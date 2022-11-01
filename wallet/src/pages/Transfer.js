@@ -2,11 +2,11 @@ import React from "react";
 import {Navigation} from "../components/Navigation";
 import {Page} from "../utill/enum";
 
-export const Home = () => {
+export const Transfer = () => {
   return (
     <>
-      홈
-      <Navigation page={Page.HOME}/>
+      transfer
+      <Navigation page={Page.TRANSFER}/>
     </>
   )
 }
