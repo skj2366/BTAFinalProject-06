@@ -1,0 +1,10 @@
+body {
+  margin: 0 auto;
+  width: 360px;
+  height: 600px;
+}
+#app-container{
+  padding: 20px;
+  height: calc(100% - 40px);
+  overflow: auto;
+}
