@@ -24,7 +24,7 @@ services:
     networks:
       - stacks-local
     depends_on:
-      - postgres
+      - mysql
     volumes:
       - ./stacks-node/bns:/bns-data
     command: ["npm", "run", "start"]
