@@ -56,7 +56,7 @@ export class Api {
   async transferSTXToken(recipient, senderKey, amount, fee, memo) {
     const txOptions = {
       recipient: recipient,
-      amount: intToBigInt(Number(amount) * LAMPORTS_PER_STX, true) + fee,
+      amount: intToBigInt(Number(amount) * LAMPORTS_PER_STX, true),
       senderKey: senderKey,
       network: this.network.isMainnet() ? 'mainnet' : 'testnet',
       memo: memo,
