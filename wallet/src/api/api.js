@@ -1,8 +1,8 @@
 import axios from "axios";
 import {LAMPORTS_PER_STX, NetworkType} from "../utill/enum";
-import {bytesToHex, with0x} from "@stacks/common";
-import fetch from 'cross-fetch';
 import {connectWebSocketClient} from "@stacks/blockchain-api-client";
+import { makeSTXTokenTransfer, broadcastTransaction, AnchorMode } from '@stacks/transactions';
+import {intToBigInt} from "@stacks/common";
 
 export class Api {
   constructor(network) {
@@ -37,7 +37,14 @@ export class Api {
       updateBalance(Number(event.balance) / LAMPORTS_PER_STX)
     })
   }
-  async sendMakeStxTransaction(walletAddress) {
+  async subscribeTransaction(txId) {
+    const socketUrl = this.getSocketUrl()
+    const client = await connectWebSocketClient(socketUrl);
+    return await client.subscribeTxUpdates(txId, event => {
+      console.log(event)
+    })
+  }
+  async requestFaucet(walletAddress) {
     return await axios.post(`${this.baseUrl}/extended/v1/faucets/stx`, {
       address: walletAddress,
       staking: false
@@ -46,50 +53,23 @@ export class Api {
   async getAccountStxTransaction(walletAddress) {
     return await axios.get(`${this.baseUrl}/extended/v1/address/${walletAddress}/transactions_with_transfers`)
   }
-  async broadcastRawTransaction(
-    rawTx,
-    attachment
-  ) {
-    const apiConfig = new Configuration({
-      fetchApi: fetch,
-      basePath: this.baseUrl
-    })
-    const transactionApi = new TransactionsApi(apiConfig)
-
-    const options = {
-      method: 'POST',
-      headers: { 'Content-Type': attachment ? 'application/json' : 'application/octet-stream' },
-      body: attachment
-        ? JSON.stringify({
-          tx: bytesToHex(rawTx),
-          attachment: bytesToHex(attachment),
-        })
-        : rawTx,
+  async transferSTXToken(recipient, senderKey, amount, fee, memo) {
+    const txOptions = {
+      recipient: recipient,
+      amount: intToBigInt(Number(amount) * LAMPORTS_PER_STX, true) + fee,
+      senderKey: senderKey,
+      network: this.network.isMainnet() ? 'mainnet' : 'testnet',
+      memo: memo,
+      fee: fee, // set a tx fee if you don't want the builder to estimate
+      anchorMode: AnchorMode.Any,
     };
-    const response = await this.network.fetchFn(this.network.getBroadcastApiUrl(), options);
-    if (!response.ok) {
-      try {
-        return (await response.json())
-      } catch (e) {
-        throw Error(`Failed to broadcast transaction: ${e.message}`);
-      }
-    }
-
-    const text = await response.text();
-    // Replace extra quotes around txid string
-    const txid = text.replace(/["]+/g, '');
-    const isValidTxId = validateTxId(txid);
-    if (!isValidTxId) {
-      throw new Error(text);
-    }
-    return {
-      txid,
-    }
-  }
-  validateTxId(txid){
-    if (txid === 'success') return true; // Bypass fetchMock tests
-    const value = with0x(txid).toLowerCase();
-    if (value.length !== 66) return false;
-    return with0x(BigInt(value).toString(16).padStart(64, '0')) === value;
+    const transaction = await makeSTXTokenTransfer(txOptions);
+    console.log(transaction)
+    const serializedTx = transaction.serialize().toString('hex');
+    console.log(serializedTx)
+    const broadcastResponse = await broadcastTransaction(transaction);
+    const txId = broadcastResponse.txid;
+    console.log(txId)
+    return txId
   }
 }

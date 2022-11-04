@@ -62,7 +62,7 @@ export const Home = () => {
 
   const faucetStx = async () => {
     setFaucet(true)
-    api.sendMakeStxTransaction(walletAddress)
+    api.requestFaucet(walletAddress)
       .then(response => {
         const {success, txId, txRaw} = response.data
         console.log(response.data)

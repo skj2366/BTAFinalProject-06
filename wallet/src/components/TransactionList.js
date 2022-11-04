@@ -4,7 +4,6 @@ import UploadIcon from '@mui/icons-material/Upload';
 import {Box, List, ListItem, ListItemAvatar, ListItemText, Typography} from "@mui/material";
 import {LAMPORTS_PER_STX} from "../utill/enum";
 
-
 export const TransactionList = (props) => {
   const {transactions} = props
   return (
