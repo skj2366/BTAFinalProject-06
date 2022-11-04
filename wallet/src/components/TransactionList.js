@@ -1,7 +1,7 @@
 import React from "react";
 import DownloadIcon from '@mui/icons-material/Download';
 import UploadIcon from '@mui/icons-material/Upload';
-import {List, ListItem, ListItemAvatar, ListItemText, Typography} from "@mui/material";
+import {Box, List, ListItem, ListItemAvatar, ListItemText, Typography} from "@mui/material";
 import {LAMPORTS_PER_STX} from "../utill/enum";
 
 
@@ -18,7 +18,6 @@ export const TransactionList = (props) => {
               <ListItem
                 alignItems="flex-start"
                 key={transaction.tx.tx_id}
-                secondaryAction={tokenAmount}
               >
                 <ListItemAvatar>
                   {
@@ -26,13 +25,22 @@ export const TransactionList = (props) => {
                   }
                 </ListItemAvatar>
                 <ListItemText
-                  primary={transaction.tx.tx_type}
+                  primary={
+                    <Box sx={{position:'relative'}}>
+                      <Typography variant={'body1'}>
+                        {transaction.tx.tx_type}
+                      </Typography>
+                      <Typography variant={'subtitle2'} sx={{position: 'absolute', top: 0, right: 0}}>
+                        {tokenAmount.toLocaleString()} STX
+                      </Typography>
+                    </Box>
+                  }
                   secondary={
                     <React.Fragment>
                       <Typography
-                        sx={{ display: 'inline' }}
+                        sx={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                         component="span"
-                        variant="subtitle1"
+                        variant="caption"
                         color="text.primary"
                       >
                         {transaction.tx.tx_id}

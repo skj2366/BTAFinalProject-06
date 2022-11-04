@@ -12,7 +12,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {updateBalance} from "../redux/balance";
 import copy from 'copy-to-clipboard'
 import {openSnackBar} from "../redux/snackBar";
-import {TransactionList} from "../components/transactionList";
+import {TransactionList} from "../components/TransactionList";
 
 
 export const Home = () => {
@@ -95,53 +95,51 @@ export const Home = () => {
 
   return (
     <>
-      <Box sx={{padding: '30px'}}>
-        <Box sx={{textAlign: 'center'}}>
-          <Box sx={{margin: '0 auto 10px'}}>
-            <Avatar
-              src="../img/LOGO.png"
-              sx={{ width: 60, height: 60, margin: '0 auto'}}
-            />
-          </Box>
-          <Box sx={{margin: '20px auto'}}>
-            <Typography variant={'h4'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              {balance.toLocaleString()}STX
-            </Typography>
-          </Box>
-          <Box onClick={handleClickCopyAddress}>
-            <Typography variant={'body1'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              <ContentCopyIcon sx={{width:15, verticalAlign: 'middle'}}/> {walletAddress}
-            </Typography>
-          </Box>
-          <Box sx={{marginTop: '10px'}}>
-            <Stack direction="row" spacing={2} sx={{justifyContent: 'center'}}>
-              <Button variant="outlined"
-                      disabled={loadingFaucet}
-                      startIcon={<InvertColorsIcon />}
-                      onClick={faucetStx}>
-                {
-                  loadingFaucet &&
-                  <CircularProgress
-                    size={24}
-                    sx={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      marginTop: '-12px',
-                      marginLeft: '-12px',
-                    }}/>
-                }
-                Faucet
-              </Button>
-              <Button variant="contained" endIcon={<SendIcon />} onClick={goToTransfer}>
-                Send
-              </Button>
-            </Stack>
-          </Box>
+      <Box sx={{textAlign: 'center', padding: '30px'}}>
+        <Box sx={{margin: '0 auto 10px'}}>
+          <Avatar
+            src="../img/LOGO.png"
+            sx={{ width: 60, height: 60, margin: '0 auto'}}
+          />
         </Box>
-        <Box>
-          <TransactionList transactions = {transactions}/>
+        <Box sx={{margin: '20px auto'}}>
+          <Typography variant={'h4'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            {balance.toLocaleString()}STX
+          </Typography>
         </Box>
+        <Box onClick={handleClickCopyAddress}>
+          <Typography variant={'body1'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            <ContentCopyIcon sx={{width:15, verticalAlign: 'middle'}}/> {walletAddress}
+          </Typography>
+        </Box>
+        <Box sx={{marginTop: '10px'}}>
+          <Stack direction="row" spacing={2} sx={{justifyContent: 'center'}}>
+            <Button variant="outlined"
+                    disabled={loadingFaucet}
+                    startIcon={<InvertColorsIcon />}
+                    onClick={faucetStx}>
+              {
+                loadingFaucet &&
+                <CircularProgress
+                  size={24}
+                  sx={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    marginTop: '-12px',
+                    marginLeft: '-12px',
+                  }}/>
+              }
+              Faucet
+            </Button>
+            <Button variant="contained" endIcon={<SendIcon />} onClick={goToTransfer}>
+              Send
+            </Button>
+          </Stack>
+        </Box>
+      </Box>
+      <Box sx={{padding: '0 10px 55px'}}>
+        <TransactionList transactions = {transactions}/>
       </Box>
       <Navigation page={Page.HOME}/>
     </>
