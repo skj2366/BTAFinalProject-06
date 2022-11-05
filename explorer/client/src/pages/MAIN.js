@@ -1,17 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Styled from 'styled-components';
 import imgUrl from '../img/back.jpg';
 import TextField from '@mui/material/TextField';
 import { styled } from '@material-ui/styles';
+import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom';
 
 const MAIN = () => {
+
+  const [search, setSearch] = useState('');
 
   return (
     <MainContainer>
     <BackImg src={imgUrl} />
     <Text>Stacks Chain Explorer</Text>
-    <Input placeholder="search by Address/ Txn Hash/ Blocks" />
-    {/* <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
+    <InputContainer>
+    <Input placeholder="search by Address/ Txn Hash/ Blocks" onChange={(e) => setSearch(e.target.value)}/>
+    <Link to={`/address/${search}`}>
+    <Icon fontSize="large"/>
+    </Link>
+
+    </InputContainer>
     <TxContainer>
     <ConfiremdTx>Confirmed</ConfiremdTx>
     <ConfiremdTx>Recent</ConfiremdTx>
@@ -30,6 +39,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 background: #f8f9fa;
+z-index: -1;
 
 `
 const BackImg = Styled.img`
@@ -45,11 +55,23 @@ const Text = Styled.div`
   font-size: 28px;
   margin-top: 70px;
 `
+const InputContainer = Styled.div`
+margin-top: 30px;
+z-index: 10;
+width: 60%;
+justify-content: center;
+align-items: center;
+display: flex;
+a{
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+}
+`;
 const Input = Styled.input`
-    width: 55%;
-    height: 45px;
-    margin-top: 30px;
-    z-index: 10;
+height: 45px;
+width: 80%;
+    // z-index: 10;
     border: none;
     border-radius: 5px;
     padding: 5px 12px;
@@ -73,13 +95,10 @@ margin: 10px;
 border-radius: 5px;
 `
 
-// const Input = styled(TextField)({
-//     background: '#fff',
-//     width: '55%',
-//     // border: 0,
-//     // borderRadius: 3,
-//     color: '#000',
-//     height: 48,
-//     // marginTop: '40px',
-//    margin: 50,
-//   });
+const Icon = styled(SearchIcon)({
+   padding: 10, 
+  marginLeft: 10,
+   borderRadius: 5,
+    background: '#fff',
+    zIndex: 10
+  });
