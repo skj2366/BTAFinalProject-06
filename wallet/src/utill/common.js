@@ -6,6 +6,12 @@ export const storage = {
   },
   get: async (key) => {
     chrome.storage.local.get([key], function (result) {
+      // return new Promise(resolve => resolve(result));
+      return result;
+    });
+  },
+  remove: async (key) => {
+    chrome.storage.local.remove([key], function (result) {
       return result;
     });
   }
