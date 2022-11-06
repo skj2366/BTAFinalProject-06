@@ -1,9 +1,9 @@
 version: '3.5'
 
 services:
-  mysql:
+  stacks-mysql:
     image: mysql/mysql-server:8.0.23
-    container_name: mysql
+    container_name: stacks-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_USERNAME}
@@ -13,11 +13,13 @@ services:
     networks:
       - stacks-local
     ports:
-      - "3312:3306"
+      - "${DB_PORT}:3306"
     stdin_open: true
     tty: true
   stacks-daemon:
-    build: "./docker"
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
     restart: unless-stopped
     container_name: stacks-daemon
     environment:
@@ -30,12 +32,11 @@ services:
     ports:
       - "3399:3000"
     depends_on:
-      - mysql
+      - stacks-mysql
     volumes:
-      - ".:/code:rw"
+      - ".:/usr/app:rw"
     stdin_open: true
     tty: true
-    command: "npm install && npm start"
   stacks-blockchain:
     image: blockstack/stacks-blockchain:2.05.0.5.1
     container_name: stacks-blockchain-1

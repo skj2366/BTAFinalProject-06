@@ -1,14 +1,9 @@
-FROM node:16-alpine
+FROM bitnami/node:16.17.0-debian-11-r6
 
-WORKDIR /code
-COPY . /code
-COPY package.json .
+WORKDIR /usr/app
+COPY . /usr/app
+COPY package*.json .
 
-WORKDIR /code
-RUN npm install -g nodemon
 RUN npm install
-
 EXPOSE 3000
 CMD ["npm", "start"]
-
-
