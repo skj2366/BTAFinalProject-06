@@ -16,34 +16,12 @@ services:
       - "3312:3306"
     stdin_open: true
     tty: true
-  stacks-daemon:
-    build: "./docker"
-    restart: unless-stopped
-    container_name: stacks-daemon
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_USERNAME}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USERNAME}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-    networks:
-      - stacks-local
-    ports:
-      - "8080:3000"
-    depends_on:
-      - mysql
-    volumes:
-      - ".:/code:rw"
-    stdin_open: true
-    tty: true
-    command: "npm install && npm start"
   stacks-blockchain:
     image: blockstack/stacks-blockchain:2.05.0.5.1
     container_name: stacks-blockchain
     restart: on-failure
     networks:
       - stacks-local
-    depends_on:
-      - stacks-daemon
     volumes:
       - ./stacks-node/persistent-data/stacks-blockchain:/root/stacks-node/data
       - ./stacks-node/config:/src/stacks-node
