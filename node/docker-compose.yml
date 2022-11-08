@@ -1,0 +1,202 @@
+version: "3.7"
+services:
+  db:
+    container_name: mirror-node-db
+    image: postgres:13.5-alpine
+    environment:
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256
+      # These should all be changed from the default before running in production
+      GRPC_PASSWORD: mirror_grpc_pass
+      IMPORTER_PASSWORD: mirror_importer_pass
+      OWNER_PASSWORD: mirror_node_pass
+      POSTGRES_PASSWORD: postgres_password
+      REST_PASSWORD: mirror_api_pass
+      ROSETTA_PASSWORD: mirror_rosetta_pass
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    stop_grace_period: 2m
+    stop_signal: SIGTERM
+    tty: true
+    networks:
+      - mirror-node
+    volumes:
+      - ./db:/var/lib/postgresql/pgdata:rw
+      - ./importer/init.sh:/docker-entrypoint-initdb.d/init.sh
+      - ./compose-network/mirror-node/init.sh:/docker-entrypoint-initdb.d/init.sh
+
+  grpc:
+    container_name: mirror-node-grpc
+    image: gcr.io/mirrornode/hedera-mirror-grpc:0.61.1
+    pull_policy: always
+    restart: unless-stopped
+    networks:
+      - mirror-node
+    depends_on:
+      - db
+      - network-node
+    environment:
+      HEDERA_MIRROR_GRPC_DB_HOST: db
+      SPRING_CONFIG_ADDITIONAL_LOCATION: file:/usr/etc/hedera-mirror-grpc/
+      SPRING_REDIS_HOST: redis
+    ports:
+      - "5600:5600"
+    volumes:
+      - ./compose-network/mirror-node/application.yml:/usr/etc/hedera-mirror-grpc/application.yml
+
+  importer:
+    container_name: mirror-node-importer
+    image: gcr.io/mirrornode/hedera-mirror-importer:0.61.1
+    pull_policy: always
+    restart: unless-stopped
+    depends_on:
+      - db
+      - minio
+    networks:
+      - mirror-node
+      - cloud-storage
+    environment:
+      HEDERA_MIRROR_IMPORTER_DB_HOST: db
+      SPRING_CONFIG_ADDITIONAL_LOCATION: file:/usr/etc/hedera-mirror-importer/
+    volumes:
+      - ./compose-network/mirror-node/application.yml:/usr/etc/hedera-mirror-importer/application.yml
+      - ./compose-network/mirror-node/addressBook.bin:/usr/etc/hedera-mirror-importer/local-dev-1-node.addressbook.f102.json.bin
+
+  monitor:
+    container_name: mirror-node-monitor
+    depends_on:
+      - grpc
+      - network-node
+    networks:
+      - mirror-node
+      - network-node-bridge
+    deploy:
+      replicas: 0
+    image: gcr.io/mirrornode/hedera-mirror-monitor:0.61.1
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      SPRING_CONFIG_ADDITIONAL_LOCATION: file:/usr/etc/hedera-mirror-monitor/
+    volumes:
+      - ./compose-network/mirror-node/application.yml:/usr/etc/hedera-mirror-monitor/application.yml
+    tty: true
+
+  minio:
+    image: minio/minio
+    container_name: minio
+    entrypoint: sh
+    command: -c 'mkdir -p /data/hedera-streams && minio server /data --console-address ":9001"'
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    networks:
+      - cloud-storage
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - "minio-data:/data"
+
+  rest:
+    image: gcr.io/mirrornode/hedera-mirror-rest:0.61.1
+    container_name: mirror-node-rest
+    pull_policy: always
+    environment:
+      HEDERA_MIRROR_REST_DB_HOST: db
+    ports:
+      - "5551:5551"
+    restart: unless-stopped
+    tty: true
+    networks:
+      - mirror-node
+    depends_on:
+      - db
+      - importer
+
+  network-node:
+    container_name: network-node
+    environment:
+      JAVA_HEAP_MAX: 2g
+      JAVA_HEAP_MIN: 256m
+      JAVA_OPTS: -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -Xlog:gc*:gc.log
+    healthcheck:
+      test: [ "CMD", "grep", "ServicesMain - Now current platform status = ACTIVE", "/opt/hgcapp/services-hedera/HapiApp2.0/output/hgcaa.log" ]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 10s
+    image: gcr.io/hedera-registry/main-network-node:0.28.7
+    networks:
+      network-node-bridge:
+        ipv4_address: 172.27.0.3
+    ports:
+      - "50211:50211"
+      - "50212:50212"
+    user: root
+    volumes:
+      - "./network-logs/node/accountBalances:/accountBalances:/opt/hgcapp/accountBalances"
+      - "./network-logs/node/recordStreams:/opt/hgcapp/recordStreams"
+      - "./compose-network/network-node/data/config:/opt/hgcapp/services-hedera/HapiApp2.0/data/config"
+      - "./network-logs/node/logs:/opt/hgcapp/services-hedera/HapiApp2.0/output"
+      - "./compose-network/network-node/data/keys:/opt/hgcapp/services-hedera/HapiApp2.0/data/keys"
+      - "./compose-network/network-node/data/onboard:/opt/hgcapp/services-hedera/HapiApp2.0/data/onboard"
+      - "./network-logs/node/stats:/opt/hgcapp/services-hedera/HapiApp2.0/data/stats"
+      - "./compose-network/network-node/config.txt:/opt/hgcapp/services-hedera/HapiApp2.0/config.txt"
+      - "./compose-network/network-node/settings.txt:/opt/hgcapp/services-hedera/HapiApp2.0/settings.txt"
+      - "./compose-network/network-node/log4j2.xml:/opt/hgcapp/services-hedera/HapiApp2.0/log4j2.xml"
+      - "./compose-network/network-node/hedera.crt:/opt/hgcapp/services-hedera/HapiApp2.0/hedera.crt"
+      - "./compose-network/network-node/hedera.key:/opt/hgcapp/services-hedera/HapiApp2.0/hedera.key"
+
+  web3:
+    image: gcr.io/mirrornode/hedera-mirror-web3:0.61.1
+    container_name: mirror-node-web3
+    mem_swappiness: 0
+    depends_on:
+      - importer
+      - db
+    networks:
+      - mirror-node
+    environment:
+      HEDERA_MIRROR_WEB3_DB_HOST: db
+    ports:
+      - "8545:8545"
+    restart: unless-stopped
+    tty: true
+
+  envoy:
+    image:  envoyproxy/envoy:v1.22.0
+    container_name: envoy-proxy
+    ports:
+      - "50213:50213"
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+    networks:
+      - network-node-bridge
+
+networks:
+  cloud-storage:
+    name: cloud-storage
+    driver: bridge
+  default:
+    name: hedera-local-node_default
+  mirror-node:
+    name: mirror-node
+    driver: bridge
+  network-node-bridge:
+    name: network-node-bridge
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.27.0.0/16
+          gateway: 172.27.0.254
+          ip_range: 172.27.0.0/24
+volumes:
+  minio-data:
+    name: minio-data
+  mirror-node-postgres:
+    name: mirror-node-postgres
