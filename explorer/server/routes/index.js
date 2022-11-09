@@ -1,10 +1,10 @@
-var express = require("express");
-var router = express.Router();
+const express = require('express');
+const transactionRouter = require('./tx.route');
+const blockRouter = require('./block.route');
 
-const Transaction = require("../models/Transaction");
+const app = express();
 
-router.get("/", function (req, res) {
-  res.status(200).send("welcome");
-});
+app.use('/tx', transactionRouter);
+app.use('/block', blockRouter);
 
-module.exports = router;
+module.exports = app;
