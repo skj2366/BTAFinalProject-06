@@ -31,12 +31,6 @@ app.use("/", indexRouter);
 //const openAPIDocument = yaml.load("./api/api_docs.yaml");
 //app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(openAPIDocument));
 
-let server;
-
-/* app.listen(PORT, async () => {
-    console.log(`      🚀 HTTP Server is starting on ${PORT}`);
-}); */
-
 models.sequelize
     .sync()
     .then(() => {   
