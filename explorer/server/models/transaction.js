@@ -10,40 +10,72 @@ module.exports = (sequelize, DataTypes) => {
     }
     transaction.init(
         {
-            blockHash: {
-                type: DataTypes.STRING(100),
-                allowNull: false,
-            },
-            blockNo: {
+            transaction_hash: {
                 type: DataTypes.STRING(100),
                 allowNull: true,
-            },
-            gas: {
+            }, 
+            transaction_id: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            type: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            node: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            charged_tx_fee: {
                 type: DataTypes.INTEGER(100),
                 allowNull: true,
-            },          
-            hash: {
+            },
+            consensus_timestamp: {
                 type: DataTypes.STRING(100),
                 allowNull: true,
+            },
+            entity_id: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            },          
+            max_fee: {
+                type: DataTypes.INTEGER(100),
+                allowNull: true,
             },   
+            memo_base64: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
             nonce: {
                 type: DataTypes.INTEGER(100),
                 allowNull: true,
             }, 
-            from: {
+            result: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            token_id: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            token_account_from: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            token_account_to: {
+                type: DataTypes.STRING(100),
+                allowNull: true,
+            }, 
+            token_amount: {
                 type: DataTypes.INTEGER(100),
                 allowNull: true,
             }, 
-            to: {
+            valid_duration_seconds: {
                 type: DataTypes.INTEGER(100),
                 allowNull: true,
             }, 
-            transactionIndex: {
-                type: DataTypes.INTEGER(100),
-                allowNull: true,
-            }, 
-            value: {
-                type: DataTypes.INTEGER(100),
+            valid_start_timestamp: {
+                type: DataTypes.STRING(100),
                 allowNull: true,
             }, 
         },
