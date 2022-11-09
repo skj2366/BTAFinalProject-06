@@ -1,0 +1,9 @@
+## Temporary node files
+*.log
+network-logs/**
+.idea
+/node_modules
+.pid
+.env
+
+.vscode
