@@ -1,4 +1,4 @@
-import {StacksMainnet, StacksMocknet, StacksTestnet} from "@stacks/network";
+import {AccountId, Client} from "@hashgraph/sdk";
 
 export const Page = {
   LOGIN: 'login',
@@ -6,11 +6,25 @@ export const Page = {
   TRANSFER: 'transfer',
   SETTING: 'setting',
 }
-export const LAMPORTS_PER_STX = 1000000
+export const LAMPORTS_PER_HG = 1000000
 
-export const NetworkType = {
-  MainNetwork: new StacksMainnet(),
-  TestNetwork: new StacksTestnet(),
-  // url 설정 필요 기본 'http://localhost:3999'
-  customNetwork: new StacksMocknet({url: `http://localhost:3999`})
+export const ClientType = {
+  MainNetwork: Client.forMainnet(),
+  TestNetwork: Client.forTestnet(),
+  localNetwork: Client.forNetwork({"127.0.0.1:50211": new AccountId(3)}),
+}
+
+export const ClientTypeName = {
+  MAIN_NET: 'mainnet',
+  TEST_NET: 'testnet',
+  LOCAL_NET: 'localnet'
+}
+
+export const StoredKey = {
+  MNEMONIC: 'mnemonic',
+  PASSWORD: 'password',
+  PUBLIC_KEY: 'publicKey',
+  ACCOUNT_ID: 'accountId',
+  PRIVATE_KEY: 'privateKey',
+  CLIENT: 'client'
 }

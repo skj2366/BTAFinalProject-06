@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Navigation} from "../components/Navigation";
+import {Navigation} from "../components/navigation";
 import {LAMPORTS_PER_STX, Page} from "../utill/enum";
 import {
   Avatar,
@@ -17,7 +17,6 @@ import {
 import {useDispatch, useSelector} from "react-redux";
 import {Api} from "../api/api";
 import {openSnackBar} from "../redux/snackBar";
-import {generateWallet} from "@stacks/wallet-sdk";
 
 const transferFees = [
   {value: 250n, label : 'low',},
@@ -26,18 +25,10 @@ const transferFees = [
 ]
 
 export const Transfer = () => {
-  const wallet2 = 'ST2Z3AB623Y5GSRK6A2E5GJ30QH63PA0KBTZNRZ14'
-  const wallet1 = 'ST694GTT70W411X0T6PGN15AJKRTT9YAG5W898MM'
-  const secretKey = 'bba99899629c489f41418a849ff48d9098ce26b777742d0edb70d256b888fc2e01'
-  const secretKey2 = 'innocent bright region diagram once forward great hello awkward maple morning expire eagle kidney butter mansion frost little venture era material auto scissors undo'
-
-  const privateKey1 = generateWallet({secretKey : secretKey2, password: ''}).then(e => {
-    console.log(e)
-  })
-  console.log('generate',privateKey1)
-
+  // TODO reducx에 값을 변경할 때 사용
   const dispatch = useDispatch();
-  const { network } = useSelector(state => state.networkReducer);
+
+  // TODO 리덕스에서 값을 가져올때 사용!
   const { balance } = useSelector(state => state.balanceReducer);
   const [amount, setAmount] = useState(0)
   const [recipient, setRecipient] = useState('')
@@ -45,7 +36,6 @@ export const Transfer = () => {
   const [fee, setFee] = useState(transferFees[1])
   const [loadingTransfer, setLoadingTransfer] = useState(false)
 
-  const api = new Api(network)
 
   const handleChangeTransferAmount = (e) => {
     setAmount(e.target.value)
@@ -62,20 +52,12 @@ export const Transfer = () => {
   const handleChangeFee = (e) => {
     const selectedFee = e.target.value
     const select = transferFees.find(fee => fee.label === selectedFee)
-    console.log(select)
     setFee(select)
   }
 
   const handleClickPreview = async () => {
     setLoadingTransfer(true)
-    await api.transferSTXToken(recipient, secretKey, amount, fee.value, memo)
-      .then(response => {
-        setLoadingTransfer(false)
-        console.log(response)
-      }).catch(e => {
-        setLoadingTransfer(false)
-        dispatch(openSnackBar('error', '잠시 후에 다시 이용해주세요.'))
-      })
+
   }
 
   return (
@@ -89,7 +71,7 @@ export const Transfer = () => {
         </Box>
         <Box>
           <Typography>
-            현재 보유량 {balance.toLocaleString()} STX
+            현재 보유량 {balance.toLocaleString()} TH
           </Typography>
           <FormControl fullWidth sx={{ margin: '5px auto' }} variant="standard">
             <InputLabel htmlFor="standard-adornment-amount">수량</InputLabel>
@@ -97,7 +79,7 @@ export const Transfer = () => {
               type='number'
               value={amount}
               onChange={handleChangeTransferAmount}
-              endAdornment={<InputAdornment position="end">STX</InputAdornment>}
+              endAdornment={<InputAdornment position="end">TH</InputAdornment>}
             />
           </FormControl>
           <FormControl fullWidth sx={{ margin: '5px auto'  }} variant="standard">

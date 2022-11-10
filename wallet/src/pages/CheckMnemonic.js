@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {goTo} from "react-chrome-extension-router";
 import {Header} from "../components/header";
 import {Avatar, Box, Button, Typography} from "@mui/material";
@@ -7,19 +7,23 @@ import {openSnackBar} from "../redux/snackBar";
 import {useDispatch} from "react-redux";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import {ConfirmMnemonic} from "./ConfirmMnemonic";
+import {WalletButton} from "../components/walletButton";
+import {Mnemonic} from "@hashgraph/sdk";
+import {storage} from "../utill/common";
 
-export const CheckMnemonic = ({params}) => {
+export const CheckMnemonic = (props) => {
   const dispatch = useDispatch();
-  console.log(params);
+  const {mnemonic} = props
 
   const handleClickCopyMnemonic = () => {
-    copy(params)
+    copy(mnemonic)
     dispatch(openSnackBar('success', '복사완료'))
   }
+
   const goToNext = async () => {
-    console.log('goToNext');
-    goTo(ConfirmMnemonic, {params: params.toString()})
-  };
+    goTo(ConfirmMnemonic, {mnemonic: mnemonic})
+  }
+
   return (
     <>
       <Header/>
@@ -32,28 +36,24 @@ export const CheckMnemonic = ({params}) => {
         </Box>
         <Box sx={{margin: '20px auto'}}>
           <Typography variant={'h6'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            복구 구문이 생성되었습니다.
-            <br/>
+            복구 구문이 생성되었습니다.<br/>
             다음의 복구구문을 꼭 기록해두세요!
           </Typography>
           <Box onClick={handleClickCopyMnemonic}>
             <Typography variant={'body1'} sx={{margin: '20px auto', textAlign: 'center', whiteSpace: 'pre-line'}}>
-              <ContentCopyIcon sx={{width:15, verticalAlign: 'middle'}}/> {params}
+              <ContentCopyIcon sx={{width:15, verticalAlign: 'middle'}}/> {mnemonic}
             </Typography>
           </Box>
           <Box>
-            <Button
+            <WalletButton
               fullWidth
-              variant="contained"
               onClick={goToNext}
             >
               다음
-            </Button>
+            </WalletButton>
           </Box>
         </Box>
       </Box>
-
-
     </>
   )
 }

@@ -1,26 +1,34 @@
 import React, {useEffect, useState} from "react";
 import {goTo} from "react-chrome-extension-router";
-import {Avatar, Box, Button, Typography} from "@mui/material";
+import {Avatar, Box, Button, Paper, Stack, Typography} from "@mui/material";
 import {CreateAccount} from "./CreateAccount";
 import {RecoverAccount} from "./RecoverAccount";
 import {useDispatch} from "react-redux";
 import {Login} from "./Login";
+import {storage} from "../utill/common";
+import {ClientTypeName, StoredKey} from "../utill/enum";
+import {changeAccount} from "../redux/accountInfo";
+import {changeClient} from "../redux/client";
 
+
+// gauge beauty victory holiday flock prepare double join idea admit celery tired
 export const Help = () => {
   const dispatch = useDispatch();
-  const [first, setFirst] = useState(false);
-  const [loadingTransfer, setLoadingTransfer] = useState(false);
+
   useEffect(() => {
     async function checkLogin() {
-      chrome.storage.local.get(["password", "privateKey", "address"], function (result) {
-        if (result.password && result.privateKey && result.address) {
-          setFirst(true);
+      await storage.get([ StoredKey.PASSWORD, StoredKey.ACCOUNT_ID, StoredKey.CLIENT ],  (result) => {
+        console.log(result)
+        if (result.password && result.accountId) {
+          dispatch(changeAccount(result.accountId))
+          dispatch(changeClient(result.client || ClientTypeName.TEST_NET))
           goTo(Login);
         }
-      });
+      })
     }
-    checkLogin()
+    checkLogin().catch(e => console.log(e))
   }, [])
+
   const handleClickCreateAccount = () => {
       goTo(CreateAccount);
   }
@@ -31,7 +39,7 @@ export const Help = () => {
 
   return (
     <>
-      <Box sx={{textAlign: 'center', padding: '30px'}}>
+      <Box sx={{textAlign: 'center', padding: '80px 30px 30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar
             src="../img/LOGO.png"
@@ -40,27 +48,19 @@ export const Help = () => {
         </Box>
         <Box sx={{margin: '20px auto'}}>
           <Typography variant={'h6'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            FullStacks가 처음이세요?
+            <b>FullStacks</b>가 처음이세요?
           </Typography>
         </Box>
-        <Box sx={{border: '1px solid black', margin: '20px auto'}}>
-          <Typography variant={'h6'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            <b>이미 비밀 복구 구문이 있습니다.</b>
-          </Typography>
-          <Typography>
-            비밀 복구 구문을 이용하여 지갑 가져오기
-          </Typography>
-          <Button onClick={handleClickRecoverAccount}>지갑 가져오기</Button>
-        </Box>
-        <Box sx={{border: '1px solid black', margin: '20px auto'}}>
-          <Typography variant={'h6'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            <b>설정을 시작하죠!</b>
-          </Typography>
-          <Typography>
-            이렇게 하면 새 지갑과 비밀 복구 구문이 만들어집니다
-          </Typography>
-          <Button onClick={handleClickCreateAccount}>지갑 생성</Button>
-        </Box>
+        <Stack direction="row" spacing={2} sx={{alignItems: "stretch"}}>
+          <Paper sx={{backgroundColor:'#000', color: '#fff', padding: '10px', width: "50%", cursor: "pointer"}} onClick={handleClickRecoverAccount}>
+            <Typography sx={{wordBreak: 'keep-all', fontWeight: "bold"}}>이미 비밀 복구 구문이 있습니다.</Typography>
+            <Typography variant="subtitle2">비밀 복구 구문을 이용하여 지갑 가져오기</Typography>
+          </Paper>
+          <Paper sx={{backgroundColor:'#000', color: '#fff', padding: '10px', width: "50%", cursor: "pointer"}} onClick={handleClickCreateAccount}>
+            <Typography sx={{wordBreak: 'keep-all', fontWeight: "bold"}}>설정을 시작하죠!</Typography>
+            <Typography variant="subtitle2">새로운 지갑 만들기</Typography>
+          </Paper>
+        </Stack>
       </Box>
     </>
   )

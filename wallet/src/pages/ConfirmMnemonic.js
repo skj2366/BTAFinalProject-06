@@ -1,32 +1,38 @@
 import React, {useEffect, useState} from "react";
-import {goTo} from "react-chrome-extension-router";
-import {Avatar, Box, Button, ToggleButton, ToggleButtonGroup, Typography} from "@mui/material";
-import {generateWallet, getStxAddress} from '@stacks/wallet-sdk';
-import {Home} from "./Home";
-import {useDispatch} from "react-redux";
+import {Box, Grid, Typography} from "@mui/material";
+import {useDispatch, useSelector} from "react-redux";
 import {openSnackBar} from "../redux/snackBar";
-import saltedSha256 from "salted-sha256";
-import {storage} from '../utill/common';
 import {Header} from "../components/header";
+import {WalletButton} from "../components/walletButton";
+import {Logo} from "../components/logo";
+import {getClient, storage, storeByEncryptPassword} from "../utill/common";
+import {AccountCreateTransaction, Client, Hbar, Mnemonic} from "@hashgraph/sdk";
+import {StoredKey} from "../utill/enum";
+import {goTo} from "react-chrome-extension-router";
+import {Home} from "./Home";
+import {changeAccount} from "../redux/accountInfo";
 
-export const ConfirmMnemonic = ({params}) => {
+export const ConfirmMnemonic = (props) => {
   const dispatch = useDispatch();
+  const { client } = useSelector(state => state.clientReducer);
   const [originalWords, setOriginalWords] = useState([]);
   const [randomWords, setRandomWords] = useState([]);
   const [formats, setFormats] = useState([]);
+  const {mnemonic} = props
+
+  console.log(client)
 
   useEffect(() => {
-    let paramList = params.split(" ");
-    setOriginalWords(paramList);
-    let wordList = [];
-    for (let i = 0; i < paramList.length; i++) {
-      wordList.push({ word: paramList[i], toggle: false });
-    }
-    setRandomWords([...wordList].sort(() => Math.random() - 0.5));
+    const mnemonicArray = mnemonic.split(" ");
+    const toggleArray = mnemonicArray.map(word => {
+      return {
+        word: word,
+        toggle: false
+      }
+    })
+    setOriginalWords(mnemonicArray)
+    setRandomWords(toggleArray.sort(() => Math.random() - 0.5));
   }, []);
-  const goToNext = () => {
-    goTo(Home);
-  }
 
   const compareMnemonic = function (a, b) {
     if (JSON.stringify(a) == JSON.stringify(b)) {
@@ -36,57 +42,68 @@ export const ConfirmMnemonic = ({params}) => {
     }
   };
 
-  const onSubmitMnemonic = () => {
-    // console.log("formats", formats);
-    // console.log("originalWords", originalWords);
+  const handleClickReset = () => {
+    setFormats([])
+    setRandomWords(randomWords.map(word => {
+      word.toggle = false
+      return word
+    }))
+  }
+
+  //pistol bleak chronic machine biology unlock shed scissors chief cushion half top
+  const onSubmitMnemonic = async () => {
     const resultCompare = compareMnemonic(formats, originalWords);
     if (resultCompare) {
-      chrome.storage.local.get(["password"], function (result) {
-        // console.log(JSON.parse(result.password));
-        generateWallet({
-          secretKey: params,
-          password: result.password,
-        }).then(async (res) => {
-          // 비밀키 => res.stxPrivateKey;
-          const saltedHashAsync = await saltedSha256(
-            res.accounts[0].stxPrivateKey,
-            result.password,
-            true
-          );
-          // console.log("saltedHashAsync", saltedHashAsync);
-          const address = getStxAddress({ account: res.accounts[0] });
-          // console.log(address);
-          await storage.set("privateKey", saltedHashAsync);
-          await storage.set("address", address);
-          await storage.set("wallet", res);
+      let encPassword = ''
+      await storage.get(StoredKey.PASSWORD, async (result) => {
+        encPassword = result.password
+      })
 
-          goToNext();
-        });
-      });
+      const createMnemonice = await Mnemonic.fromString(mnemonic);
+      const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
+      const accountPublicKey = accountPrivateKey.publicKey;
+
+      const operatorId = process.env.WALLET_ACCOUNT_ID
+      const operatorKey = process.env.WALLET_PRIVATE_KEY
+      const currentClient = Client.forTestnet()
+      currentClient.setOperator(operatorId, operatorKey);
+
+      const transaction = new AccountCreateTransaction()
+        .setKey(accountPublicKey)
+        .setInitialBalance(new Hbar(1000))
+
+      const txResponse = await transaction.execute(currentClient)
+      const receipt = await txResponse.getReceipt(currentClient)
+      const newAccountId = receipt.accountId.toString();
+
+      await storage.set(StoredKey.ACCOUNT_ID, newAccountId)
+      await storage.set(StoredKey.PUBLIC_KEY, accountPublicKey.toString())
+      await storeByEncryptPassword(StoredKey.PRIVATE_KEY, accountPrivateKey.toString(), encPassword)
+      dispatch(changeAccount(newAccountId))
+      goTo(Home)
     } else {
       dispatch(openSnackBar('error', '복구 구문을 다시 확인해주세요.'));
       return false;
     }
   }
 
-  const handleFormat = (event, newFormats) => {
-    if (newFormats.length) {
-      setFormats(newFormats);
-    } else {
-      setFormats([]);
+  const handleClickMnemonic = (value) => {
+    if (!formats.includes(value.word)) {
+      setRandomWords(randomWords.map(word => {
+        if(word.word === value.word) {
+          word.toggle = true
+        }
+        return word
+      }))
+      setFormats(formats.concat(value.word))
     }
-  };
+  }
 
   return (
     <>
       <Header/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
-        <Box sx={{margin: '0 auto 10px'}}>
-          <Avatar
-            src="../img/LOGO.png"
-            sx={{ width: 60, height: 60, margin: '0 auto'}}
-          />
-        </Box>
+        <Logo/>
         <Box sx={{margin: '20px auto'}}>
           <Typography variant={'h6'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             복구 구문을 확인합니다.
@@ -103,7 +120,7 @@ export const ConfirmMnemonic = ({params}) => {
           display: 'flex',
           flexWrap: 'wrap',
           padding: '10px',
-          boxSizing: 'border-box'
+          margin: '0 auto'
         }}>
           {formats.map((item, index) => {
             return (
@@ -111,41 +128,48 @@ export const ConfirmMnemonic = ({params}) => {
             )
           })}
         </Box>
-      </Box>
-      {/*<Box sx={{ width: '360px', margin: '10px auto', whiteSpace: 'pre-wrap', textAlign: 'center'}}>*/}
-      <ToggleButtonGroup
-        value={formats} onChange={handleFormat} aria-label="mnemonic"
-        sx={{
-          margin: '10px auto',
-          width: '360px',
-          display: 'flex',
-          flexWrap: 'wrap',
-          marginTop: '20px',
-          textAlign: 'center'
-      }}>
-        {
-          randomWords?.map((value, index) => {
-            return (
-              <ToggleButton size='small' color='primary' sx={{
-                margin: '10px auto',
+        <Grid
+          container
+          rowSpacing={1}
+          columnSpacing={{ xs: 2, sm: 2, md: 3 }}
+          sx={{marginTop: "10px", marginBottom: "10px"}}
+        >
+          {randomWords.map((value, index) => (
+            <Grid
+              item
+              xs={4}
+              key={index}
+              sx={{cursor: 'pointer'}}
+            >
+              <Box
+                onClick={() => handleClickMnemonic(value)}
+                sx={{
+                backgroundColor: !value.toggle? '#000' : '#fff',
+                color: !value.toggle? '#fff' : '#666',
+                textAlign: 'center',
                 padding: '10px',
-                width: '90px'
-              }} key={index} value={value.word}>
-                <Typography>{value.word}</Typography>
-              </ToggleButton>
-            );
-          })
-        }
-      </ToggleButtonGroup>
-      {/*</Box>*/}
-      <Box sx={{textAlign: 'center', padding: '30px'}}>
-        <Button
+                borderRadius: '5px',}}
+              >
+                {value.word}
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+        <WalletButton
           fullWidth
-          variant="contained"
           onClick={onSubmitMnemonic}
         >
           다음
-        </Button>
+        </WalletButton>
+        <Box sx={{marginTop: '10px'}}>
+
+        </Box>
+        <WalletButton
+          fullWidth
+          onClick={handleClickReset}
+        >
+          다시하기
+        </WalletButton>
       </Box>
     </>
   )

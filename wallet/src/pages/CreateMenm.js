@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {generateSecretKey} from '@stacks/wallet-sdk';
 import {Avatar, Box, Button, Typography} from "@mui/material";
-
+import {Mnemonic} from '@hashgraph/sdk';
 
 const CreateMenm = () => {
-
   const [mnem, setMnem] = useState([]);
   const [paramMnem, setParamMnem] = useState('');
   useEffect(() => {
@@ -15,7 +13,6 @@ const CreateMenm = () => {
     // console.log(generateSecretKey(len));
     let menm = generateSecretKey(len);
     setParamMnem(menm);
-    console.log('menm', menm)
     let wordList = menm.split(' ');
     setMnem(wordList);
   }

@@ -7,7 +7,7 @@ import {rootReducer} from "./redux";
 import {composeWithDevTools} from "redux-devtools-extension";
 import {logger} from "redux-logger/src";
 import {Provider} from "react-redux";
-import {SimpleSnackBar} from "./pages/SimpleSnackBar";
+import {SimpleSnackBar} from "./components/simpleSnackBar";
 import {Help} from "./pages/Help";
 
 function App() {
