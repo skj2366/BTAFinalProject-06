@@ -66,7 +66,7 @@ export const InputPassword = (props) => {
         >
           {
             loading &&
-            <ButtonProgress size={24}/>
+            <ButtonProgress/>
           }
           {buttonMessage}
         </WalletButton>

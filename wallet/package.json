@@ -47,6 +47,7 @@
     "gulp-connect": "^5.7.0",
     "gulp-eslint-new": "^1.4.2",
     "metamask-extension-provider": "^3.0.0",
+    "moment": "^2.29.4",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "open": "^8.4.0",
     "patch-package": "^6.4.7",

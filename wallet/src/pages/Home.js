@@ -51,16 +51,11 @@ export const Home = () => {
   }
 
   const getAccountStxTransaction = async () => {
-/*    api.getAccountStxTransaction(walletAddress)
-      .then(response => {
-        const {results} = response.data
-        setTransactions(results)
-        console.log(response.data)
-      })*/
+
   }
 
   const handleClickCopyAddress = () => {
-/*    copy(walletAddress)*/
+    copy(accountId)
     dispatch(openSnackBar('success', '복사완료'))
   }
 

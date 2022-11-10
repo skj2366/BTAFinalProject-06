@@ -11,7 +11,7 @@ export const accountReducer = (state = initialState, action) => {
     case CHANGE_ACCOUNT:
       return {
         ...state,
-        accountId: action.accountId
+        accountId: action.accountId,
       }
     default:
       return state

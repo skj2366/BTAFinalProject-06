@@ -39,13 +39,9 @@ export const unlockWallet = () => {
   chrome.storage.local.remove('lock')
 }
 
-export const decryptKey = async (key, encPassword) => {
-  const result = await storage.get(key)
-  if (result) {
-    const decSecretKey = crypto.AES.decrypt(key, encPassword)
-    const originalSecretKey = decSecretKey.toString(crypto.enc.Utf8)
-    return originalSecretKey
-  }
+export const decryptByEncryptPassword = (value, encryptPassword) => {
+  const decSecretKey = crypto.AES.decrypt(value, encryptPassword)
+  return decSecretKey.toString(crypto.enc.Utf8)
 }
 
 export const getClient = async (client) => {

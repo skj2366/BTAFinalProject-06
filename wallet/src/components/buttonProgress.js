@@ -7,5 +7,6 @@ export const ButtonProgress = styled(CircularProgress) ({
   marginTop: '-12px',
   marginLeft: '-12px',
   color: "#000",
-  size: 24
+  width: '24px !important',
+  height: '24px !important',
 })

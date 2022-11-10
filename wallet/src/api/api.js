@@ -1,5 +1,13 @@
 
-import {AccountBalanceQuery, AccountId, Client} from "@hashgraph/sdk";
+import {
+  AccountBalanceQuery,
+  AccountCreateTransaction,
+  AccountId,
+  Client,
+  Hbar,
+  Mnemonic, PrivateKey, ScheduleCreateTransaction, ScheduleSignTransaction,
+  TransferTransaction
+} from "@hashgraph/sdk";
 import {ClientTypeName} from "../utill/enum";
 import axios from "axios";
 
@@ -17,17 +25,25 @@ export class Api {
       }
     }
   }
-  async generateAccount () {
-
+  async generateAccount (mnemonic) {
+    const createMnemonice = await Mnemonic.fromString(mnemonic);
+    const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
+    const accountPublicKey = accountPrivateKey.publicKey;
+    const transaction = new AccountCreateTransaction()
+      .setKey(accountPublicKey)
+    const txResponse = await transaction.execute(this.client)
+    const receipt = await txResponse.getReceipt(this.client)
+    return {
+      accountId : receipt.accountId.toString(),
+      accountPublicKey: accountPrivateKey.toString(),
+      accountPrivateKey: accountPrivateKey.toString()
+    }
   }
   async fetchBalance(accountId) {
     const query = new AccountBalanceQuery()
       .setAccountId(accountId);
     const accountBalance = await query.execute(this.client);
     return accountBalance.hbars.toString()
-  }
-  async subscribeBalance(walletAddress, updateBalance) {
-
   }
   async subscribeTransaction(txId) {
 
@@ -38,8 +54,50 @@ export class Api {
   async getAccountStxTransaction(walletAddress) {
 
   }
-  async transfer(recipient, senderKey, amount, fee, memo) {
+  async transfer(recipientId, myAccountId, mnemonic, amount, memo) {
+    const createMnemonice = await Mnemonic.fromString(mnemonic);
+    const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
 
+    const transaction = await new TransferTransaction()
+      .addHbarTransfer(myAccountId, new Hbar(- 1 * amount))
+      .addHbarTransfer(recipientId, new Hbar(amount))
+      .setTransactionMemo(memo)
+      .freezeWith(this.client)
+      .sign(accountPrivateKey)
+
+    const txResponse = await transaction.execute(this.client);
+    const receipt = await txResponse.getReceipt(this.client);
+
+    const transactionStatus = receipt.status;
+    console.log(transactionStatus)
+  }
+  async scheduleTransfer(recipientId, myAccountId, mnemonic, amount, memo, isoTime) {
+    const createMnemonice = await Mnemonic.fromString(mnemonic);
+    const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
+
+    const transactionToSchedule = await new TransferTransaction()
+      .addHbarTransfer(myAccountId, new Hbar(- 1 * amount))
+      .addHbarTransfer(recipientId, new Hbar(amount))
+      .setTransactionMemo(memo)
+
+    const transaction = new ScheduleCreateTransaction()
+      .setScheduledTransaction(transactionToSchedule)
+      .setScheduleMemo(isoTime)
+
+    const txResponse = await transaction.execute(this.client)
+    const receipt = await txResponse.getReceipt(this.client)
+
+    const scheduleId = receipt.scheduleId
+    console.log(scheduleId)
+
+    const signTransaction = await new ScheduleSignTransaction()
+      .setScheduleId(scheduleId)
+      .freezeWith(this.client)
+      .sign(accountPrivateKey)
+
+    const signTxResponse = await signTransaction.execute(this.client)
+    const signReceipt = await signTxResponse.getReceipt(this.client)
+    const transactionStatus = signReceipt.status
   }
 
   async getAccount(pubkey) {

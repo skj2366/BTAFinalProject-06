@@ -11,6 +11,7 @@ import {StoredKey} from "../utill/enum";
 import {goTo} from "react-chrome-extension-router";
 import {Home} from "./Home";
 import {changeAccount} from "../redux/accountInfo";
+import {Api} from "../api/api";
 
 export const ConfirmMnemonic = (props) => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ export const ConfirmMnemonic = (props) => {
   const [formats, setFormats] = useState([]);
   const {mnemonic} = props
 
-  console.log(client)
+  const api = new Api(client)
 
   useEffect(() => {
     const mnemonicArray = mnemonic.split(" ");
@@ -50,7 +51,6 @@ export const ConfirmMnemonic = (props) => {
     }))
   }
 
-  //pistol bleak chronic machine biology unlock shed scissors chief cushion half top
   const onSubmitMnemonic = async () => {
     const resultCompare = compareMnemonic(formats, originalWords);
     if (resultCompare) {
@@ -59,27 +59,13 @@ export const ConfirmMnemonic = (props) => {
         encPassword = result.password
       })
 
-      const createMnemonice = await Mnemonic.fromString(mnemonic);
-      const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
-      const accountPublicKey = accountPrivateKey.publicKey;
+      const result = api.generateAccount(mnemonic)
+      const {accountId, accountPublicKey, accountPrivateKey} = result
 
-      const operatorId = process.env.WALLET_ACCOUNT_ID
-      const operatorKey = process.env.WALLET_PRIVATE_KEY
-      const currentClient = Client.forTestnet()
-      currentClient.setOperator(operatorId, operatorKey);
-
-      const transaction = new AccountCreateTransaction()
-        .setKey(accountPublicKey)
-        .setInitialBalance(new Hbar(1000))
-
-      const txResponse = await transaction.execute(currentClient)
-      const receipt = await txResponse.getReceipt(currentClient)
-      const newAccountId = receipt.accountId.toString();
-
-      await storage.set(StoredKey.ACCOUNT_ID, newAccountId)
-      await storage.set(StoredKey.PUBLIC_KEY, accountPublicKey.toString())
-      await storeByEncryptPassword(StoredKey.PRIVATE_KEY, accountPrivateKey.toString(), encPassword)
-      dispatch(changeAccount(newAccountId))
+      await storage.set(StoredKey.ACCOUNT_ID, accountId)
+      await storage.set(StoredKey.PUBLIC_KEY, accountPublicKey)
+      await storeByEncryptPassword(StoredKey.PRIVATE_KEY, accountPrivateKey, encPassword)
+      dispatch(changeAccount(accountId))
       goTo(Home)
     } else {
       dispatch(openSnackBar('error', '복구 구문을 다시 확인해주세요.'));
