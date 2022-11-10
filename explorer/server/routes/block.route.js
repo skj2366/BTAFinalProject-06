@@ -3,7 +3,7 @@ const block = require('../controllers/block.controller');
 
 const router = express.Router();
 
-router.get('/allblocks', block.getAllBlock);
+router.get('/', block.searchBlock);
 router.get('/:blockNumber', block.getBlockByNumber);
 
 
