@@ -1,17 +1,19 @@
 const {Transaction} = require("../models");
 const {asyncWrapper} = require('../utils/async');
 const {StatusCodes} = require("http-status-codes");
+const { Op } = require("sequelize");
 
 /**
  * 최신 20건의 트랜잭션 전체 조회
  *
- * @req : page(number), txId
+ * @req : page(number), txId, txHash
  */
 const searchTx = asyncWrapper(async (req) => {
     try {
-        const {page, txId} = req.query; // 요청 페이지 넘버, 트랜잭션 ID
+        const {page, txId, txHash} = req.query; // 요청 페이지 넘버, 트랜잭션 ID, hash
+        console.log(txHash);
         let offset = 0;
-
+    
         if (page > 1) {
             offset = 20 * (page - 1);
         }
@@ -20,13 +22,25 @@ const searchTx = asyncWrapper(async (req) => {
         if (txId) {
             txData = await Transaction.findAll({
                 where: {
-                    transaction_id: txId
+                    [Op.txId]: "%" + txId + "%",
                 },
                 order: [
                     ["id", "DESC"]
                 ]
             });
-        } else {
+        } else if (txHash) {
+            txData = await Transaction.findOne({
+                where: {
+                    transaction_hash: {
+                        [Op.like]: "%" + txHash + "%",
+                    },
+                },
+                order: [
+                    ["id", "DESC"]
+                ]
+            });
+        }
+        else {
             txData = await Transaction.findAll({
                 offset: offset,
                 limit: 20,
