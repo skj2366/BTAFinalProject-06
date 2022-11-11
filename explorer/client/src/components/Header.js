@@ -9,8 +9,9 @@ const Header = () => {
     <HeaderContainer>
         <Logo><Link to ="/">로고 이미지</Link></Logo>
         <Navi>
-            <Link to ="/tx">Transaction</Link>
+            <Link to ="/tx">Transactions</Link>
             <Link to ="/block">Blocks</Link>
+            <Link to ="/account">Accounts</Link>
             <div>시세 API</div>
         </Navi>
     </HeaderContainer>
