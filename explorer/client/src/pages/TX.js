@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { utils } from '../utils/utils';
 
 const TX = () => {
  
@@ -35,7 +36,7 @@ const TX = () => {
           <>
         <div>TX ID: {item.transaction_id}</div>
         <div>Type: {item.type}</div>
-        <div>Time: {item.consensus_timestamp}</div>
+        <div>Time: {utils.convertToDate(item.consensus_timestamp)}</div>
         <div>nonce: {item.nonce}</div>
         <div>result: {item.result}</div>
         <div>TX hash: {item.transaction_hash}</div>

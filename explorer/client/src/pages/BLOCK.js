@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { utils } from '../utils/utils';
 
 const server_url = process.env.SERVER_URL;
 
@@ -38,8 +39,8 @@ const BLOCK = () => {
           <>
         <div>Number: {item.number}</div>
         <div>Hash: {item.hash}</div>
-        <div>Start Time: {item.timestamp_from}</div>
-        <div>End Time: {item.timestamp_to}</div>
+        <div>Start Time: {utils.convertToDate(item.timestamp_from)}</div>
+        <div>End Time: {utils.convertToDate(item.timestamp_to)}</div>
         <div>Size: {item.size}</div>
         <div>Gas Used: {item.gas_used}</div>
         </>
