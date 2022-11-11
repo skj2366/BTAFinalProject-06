@@ -81,7 +81,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         {
             sequelize,
-            modelName: 'transaction',
+            modelName: 'Transaction',
             freezeTableName: true,
             timestamps: true,
             createdAt: true,

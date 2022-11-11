@@ -12,14 +12,14 @@ var indexRouter = require("./routes/index");
 //const swaggerUI = require("swagger-ui-express");
 
 const app = express();
-const PORT = process.env.SERVER_PORT || 8080;
+const PORT = env.SERVER_PORT || 8080;
 
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
     cors({
-        origin: process.env.CLIENT_URL || "http://localhost:3000",
+        origin: env.CLIENT_URL || "http://localhost:3000",
         credentials: true,
         methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     })
