@@ -61,7 +61,7 @@ const getBlockByNumber = asyncWrapper(async (req) => {
             return {status: StatusCodes.BAD_REQUEST, message: '유효하지 않은 파라미터 값', data: {}};
         }
 
-        let blockData = await Block.findOne({
+        let blockData = await Block.findAll({
             where: {
                 number: blockNumber
             },

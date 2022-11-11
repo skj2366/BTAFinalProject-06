@@ -60,7 +60,7 @@ const getTxById = asyncWrapper(async (req) => {
             return {status: StatusCodes.BAD_REQUEST, message: '유효하지 않은 파라미터 값', data: {}};
         }
 
-        let trasData = await Transaction.findOne({
+        let trasData = await Transaction.findAll({
             where: {
                 transaction_id: txId
             },
