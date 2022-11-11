@@ -15,10 +15,10 @@ const searchAccount = asyncWrapper(async (req) => {
         let accountData;
         if(accountId) {
             const {data} = await axios.get(`${env.NODE_URI}/api/v1/accounts/?order=desc&account.id=${accountId}`)  
-            accountData = data;
+            accountData = data.accounts;
         } else {
             const {data} = await axios.get(`${env.NODE_URI}/api/v1/accounts/?order=desc&limit=20`)  
-            accountData = data;
+            accountData = data.accounts;
         }        
       
         console.log(accountData);
@@ -59,7 +59,7 @@ const searchAccount = asyncWrapper(async (req) => {
         return {
             status: StatusCodes.OK,
             message: '성공',
-            data: data,
+            data: data.accounts,
         };
     } catch (e) {
         console.log(e)

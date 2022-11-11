@@ -1,15 +1,15 @@
-const {transaction} = require("../models");
+const {Transaction} = require("../models");
 const {asyncWrapper} = require('../utils/async');
 const {StatusCodes} = require("http-status-codes");
 
 /**
  * 최신 20건의 트랜잭션 전체 조회
  *
- * @req : page(number), transactionId
+ * @req : page(number), txId
  */
 const searchTx = asyncWrapper(async (req) => {
     try {
-        const {page, transactionId} = req.query; // 요청 페이지 넘버, 트랜잭션 ID
+        const {page, txId} = req.query; // 요청 페이지 넘버, 트랜잭션 ID
         let offset = 0;
 
         if (page > 1) {
@@ -17,17 +17,17 @@ const searchTx = asyncWrapper(async (req) => {
         }
 
         let txData;
-        if (transactionId) {
-            txData = await transaction.findAll({
+        if (txId) {
+            txData = await Transaction.findAll({
                 where: {
-                    transaction_id: transactionId
+                    transaction_id: txId
                 },
                 order: [
                     ["id", "DESC"]
                 ]
             });
         } else {
-            txData = await transaction.findAll({
+            txData = await Transaction.findAll({
                 offset: offset,
                 limit: 20,
                 order: [
@@ -51,18 +51,18 @@ const searchTx = asyncWrapper(async (req) => {
 /**
  * 트랜잭션 상세 조회
  *
- * @req : transactionId
+ * @req : txId
  */
 const getTxById = asyncWrapper(async (req) => {
     try {
-        const {transactionId} = req.params;
-        if (transactionId === undefined) {
+        const {txId} = req.params;
+        if (txId === undefined) {
             return {status: StatusCodes.BAD_REQUEST, message: '유효하지 않은 파라미터 값', data: {}};
         }
 
-        let trasData = await transaction.findAll({
+        let trasData = await Transaction.findOne({
             where: {
-                transaction_id: transactionId
+                transaction_id: txId
             },
             order: [
                 ["id", "DESC"]

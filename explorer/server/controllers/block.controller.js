@@ -1,4 +1,4 @@
-const {block} = require("../models");
+const {Block} = require("../models");
 const {asyncWrapper} = require('../utils/async');
 const {StatusCodes} = require("http-status-codes");
 
@@ -18,7 +18,7 @@ const searchBlock = asyncWrapper(async (req) => {
 
         let blockData;
         if (blockNumber) {
-            blockData = await block.findAll({
+            blockData = await Block.findAll({
                 where: {
                     number: blockNumber
                 },
@@ -27,7 +27,7 @@ const searchBlock = asyncWrapper(async (req) => {
                 ]
             });
         } else {
-            blockData = await block.findAll({
+            blockData = await Block.findAll({
                 offset: offset,
                 limit: 20,
                 order: [
@@ -61,7 +61,7 @@ const getBlockByNumber = asyncWrapper(async (req) => {
             return {status: StatusCodes.BAD_REQUEST, message: '유효하지 않은 파라미터 값', data: {}};
         }
 
-        let blockData = await block.findAll({
+        let blockData = await Block.findOne({
             where: {
                 number: blockNumber
             },
