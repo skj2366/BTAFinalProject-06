@@ -11,13 +11,18 @@ import {StoredKey} from "../utill/enum";
 import {goTo} from "react-chrome-extension-router";
 import {Home} from "./Home";
 import {InputPassword} from "../components/InputPassword";
+import {Api} from "../api/api";
+import {changeAccount} from "../redux/accountInfo";
 
 export const RecoverAccount = () => {
+  const { client } = useSelector(state => state.clientReducer);
+  const api = new Api(client);
   const MNEMONIC_ARRAY_LENGTH = 12
   const [step, setStep] = useState(1)
   const [inputs, setInputs] = useState(
     Array.from({length: MNEMONIC_ARRAY_LENGTH}, () =>  '')
   )
+  const [recoverMnem, setRecoverMnem] = useState({});
   // reducx에 값을 변경할 때 사용
   const dispatch = useDispatch();
 
@@ -27,7 +32,7 @@ export const RecoverAccount = () => {
     setInputs(newTypedMnemonic)
   }
 
-  const validateMnemonic = () => {
+  const validateMnemonic = async () => {
     console.log(inputs)
     const checkMnemonic = inputs.every(input => input.length > 0)
     console.log(checkMnemonic)
@@ -38,21 +43,38 @@ export const RecoverAccount = () => {
     return true;
   }
 
-  const completeMnemonic = () => {
-    if (!validateMnemonic()) return;
-    setStep(2)
+  const completeMnemonic = async () => {
+    let flag = false;
+    if (!await validateMnemonic()) return;
+    try {
+      const recoveredMnemonic = await Mnemonic.fromString(inputs.toString());
+      setRecoverMnem(recoveredMnemonic);
+      flag = true;
+    } catch (e) {
+      dispatch(openSnackBar('error', '정확한 복구 구문을 입력해주세요.'));
+      console.error(e);
+    }
+    if (flag) setStep(2)
   }
 
   const handleGetWalletBtnClick = async (password) => {
     console.log(password)
     try {
-      const recoveredMnemonic = await Mnemonic.fromString(inputs.toString());
+      const recoveredMnemonic = recoverMnem;
       const privateKey = await recoveredMnemonic.toEd25519PrivateKey();
       const accountPublicKey = privateKey.publicKey;
 
       const encryptPwd = encryptPassword(password)
+      let axiosData = await api.getAccount(accountPublicKey.toString());
+      const recoverAccountIds = axiosData.data.accounts;
+      const recoverAccountId = recoverAccountIds[0].account;
+
+      await storage.set(StoredKey.PASSWORD, encryptPwd)
+      await storage.set(StoredKey.ACCOUNT_ID, recoverAccountIds[0].account);
       await storage.set(StoredKey.PUBLIC_KEY, accountPublicKey.toString())
+      await storeByEncryptPassword(StoredKey.MNEMONIC, recoveredMnemonic.toString(), encryptPwd)
       await storeByEncryptPassword(StoredKey.PRIVATE_KEY, privateKey.toString(), encryptPwd)
+      dispatch(changeAccount(recoverAccountId));
       goTo(Home)
 
     } catch (e) {

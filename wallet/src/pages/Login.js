@@ -32,9 +32,11 @@ export const Login = () => {
   }
 
   const handleExplainKey = async () => {
-    await storage.remove(StoredKey.MNEMONIC);
+    await storage.remove(StoredKey.PASSWORD);
     await storage.remove(StoredKey.PRIVATE_KEY);
     await storage.remove(StoredKey.PUBLIC_KEY);
+    await storage.remove(StoredKey.ACCOUNT_ID);
+    await storage.remove(StoredKey.MNEMONIC);
     goTo(Help);
   }
 
