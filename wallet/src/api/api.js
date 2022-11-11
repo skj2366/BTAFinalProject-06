@@ -1,6 +1,7 @@
 
 import {AccountBalanceQuery, AccountId, Client} from "@hashgraph/sdk";
 import {ClientTypeName} from "../utill/enum";
+import axios from "axios";
 
 
 export class Api {
@@ -39,5 +40,17 @@ export class Api {
   }
   async transfer(recipient, senderKey, amount, fee, memo) {
 
+  }
+
+  async getAccount(pubkey) {
+    const option = {
+      url: process.env.API_URL+'/accounts?account.publicKey='+pubkey,
+      method: 'GET',
+      header: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json;charset=UTP-8'
+      }
+    }
+    return await axios(option);
   }
 }
