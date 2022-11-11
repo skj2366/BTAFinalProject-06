@@ -13,9 +13,9 @@ const MAIN = () => {
   return (
     <MainContainer>
     <BackImg src={imgUrl} />
-    <Text>Stacks Chain Explorer</Text>
+    <Text>Hedera Chain Explorer</Text>
     <InputContainer>
-    <Input placeholder="search by Address/ Txn Hash/ Blocks" onChange={(e) => setSearch(e.target.value)}/>
+    <Input placeholder="search by Tx ID/ Block Number/ Account ID" onChange={(e) => setSearch(e.target.value)}/>
     <Link to={`/address/${search}`}>
     <Icon fontSize="large"/>
     </Link>
