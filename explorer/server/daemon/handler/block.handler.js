@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { block } = require("../../models");
+const { Block } = require("../../models");
 require('dotenv').config();
 const env = process.env;
 
@@ -21,7 +21,7 @@ const getLastblockNumberFromChain = async () => {
 
 const getLastBlockFromDB = async () => {
     try {
-        const lastBlock = await block.findOne({
+        const lastBlock = await Block.findOne({
             order: [['number', 'DESC']]
         });
 
@@ -51,7 +51,7 @@ module.exports = async () => {
         const blockInfo = await Promise.all(
             data.blocks.map(
                 async ({gas_used, hash, number, name, previous_hash, size, timestamp}) => {
-                    let newBlock = new block({
+                    let newBlock = new Block({
                         gas_used,
                         hash,
                         number, 

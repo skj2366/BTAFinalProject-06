@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { transaction } = require("../../models");
+const { Transaction } = require("../../models");
 require('dotenv').config();
 const env = process.env;
 
@@ -21,7 +21,7 @@ const getLastTimestampFromChain = async () => {
 
 const getLastTimestampFromDB = async () => {
     try {
-        const txData = await transaction.findOne({
+        const txData = await Transaction.findOne({
             order: [['consensus_timestamp', 'DESC']]
         });
 
@@ -48,13 +48,13 @@ module.exports = async () => {
 
         const {data} = await axios.get(`${env.NODE_URI}/api/v1/transactions/?order=asc&timestamp=gt:${lastTimestampFromDB}`)
         
-        console.log(data);
+        //console.log(data);
 
         const txInfo = await Promise.all(
             data.transactions.map(
                 async ({charged_tx_fee, consensus_timestamp, entity_id, max_fee, memo_base64, name, node, nonce,
                         result, transaction_hash, transaction_id, transfers, token_transfers, valid_duration_seconds, valid_start_timestamp}) => {
-                    let newTx = new transaction({
+                    let newTx = new Transaction({
                         transaction_hash,
                         transaction_id,
                         type: name, 

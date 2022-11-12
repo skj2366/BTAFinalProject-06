@@ -17,7 +17,6 @@ const TX = () => {
     .catch((e)=> {
       console.log(e);
     });
-
   }
 
   useEffect(() => {

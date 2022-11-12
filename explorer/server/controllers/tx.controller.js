@@ -11,7 +11,7 @@ const { Op } = require("sequelize");
 const searchTx = asyncWrapper(async (req) => {
     try {
         const {page, txId, txHash} = req.query; // 요청 페이지 넘버, 트랜잭션 ID, hash
-        console.log(txHash);
+        console.log("hash 값: " + txHash);
         let offset = 0;
     
         if (page > 1) {
@@ -49,6 +49,9 @@ const searchTx = asyncWrapper(async (req) => {
                 ]
             });
         }
+
+        console.log(txData);
+
         return {
             status: txData.length > 0
                 ? StatusCodes.OK
@@ -69,6 +72,7 @@ const searchTx = asyncWrapper(async (req) => {
  */
 const getTxById = asyncWrapper(async (req) => {
     try {
+        console.log(req);
         const {txId} = req.params;
         if (txId === undefined) {
             return {status: StatusCodes.BAD_REQUEST, message: '유효하지 않은 파라미터 값', data: {}};

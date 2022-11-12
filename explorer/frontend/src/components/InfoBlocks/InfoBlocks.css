@@ -1,0 +1,42 @@
+.info_title {
+    margin: 0;
+    user-select: none;
+    margin-top: 2rem;
+    text-align: center;
+}
+.info_blocks{
+    display: flex;
+}
+.info_block {
+    position: relative;
+    margin: 2rem 0 2rem 0;
+}
+.block_title {
+    user-select: none;
+}
+.info_block:not(:last-child) {
+    margin-right: 1.5rem !important;
+}
+.supply_vol {
+    font-size: 15px;
+}
+.hbar {
+    font-size: 17px;
+}
+.p_price {
+    color: green;
+}
+.n_price {
+    color: rgb(187, 2, 2);
+}
+.info_inp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info_inp:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+.info_inp>span {
+    margin-right: 3rem;
+}
