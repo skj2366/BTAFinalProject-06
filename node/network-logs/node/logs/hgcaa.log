@@ -13648,3 +13648,2154 @@ com.swirlds.common.merkle.exceptions.ArchivedException: operation can not be per
 2022-11-12 09:26:40.161 INFO  169  SignedStateBalancesExporter -  -> Took 22ms to export and sign proto balances file at 2022-11-12T09:26:40.010270848Z
 2022-11-12 09:33:20.187 INFO  147  SignedStateBalancesExporter - Took 35ms to summarize signed state balances
 2022-11-12 09:33:20.207 INFO  169  SignedStateBalancesExporter -  -> Took 18ms to export and sign proto balances file at 2022-11-12T09:33:20.039433247Z
+2022-11-12 09:40:00.189 INFO  147  SignedStateBalancesExporter - Took 50ms to summarize signed state balances
+2022-11-12 09:40:00.201 INFO  169  SignedStateBalancesExporter -  -> Took 11ms to export and sign proto balances file at 2022-11-12T09:40:00.023439438Z
+2022-11-12 09:58:46.228 INFO  147  SignedStateBalancesExporter - Took 71ms to summarize signed state balances
+2022-11-12 09:58:46.257 INFO  169  SignedStateBalancesExporter -  -> Took 25ms to export and sign proto balances file at 2022-11-12T09:58:46.036062500Z
+2022-11-12 09:58:46.283 INFO  147  SignedStateBalancesExporter - Took 17ms to summarize signed state balances
+2022-11-12 09:58:46.294 INFO  169  SignedStateBalancesExporter -  -> Took 10ms to export and sign proto balances file at 2022-11-12T09:58:46.136952291Z
+2022-11-12 10:00:00.175 INFO  147  SignedStateBalancesExporter - Took 44ms to summarize signed state balances
+2022-11-12 10:00:00.213 INFO  169  SignedStateBalancesExporter -  -> Took 25ms to export and sign proto balances file at 2022-11-12T10:00:00.013213076Z
+2022-11-12 10:06:40.197 INFO  147  SignedStateBalancesExporter - Took 54ms to summarize signed state balances
+2022-11-12 10:06:40.216 INFO  169  SignedStateBalancesExporter -  -> Took 18ms to export and sign proto balances file at 2022-11-12T10:06:40.023065087Z
+2022-11-12 10:13:20.307 INFO  147  SignedStateBalancesExporter - Took 137ms to summarize signed state balances
+2022-11-12 10:13:20.359 INFO  169  SignedStateBalancesExporter -  -> Took 50ms to export and sign proto balances file at 2022-11-12T10:13:20.039397945Z
+2022-11-12 10:20:00.233 INFO  147  SignedStateBalancesExporter - Took 89ms to summarize signed state balances
+2022-11-12 10:20:00.272 INFO  169  SignedStateBalancesExporter -  -> Took 20ms to export and sign proto balances file at 2022-11-12T10:20:00.007378302Z
+2022-11-12 10:26:40.144 INFO  147  SignedStateBalancesExporter - Took 25ms to summarize signed state balances
+2022-11-12 10:26:40.158 INFO  169  SignedStateBalancesExporter -  -> Took 13ms to export and sign proto balances file at 2022-11-12T10:26:40.008745493Z
+2022-11-12 10:33:20.184 INFO  147  SignedStateBalancesExporter - Took 36ms to summarize signed state balances
+2022-11-12 10:33:20.200 INFO  169  SignedStateBalancesExporter -  -> Took 14ms to export and sign proto balances file at 2022-11-12T10:33:20.037748892Z
+2022-11-12 10:40:00.182 INFO  147  SignedStateBalancesExporter - Took 59ms to summarize signed state balances
+2022-11-12 10:40:00.198 INFO  169  SignedStateBalancesExporter -  -> Took 14ms to export and sign proto balances file at 2022-11-12T10:40:00.010345708Z
+2022-11-12 10:46:40.174 INFO  147  SignedStateBalancesExporter - Took 33ms to summarize signed state balances
+2022-11-12 10:46:40.196 INFO  169  SignedStateBalancesExporter -  -> Took 20ms to export and sign proto balances file at 2022-11-12T10:46:40.029876607Z
+2022-11-12 10:53:20.184 INFO  147  SignedStateBalancesExporter - Took 41ms to summarize signed state balances
+2022-11-12 10:53:20.198 INFO  169  SignedStateBalancesExporter -  -> Took 13ms to export and sign proto balances file at 2022-11-12T10:53:20.026938006Z
+2022-11-12 11:00:00.176 INFO  147  SignedStateBalancesExporter - Took 20ms to summarize signed state balances
+2022-11-12 11:00:00.209 INFO  169  SignedStateBalancesExporter -  -> Took 32ms to export and sign proto balances file at 2022-11-12T11:00:00.038488113Z
+2022-11-12 11:06:40.160 INFO  147  SignedStateBalancesExporter - Took 36ms to summarize signed state balances
+2022-11-12 11:06:40.175 INFO  169  SignedStateBalancesExporter -  -> Took 14ms to export and sign proto balances file at 2022-11-12T11:06:40.013312137Z
+2022-11-12 11:13:20.168 INFO  147  SignedStateBalancesExporter - Took 17ms to summarize signed state balances
+2022-11-12 11:13:20.180 INFO  169  SignedStateBalancesExporter -  -> Took 11ms to export and sign proto balances file at 2022-11-12T11:13:20.036931620Z
+2022-11-12 11:20:00.148 INFO  147  SignedStateBalancesExporter - Took 17ms to summarize signed state balances
+2022-11-12 11:20:00.159 INFO  169  SignedStateBalancesExporter -  -> Took 10ms to export and sign proto balances file at 2022-11-12T11:20:00.014336352Z
+2022-11-12 11:36:07.227 INFO  147  SignedStateBalancesExporter - Took 73ms to summarize signed state balances
+2022-11-12 11:36:07.252 INFO  169  SignedStateBalancesExporter -  -> Took 23ms to export and sign proto balances file at 2022-11-12T11:36:07.035981166Z
+2022-11-12 11:36:07.274 INFO  147  SignedStateBalancesExporter - Took 16ms to summarize signed state balances
+2022-11-12 11:36:07.291 INFO  169  SignedStateBalancesExporter -  -> Took 16ms to export and sign proto balances file at 2022-11-12T11:36:07.137474625Z
+2022-11-12 11:41:54.240 INFO  147  SignedStateBalancesExporter - Took 76ms to summarize signed state balances
+2022-11-12 11:41:54.267 INFO  169  SignedStateBalancesExporter -  -> Took 25ms to export and sign proto balances file at 2022-11-12T11:41:54.036822250Z
+2022-11-12 11:46:40.177 INFO  147  SignedStateBalancesExporter - Took 17ms to summarize signed state balances
+2022-11-12 11:46:40.192 INFO  169  SignedStateBalancesExporter -  -> Took 13ms to export and sign proto balances file at 2022-11-12T11:46:40.049385219Z
+2022-11-12 11:53:20.155 INFO  147  SignedStateBalancesExporter - Took 14ms to summarize signed state balances
+2022-11-12 11:53:20.165 INFO  169  SignedStateBalancesExporter -  -> Took 9ms to export and sign proto balances file at 2022-11-12T11:53:20.032588368Z
+2022-11-12 12:00:00.238 INFO  147  SignedStateBalancesExporter - Took 79ms to summarize signed state balances
+2022-11-12 12:00:00.251 INFO  169  SignedStateBalancesExporter -  -> Took 11ms to export and sign proto balances file at 2022-11-12T12:00:00.044272267Z
+2022-11-12 12:06:40.184 INFO  147  SignedStateBalancesExporter - Took 32ms to summarize signed state balances
+2022-11-12 12:06:40.196 INFO  169  SignedStateBalancesExporter -  -> Took 11ms to export and sign proto balances file at 2022-11-12T12:06:40.040769458Z
+2022-11-12 12:13:20.180 INFO  147  SignedStateBalancesExporter - Took 28ms to summarize signed state balances
+2022-11-12 12:13:20.195 INFO  169  SignedStateBalancesExporter -  -> Took 14ms to export and sign proto balances file at 2022-11-12T12:13:20.038658815Z
+2022-11-12 12:24:20.282 INFO  147  SignedStateBalancesExporter - Took 96ms to summarize signed state balances
+2022-11-12 12:24:20.315 INFO  169  SignedStateBalancesExporter -  -> Took 29ms to export and sign proto balances file at 2022-11-12T12:24:20.050896833Z
+2022-11-12 12:30:09.157 INFO  147  SignedStateBalancesExporter - Took 19ms to summarize signed state balances
+2022-11-12 12:30:09.167 INFO  169  SignedStateBalancesExporter -  -> Took 9ms to export and sign proto balances file at 2022-11-12T12:30:09.030032333Z
+2022-11-12 12:35:47.344 INFO  147  SignedStateBalancesExporter - Took 182ms to summarize signed state balances
+2022-11-12 12:35:47.364 INFO  169  SignedStateBalancesExporter -  -> Took 18ms to export and sign proto balances file at 2022-11-12T12:35:47.044435416Z
+2022-11-12 12:41:35.245 INFO  147  SignedStateBalancesExporter - Took 100ms to summarize signed state balances
+2022-11-12 12:41:35.266 INFO  169  SignedStateBalancesExporter -  -> Took 19ms to export and sign proto balances file at 2022-11-12T12:41:35.010841291Z
+2022-11-12 12:47:23.208 INFO  147  SignedStateBalancesExporter - Took 69ms to summarize signed state balances
+2022-11-12 12:47:23.262 INFO  169  SignedStateBalancesExporter -  -> Took 52ms to export and sign proto balances file at 2022-11-12T12:47:23.018813250Z
+2022-11-12 12:53:20.192 INFO  147  SignedStateBalancesExporter - Took 53ms to summarize signed state balances
+2022-11-12 12:53:20.216 INFO  169  SignedStateBalancesExporter -  -> Took 23ms to export and sign proto balances file at 2022-11-12T12:53:20.025751003Z
+2022-11-12 12:55:03.380 INFO  74   SemanticVersions - Discovered semantic versions {hedera.services.version=0.28.7, hapi.proto.version=0.28.1} from resource 'semantic-version.properties'
+2022-11-12 12:55:03.410 INFO  230  ServicesState - Init called on Services node 0 WITH Merkle saved state
+2022-11-12 12:55:03.715 INFO  287  ServicesState - Dual state includes freeze time=null and last frozen=null
+2022-11-12 12:55:03.722 INFO  146  ServicesState -   (@ 0) # NFTs               = 0
+2022-11-12 12:55:03.722 INFO  150  ServicesState -   (@ 1) # token associations = 2
+2022-11-12 12:55:03.723 INFO  154  ServicesState -   (@ 2) # topics             = 1
+2022-11-12 12:55:03.723 INFO  155  ServicesState -   (@ 3) # blobs              = 24
+2022-11-12 12:55:03.724 INFO  156  ServicesState -   (@ 4) # accounts/contracts = 706
+2022-11-12 12:55:03.725 INFO  160  ServicesState -   (@ 5) # tokens             = 2
+2022-11-12 12:55:03.726 INFO  161  ServicesState -   (@ 8) # scheduled txns     = 0
+2022-11-12 12:55:03.726 INFO  165  ServicesState -   (@ 11) # contract K/V pairs = 0
+2022-11-12 12:55:03.762 INFO  42   ScreenedNodeFileProps - No overrides present at data/config/node.properties.
+2022-11-12 12:55:03.774 INFO  94   ScreenedNodeFileProps - Node-local properties overridden on disk are:
+  
+2022-11-12 12:55:03.854 INFO  121  BootstrapProperties - Resolved bootstrap properties:
+  accounts.addressBookAdmin=55
+  accounts.exchangeRatesAdmin=57
+  accounts.feeSchedulesAdmin=56
+  accounts.freezeAdmin=58
+  accounts.maxNumber=500000000
+  accounts.nodeRewardAccount=801
+  accounts.stakingRewardAccount=800
+  accounts.systemAdmin=50
+  accounts.systemDeleteAdmin=59
+  accounts.systemUndeleteAdmin=60
+  accounts.treasury=2
+  autoCreation.enabled=true
+  autoRemove.maxPurgedKvPairsPerTouch=10
+  autoRemove.maxReturnedNftsPerTouch=10
+  autoRenew.targetTypes=[]
+  autorenew.gracePeriod=604800
+  autorenew.maxNumberOfEntitiesToRenewOrDelete=2
+  autorenew.numberOfEntitiesToScan=100
+  balances.exportDir.path=/opt/hgcapp/accountBalances/
+  balances.exportEnabled=true
+  balances.exportPeriodSecs=400
+  balances.exportTokenBalances=true
+  balances.nodeBalanceWarningThreshold=0
+  bootstrap.feeSchedulesJson.resource=feeSchedules.json
+  bootstrap.genesisPublicKey=0aa8e21064c61eab86e2a9c164565b4e7a9a4146106e0a6cd03a8c395a110e92
+  bootstrap.hapiPermissions.path=data/config/api-permission.properties
+  bootstrap.networkProperties.path=data/config/application.properties
+  bootstrap.rates.currentCentEquiv=12
+  bootstrap.rates.currentExpiry=4102444800
+  bootstrap.rates.currentHbarEquiv=1
+  bootstrap.rates.nextCentEquiv=15
+  bootstrap.rates.nextExpiry=4102444800
+  bootstrap.rates.nextHbarEquiv=1
+  bootstrap.system.entityExpiry=1812637686
+  bootstrap.throttleDefsJson.resource=throttles.json
+  cache.records.ttl=180
+  consensus.handle.maxFollowingRecords=50
+  consensus.handle.maxPrecedingRecords=3
+  consensus.message.maxBytesAllowed=1024
+  contracts.allowAutoAssociations=false
+  contracts.allowCreate2=true
+  contracts.chainId=298
+  contracts.defaultLifetime=7890000
+  contracts.enableTraceability=false
+  contracts.knownBlockHash=KnownBlockValues{hash=, number=0}
+  contracts.localCall.estRetBytes=32
+  contracts.maxGasPerSec=15000000
+  contracts.maxKvPairs.aggregate=500000000
+  contracts.maxKvPairs.individual=163840
+  contracts.maxNumber=500000000
+  contracts.maxRefundPercentOfGasLimit=20
+  contracts.precompile.exchangeRateGasCost=100
+  contracts.precompile.exportRecordResults=true
+  contracts.precompile.htsDefaultGasCost=10000
+  contracts.precompile.htsEnableTokenCreate=true
+  contracts.redirectTokenCalls=true
+  contracts.scheduleThrottleMaxGasLimit=5000000
+  contracts.throttle.throttleByGas=true
+  dev.defaultListeningNodeAccount=0.0.3
+  dev.onlyDefaultNodeListens=true
+  entities.limitTokenAssociations=false
+  entities.maxLifetime=3153600000
+  entities.systemDeletable=[FILE]
+  fees.minCongestionPeriod=60
+  fees.percentCongestionMultipliers=CongestionMultipliers{10x @ >=90%, 25x @ >=95%, 100x @ >=99%}
+  fees.tokenTransferUsageMultiplier=380
+  files.addressBook=101
+  files.exchangeRates=112
+  files.feeSchedules=111
+  files.hapiPermissions=122
+  files.maxNumber=500000000
+  files.maxSizeKb=2048
+  files.networkProperties=121
+  files.nodeDetails=102
+  files.softwareUpdateRange=(150,159)
+  files.throttleDefinitions=123
+  grpc.port=50211
+  grpc.tlsPort=50212
+  hedera.accountsExportPath=data/onboard/exportedAccount.txt
+  hedera.allowances.isEnabled=true
+  hedera.allowances.maxAccountLimit=100
+  hedera.allowances.maxTransactionLimit=20
+  hedera.exportAccountsOnStartup=false
+  hedera.firstUserEntity=1001
+  hedera.prefetch.codeCacheTtlSecs=600
+  hedera.prefetch.queueCapacity=70000
+  hedera.prefetch.threadPoolSize=4
+  hedera.profiles.active=PROD
+  hedera.realm=0
+  hedera.recordStream.isEnabled=true
+  hedera.recordStream.logDir=/opt/hgcapp/recordStreams
+  hedera.recordStream.logPeriod=1
+  hedera.recordStream.queueCapacity=5000
+  hedera.recordStream.recordFileVersion=5
+  hedera.recordStream.signatureFileVersion=5
+  hedera.shard=0
+  hedera.transaction.maxMemoUtf8Bytes=100
+  hedera.transaction.maxValidDuration=180
+  hedera.transaction.minValidDuration=15
+  hedera.transaction.minValidityBufferSecs=10
+  iss.resetPeriod=60
+  iss.roundsToLog=5000
+  ledger.autoRenewPeriod.maxDuration=8000001
+  ledger.autoRenewPeriod.minDuration=6999999
+  ledger.changeHistorian.memorySecs=20
+  ledger.fundingAccount=98
+  ledger.id=0x01
+  ledger.nftTransfers.maxLen=10
+  ledger.numSystemAccounts=100
+  ledger.records.maxQueryableByAccount=180
+  ledger.schedule.txExpiryTimeSecs=1800
+  ledger.tokenTransfers.maxLen=10
+  ledger.totalTinyBarFloat=5000000000000000000
+  ledger.transfers.maxLen=10
+  ledger.xferBalanceChanges.maxLen=20
+  netty.mode=DEV
+  netty.prod.flowControlWindow=10240
+  netty.prod.keepAliveTime=10
+  netty.prod.keepAliveTimeout=3
+  netty.prod.maxConcurrentCalls=10
+  netty.prod.maxConnectionAge=15
+  netty.prod.maxConnectionAgeGrace=5
+  netty.prod.maxConnectionIdle=10
+  netty.startRetries=90
+  netty.startRetryIntervalMs=1000
+  netty.tlsCrt.path=hedera.crt
+  netty.tlsKey.path=hedera.key
+  queries.blob.lookupRetries=3
+  rates.intradayChangeLimitPercent=25
+  rates.midnightCheckInterval=1
+  scheduling.longTermEnabled=false
+  scheduling.maxExpirationFutureSeconds=5356800
+  scheduling.maxNumber=500000000
+  scheduling.maxTxnPerSecond=100
+  scheduling.whitelist=[TokenBurn, ConsensusSubmitMessage, TokenMint, CryptoTransfer]
+  sigs.expandFromLastSignedState=true
+  staking.fees.nodeRewardPercentage=0
+  staking.fees.stakingRewardPercentage=0
+  staking.isEnabled=true
+  staking.maxDailyStakeRewardThPerH=17808
+  staking.nodeMaxToMinStakeRatios={}
+  staking.periodMins=1440
+  staking.requireMinStakeToReward=false
+  staking.rewardHistory.numStoredPeriods=365
+  staking.rewardRate=0
+  staking.startThreshold=25000000000000000
+  stats.consThrottlesToSample=[<GAS>, ThroughputLimits, CreationLimits]
+  stats.entityUtils.gaugeUpdateIntervalMs=3000
+  stats.executionTimesToTrack=0
+  stats.hapiOps.speedometerUpdateIntervalMs=3000
+  stats.hapiThrottlesToSample=[<GAS>, ThroughputLimits, OffHeapQueryLimits, CreationLimits, FreeQueryLimits]
+  stats.runningAvgHalfLifeSecs=10.0
+  stats.speedometerHalfLifeSecs=10.0
+  stats.throttleUtils.gaugeUpdateIntervalMs=1000
+  tokens.maxAggregateRels=500000000
+  tokens.maxCustomFeeDepth=2
+  tokens.maxCustomFeesAllowed=10
+  tokens.maxNumber=500000000
+  tokens.maxPerAccount=1000
+  tokens.maxRelsPerInfoQuery=1000
+  tokens.maxSymbolUtf8Bytes=100
+  tokens.maxTokenNameUtf8Bytes=100
+  tokens.nfts.areEnabled=true
+  tokens.nfts.maxAllowedMints=5000000
+  tokens.nfts.maxBatchSizeBurn=10
+  tokens.nfts.maxBatchSizeMint=10
+  tokens.nfts.maxBatchSizeWipe=10
+  tokens.nfts.maxMetadataBytes=100
+  tokens.nfts.maxQueryRange=100
+  tokens.nfts.mintThrottleScaleFactor=ThrottleReqOpsScaleFactor{scale=5:2}
+  tokens.nfts.useTreasuryWildcards=true
+  topics.maxNumber=500000000
+  upgrade.artifacts.path=/opt/hgcapp/services-hedera/HapiApp2.0/data/upgrade/current
+  utilPrng.isEnabled=true
+2022-11-12 12:55:03.920 INFO  188  RecordStreamManager - Finish initializing RecordStreamManager with: enableRecordStreaming: true, recordStreamDir: /opt/hgcapp/recordStreams/record0.0.3, recordsLogPeriod: 1 secs, recordStreamQueueCapacity: 5000, initialHash: fa4a699960c65df33a7b193a3c7c8099438e8b4246be1cca329c5d1f0d328456bcc3cb64087e3d8d66c894fd7d24b546
+2022-11-12 12:55:03.999 INFO  53   RecordCacheFactory - Constructing the node-local txn id cache with ttl=180s
+2022-11-12 12:55:04.762 INFO  68   StateInitializationFlow - Context updated with working state
+2022-11-12 12:55:04.763 INFO  260  RecordStreamManager - RecordStreamManager::setInitialHash: fa4a699960c65df33a7b193a3c7c8099438e8b4246be1cca329c5d1f0d328456bcc3cb64087e3d8d66c894fd7d24b546
+2022-11-12 12:55:04.765 INFO  72   StateInitializationFlow - Record running hash initialized
+2022-11-12 12:55:04.767 INFO  76   StateInitializationFlow - Registered 5 file update interceptors
+2022-11-12 12:55:04.778 INFO  70   StoreInitializationFlow - Backing stores rebuilt
+2022-11-12 12:55:04.789 INFO  196  AliasManager - Rebuild complete, re-mapped 0 aliases (0 from CREATE2, 0 externally owned accounts)
+2022-11-12 12:55:04.803 INFO  80   StoreInitializationFlow - Account aliases map rebuilt
+2022-11-12 12:55:04.818 INFO  46   EntitiesInitializationFlow - Payer records reviewed
+2022-11-12 12:55:04.819 INFO  49   EntitiesInitializationFlow - Short-lived entities reviewed
+2022-11-12 12:55:04.819 INFO  52   EntitiesInitializationFlow - Signature impact history invalidated
+2022-11-12 12:55:04.820 INFO  115  NetworkCtxManager - Observable files not yet loaded, doing now
+2022-11-12 12:55:04.869 INFO  59   StandardizedPropertySources - Reloading global dynamic properties from 1 candidates
+2022-11-12 12:55:04.876 INFO  137  ScreenedSysFileProps - Global/dynamic properties overridden in system file are:
+  autoRenew.targetTypes=[]
+2022-11-12 12:55:04.881 INFO  222  DeterministicThrottling - Resolved HAPI gas throttle -
+  15000000 gas/sec (throttling ON)
+2022-11-12 12:55:04.886 INFO  222  DeterministicThrottling - Resolved CONSENSUS gas throttle -
+  15000000 gas/sec (throttling ON)
+2022-11-12 12:55:04.887 INFO  222  DeterministicThrottling - Resolved SCHEDULE gas throttle -
+  5000000 gas/sec (throttling ON)
+2022-11-12 12:55:04.892 INFO  115  ConfigCallbacks - Set node0 max/min stake to 5000000000000000000/1250000000000000000 ~ 4:1 ratio
+2022-11-12 12:55:04.924 INFO  251  DeterministicThrottling - Resolved throttles for HAPI (after splitting capacity 1 ways) - 
+  ConsensusCreateTopic: min{10000.00 tps (ThroughputLimits), 5.00 tps (CreationLimits)}
+  ConsensusDeleteTopic: min{10000.00 tps (ThroughputLimits)}
+  ConsensusGetTopicInfo: min{10000.00 tps (ThroughputLimits)}
+  ConsensusSubmitMessage: min{10000.00 tps (ThroughputLimits)}
+  ConsensusUpdateTopic: min{10000.00 tps (ThroughputLimits)}
+  ContractCall: min{350.00 tps (ThroughputLimits)}
+  ContractCallLocal: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractCreate: min{350.00 tps (ThroughputLimits)}
+  ContractDelete: min{10000.00 tps (ThroughputLimits)}
+  ContractGetBytecode: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetRecords: min{10000.00 tps (ThroughputLimits)}
+  ContractUpdate: min{10000.00 tps (ThroughputLimits)}
+  CryptoApproveAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoCreate: min{10000.00 tps (ThroughputLimits), 2.00 tps (CreationLimits)}
+  CryptoDelete: min{10000.00 tps (ThroughputLimits)}
+  CryptoDeleteAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetAccountBalance: min{1000000.00 tps (FreeQueryLimits)}
+  CryptoGetAccountRecords: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetInfo: min{10000.00 tps (ThroughputLimits)}
+  CryptoTransfer: min{10000.00 tps (ThroughputLimits)}
+  CryptoUpdate: min{10000.00 tps (ThroughputLimits)}
+  EthereumTransaction: min{350.00 tps (ThroughputLimits)}
+  FileAppend: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileCreate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileDelete: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileGetContents: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileUpdate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  GetVersionInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleCreate: min{10000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  ScheduleDelete: min{10000.00 tps (ThroughputLimits)}
+  ScheduleGetInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleSign: min{100.00 tps (ThroughputLimits)}
+  TokenAccountWipe: min{3000.00 tps (ThroughputLimits)}
+  TokenAssociateToAccount: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenBurn: min{3000.00 tps (ThroughputLimits)}
+  TokenCreate: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenDelete: min{3000.00 tps (ThroughputLimits)}
+  TokenDissociateFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenFeeScheduleUpdate: min{3000.00 tps (ThroughputLimits)}
+  TokenFreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenGetAccountNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGetInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGrantKycToAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenMint: min{3000.00 tps (ThroughputLimits)}
+  TokenPause: min{3000.00 tps (ThroughputLimits)}
+  TokenRevokeKycFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnfreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnpause: min{3000.00 tps (ThroughputLimits)}
+  TokenUpdate: min{3000.00 tps (ThroughputLimits)}
+  TransactionGetReceipt: min{1000000.00 tps (FreeQueryLimits)}
+  TransactionGetRecord: min{10000.00 tps (ThroughputLimits)}
+  UtilPrng: min{10000.00 tps (ThroughputLimits)}
+2022-11-12 12:55:04.928 INFO  251  DeterministicThrottling - Resolved throttles for CONSENSUS (after splitting capacity 1 ways) - 
+  ConsensusCreateTopic: min{10000.00 tps (ThroughputLimits), 5.00 tps (CreationLimits)}
+  ConsensusDeleteTopic: min{10000.00 tps (ThroughputLimits)}
+  ConsensusGetTopicInfo: min{10000.00 tps (ThroughputLimits)}
+  ConsensusSubmitMessage: min{10000.00 tps (ThroughputLimits)}
+  ConsensusUpdateTopic: min{10000.00 tps (ThroughputLimits)}
+  ContractCall: min{350.00 tps (ThroughputLimits)}
+  ContractCallLocal: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractCreate: min{350.00 tps (ThroughputLimits)}
+  ContractDelete: min{10000.00 tps (ThroughputLimits)}
+  ContractGetBytecode: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetRecords: min{10000.00 tps (ThroughputLimits)}
+  ContractUpdate: min{10000.00 tps (ThroughputLimits)}
+  CryptoApproveAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoCreate: min{10000.00 tps (ThroughputLimits), 2.00 tps (CreationLimits)}
+  CryptoDelete: min{10000.00 tps (ThroughputLimits)}
+  CryptoDeleteAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetAccountBalance: min{1000000.00 tps (FreeQueryLimits)}
+  CryptoGetAccountRecords: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetInfo: min{10000.00 tps (ThroughputLimits)}
+  CryptoTransfer: min{10000.00 tps (ThroughputLimits)}
+  CryptoUpdate: min{10000.00 tps (ThroughputLimits)}
+  EthereumTransaction: min{350.00 tps (ThroughputLimits)}
+  FileAppend: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileCreate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileDelete: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileGetContents: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileUpdate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  GetVersionInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleCreate: min{10000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  ScheduleDelete: min{10000.00 tps (ThroughputLimits)}
+  ScheduleGetInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleSign: min{100.00 tps (ThroughputLimits)}
+  TokenAccountWipe: min{3000.00 tps (ThroughputLimits)}
+  TokenAssociateToAccount: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenBurn: min{3000.00 tps (ThroughputLimits)}
+  TokenCreate: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenDelete: min{3000.00 tps (ThroughputLimits)}
+  TokenDissociateFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenFeeScheduleUpdate: min{3000.00 tps (ThroughputLimits)}
+  TokenFreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenGetAccountNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGetInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGrantKycToAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenMint: min{3000.00 tps (ThroughputLimits)}
+  TokenPause: min{3000.00 tps (ThroughputLimits)}
+  TokenRevokeKycFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnfreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnpause: min{3000.00 tps (ThroughputLimits)}
+  TokenUpdate: min{3000.00 tps (ThroughputLimits)}
+  TransactionGetReceipt: min{1000000.00 tps (FreeQueryLimits)}
+  TransactionGetRecord: min{10000.00 tps (ThroughputLimits)}
+  UtilPrng: min{10000.00 tps (ThroughputLimits)}
+2022-11-12 12:55:04.937 INFO  580  DeterministicThrottling - Schedule Throttles: 
+CreationLimits : ConsensusCreateTopic - 1 tps
+ThroughputLimits : ConsensusDeleteTopic - 72 tps
+ThroughputLimits : ConsensusSubmitMessage - 72 tps
+ThroughputLimits : ConsensusUpdateTopic - 72 tps
+ThroughputLimits : ContractCall - 2 tps
+ThroughputLimits : ContractCreate - 2 tps
+ThroughputLimits : ContractDelete - 72 tps
+ThroughputLimits : ContractUpdate - 72 tps
+ThroughputLimits : CryptoApproveAllowance - 72 tps
+CreationLimits : CryptoCreate - 1 tps
+ThroughputLimits : CryptoDelete - 72 tps
+ThroughputLimits : CryptoDeleteAllowance - 72 tps
+ThroughputLimits : CryptoTransfer - 72 tps
+ThroughputLimits : CryptoUpdate - 72 tps
+ThroughputLimits : EthereumTransaction - 2 tps
+PriorityReservations : FileAppend - 1 tps
+PriorityReservations : FileCreate - 1 tps
+PriorityReservations : FileDelete - 1 tps
+PriorityReservations : FileUpdate - 1 tps
+ThroughputLimits : ScheduleDelete - 72 tps
+ThroughputLimits : TokenAccountWipe - 21 tps
+CreationLimits : TokenAssociateToAccount - 1 tps
+ThroughputLimits : TokenBurn - 21 tps
+CreationLimits : TokenCreate - 1 tps
+ThroughputLimits : TokenDelete - 21 tps
+ThroughputLimits : TokenDissociateFromAccount - 21 tps
+ThroughputLimits : TokenFeeScheduleUpdate - 21 tps
+ThroughputLimits : TokenFreezeAccount - 21 tps
+ThroughputLimits : TokenGrantKycToAccount - 21 tps
+ThroughputLimits : TokenMint - 21 tps
+ThroughputLimits : TokenPause - 21 tps
+ThroughputLimits : TokenRevokeKycFromAccount - 21 tps
+ThroughputLimits : TokenUnfreezeAccount - 21 tps
+ThroughputLimits : TokenUnpause - 21 tps
+ThroughputLimits : TokenUpdate - 21 tps
+ThroughputLimits : UtilPrng - 72 tps
+2022-11-12 12:55:04.942 INFO  251  DeterministicThrottling - Resolved throttles for SCHEDULE (after splitting capacity 1 ways) - 
+  ConsensusCreateTopic: min{72.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  ConsensusDeleteTopic: min{72.00 tps (ThroughputLimits)}
+  ConsensusGetTopicInfo: min{72.00 tps (ThroughputLimits)}
+  ConsensusSubmitMessage: min{72.00 tps (ThroughputLimits)}
+  ConsensusUpdateTopic: min{72.00 tps (ThroughputLimits)}
+  ContractCall: min{2.00 tps (ThroughputLimits)}
+  ContractCallLocal: min{72.00 tps (ThroughputLimits)}
+  ContractCreate: min{2.00 tps (ThroughputLimits)}
+  ContractDelete: min{72.00 tps (ThroughputLimits)}
+  ContractGetBytecode: min{72.00 tps (ThroughputLimits)}
+  ContractGetInfo: min{72.00 tps (ThroughputLimits)}
+  ContractGetRecords: min{72.00 tps (ThroughputLimits)}
+  ContractUpdate: min{72.00 tps (ThroughputLimits)}
+  CryptoApproveAllowance: min{72.00 tps (ThroughputLimits)}
+  CryptoCreate: min{72.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  CryptoDelete: min{72.00 tps (ThroughputLimits)}
+  CryptoDeleteAllowance: min{72.00 tps (ThroughputLimits)}
+  CryptoGetAccountRecords: min{72.00 tps (ThroughputLimits)}
+  CryptoGetInfo: min{72.00 tps (ThroughputLimits)}
+  CryptoTransfer: min{72.00 tps (ThroughputLimits)}
+  CryptoUpdate: min{72.00 tps (ThroughputLimits)}
+  EthereumTransaction: min{2.00 tps (ThroughputLimits)}
+  FileAppend: min{1.00 tps (PriorityReservations)}
+  FileCreate: min{1.00 tps (PriorityReservations)}
+  FileDelete: min{1.00 tps (PriorityReservations)}
+  FileGetContents: min{72.00 tps (ThroughputLimits)}
+  FileGetInfo: min{72.00 tps (ThroughputLimits)}
+  FileUpdate: min{1.00 tps (PriorityReservations)}
+  GetVersionInfo: min{72.00 tps (ThroughputLimits)}
+  ScheduleCreate: min{72.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  ScheduleDelete: min{72.00 tps (ThroughputLimits)}
+  ScheduleGetInfo: min{72.00 tps (ThroughputLimits)}
+  TokenAccountWipe: min{21.00 tps (ThroughputLimits)}
+  TokenAssociateToAccount: min{21.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  TokenBurn: min{21.00 tps (ThroughputLimits)}
+  TokenCreate: min{21.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  TokenDelete: min{21.00 tps (ThroughputLimits)}
+  TokenDissociateFromAccount: min{21.00 tps (ThroughputLimits)}
+  TokenFeeScheduleUpdate: min{21.00 tps (ThroughputLimits)}
+  TokenFreezeAccount: min{21.00 tps (ThroughputLimits)}
+  TokenGetAccountNftInfos: min{72.00 tps (ThroughputLimits)}
+  TokenGetInfo: min{72.00 tps (ThroughputLimits)}
+  TokenGetNftInfo: min{72.00 tps (ThroughputLimits)}
+  TokenGetNftInfos: min{72.00 tps (ThroughputLimits)}
+  TokenGrantKycToAccount: min{21.00 tps (ThroughputLimits)}
+  TokenMint: min{21.00 tps (ThroughputLimits)}
+  TokenPause: min{21.00 tps (ThroughputLimits)}
+  TokenRevokeKycFromAccount: min{21.00 tps (ThroughputLimits)}
+  TokenUnfreezeAccount: min{21.00 tps (ThroughputLimits)}
+  TokenUnpause: min{21.00 tps (ThroughputLimits)}
+  TokenUpdate: min{21.00 tps (ThroughputLimits)}
+  TransactionGetRecord: min{72.00 tps (ThroughputLimits)}
+  UtilPrng: min{72.00 tps (ThroughputLimits)}
+2022-11-12 12:55:04.943 INFO  241  TxnRateFeeMultiplierSource - The new cutoffs for congestion pricing are : 
+  (ThroughputLimits) When logical TPS exceeds:
+    2457000.00 TPS, multiplier is 10x
+    2593500.00 TPS, multiplier is 25x
+    2702700.00 TPS, multiplier is 100x
+2022-11-12 12:55:04.943 INFO  117  NetworkCtxManager - Loaded observable files
+2022-11-12 12:55:04.944 INFO  684  MerkleNetworkContext - Reset DeterministicThrottle{name='ThroughputLimits', mtps=2730000000, capacity=8190000000000000000 (used=0)} with saved usage snapshot
+2022-11-12 12:55:04.945 INFO  684  MerkleNetworkContext - Reset DeterministicThrottle{name='OffHeapQueryLimits', mtps=700000, capacity=700000000000000 (used=0)} with saved usage snapshot
+2022-11-12 12:55:04.945 INFO  684  MerkleNetworkContext - Reset DeterministicThrottle{name='PriorityReservations', mtps=10000, capacity=30000000000000 (used=0)} with saved usage snapshot
+2022-11-12 12:55:04.945 INFO  684  MerkleNetworkContext - Reset DeterministicThrottle{name='CreationLimits', mtps=100000, capacity=1500000000000000 (used=0)} with saved usage snapshot
+2022-11-12 12:55:04.946 INFO  684  MerkleNetworkContext - Reset DeterministicThrottle{name='FreeQueryLimits', mtps=1000000000, capacity=1000000000000000000 (used=0)} with saved usage snapshot
+2022-11-12 12:55:04.946 INFO  699  MerkleNetworkContext - Reset DeterministicThrottle.UsageSnapshot{used=0, last decision @ <N/A>} with saved gas throttle usage snapshot
+2022-11-12 12:55:04.947 INFO  241  TxnRateFeeMultiplierSource - The new cutoffs for congestion pricing are : 
+  (ThroughputLimits) When logical TPS exceeds:
+    2457000.00 TPS, multiplier is 10x
+    2593500.00 TPS, multiplier is 25x
+    2702700.00 TPS, multiplier is 100x
+2022-11-12 12:55:05.011 INFO  121  BootstrapProperties - Resolved bootstrap properties:
+  accounts.addressBookAdmin=55
+  accounts.exchangeRatesAdmin=57
+  accounts.feeSchedulesAdmin=56
+  accounts.freezeAdmin=58
+  accounts.maxNumber=500000000
+  accounts.nodeRewardAccount=801
+  accounts.stakingRewardAccount=800
+  accounts.systemAdmin=50
+  accounts.systemDeleteAdmin=59
+  accounts.systemUndeleteAdmin=60
+  accounts.treasury=2
+  autoCreation.enabled=true
+  autoRemove.maxPurgedKvPairsPerTouch=10
+  autoRemove.maxReturnedNftsPerTouch=10
+  autoRenew.targetTypes=[]
+  autorenew.gracePeriod=604800
+  autorenew.maxNumberOfEntitiesToRenewOrDelete=2
+  autorenew.numberOfEntitiesToScan=100
+  balances.exportDir.path=/opt/hgcapp/accountBalances/
+  balances.exportEnabled=true
+  balances.exportPeriodSecs=400
+  balances.exportTokenBalances=true
+  balances.nodeBalanceWarningThreshold=0
+  bootstrap.feeSchedulesJson.resource=feeSchedules.json
+  bootstrap.genesisPublicKey=0aa8e21064c61eab86e2a9c164565b4e7a9a4146106e0a6cd03a8c395a110e92
+  bootstrap.hapiPermissions.path=data/config/api-permission.properties
+  bootstrap.networkProperties.path=data/config/application.properties
+  bootstrap.rates.currentCentEquiv=12
+  bootstrap.rates.currentExpiry=4102444800
+  bootstrap.rates.currentHbarEquiv=1
+  bootstrap.rates.nextCentEquiv=15
+  bootstrap.rates.nextExpiry=4102444800
+  bootstrap.rates.nextHbarEquiv=1
+  bootstrap.system.entityExpiry=1812637686
+  bootstrap.throttleDefsJson.resource=throttles.json
+  cache.records.ttl=180
+  consensus.handle.maxFollowingRecords=50
+  consensus.handle.maxPrecedingRecords=3
+  consensus.message.maxBytesAllowed=1024
+  contracts.allowAutoAssociations=false
+  contracts.allowCreate2=true
+  contracts.chainId=298
+  contracts.defaultLifetime=7890000
+  contracts.enableTraceability=false
+  contracts.knownBlockHash=KnownBlockValues{hash=, number=0}
+  contracts.localCall.estRetBytes=32
+  contracts.maxGasPerSec=15000000
+  contracts.maxKvPairs.aggregate=500000000
+  contracts.maxKvPairs.individual=163840
+  contracts.maxNumber=500000000
+  contracts.maxRefundPercentOfGasLimit=20
+  contracts.precompile.exchangeRateGasCost=100
+  contracts.precompile.exportRecordResults=true
+  contracts.precompile.htsDefaultGasCost=10000
+  contracts.precompile.htsEnableTokenCreate=true
+  contracts.redirectTokenCalls=true
+  contracts.scheduleThrottleMaxGasLimit=5000000
+  contracts.throttle.throttleByGas=true
+  dev.defaultListeningNodeAccount=0.0.3
+  dev.onlyDefaultNodeListens=true
+  entities.limitTokenAssociations=false
+  entities.maxLifetime=3153600000
+  entities.systemDeletable=[FILE]
+  fees.minCongestionPeriod=60
+  fees.percentCongestionMultipliers=CongestionMultipliers{10x @ >=90%, 25x @ >=95%, 100x @ >=99%}
+  fees.tokenTransferUsageMultiplier=380
+  files.addressBook=101
+  files.exchangeRates=112
+  files.feeSchedules=111
+  files.hapiPermissions=122
+  files.maxNumber=500000000
+  files.maxSizeKb=2048
+  files.networkProperties=121
+  files.nodeDetails=102
+  files.softwareUpdateRange=(150,159)
+  files.throttleDefinitions=123
+  grpc.port=50211
+  grpc.tlsPort=50212
+  hedera.accountsExportPath=data/onboard/exportedAccount.txt
+  hedera.allowances.isEnabled=true
+  hedera.allowances.maxAccountLimit=100
+  hedera.allowances.maxTransactionLimit=20
+  hedera.exportAccountsOnStartup=false
+  hedera.firstUserEntity=1001
+  hedera.prefetch.codeCacheTtlSecs=600
+  hedera.prefetch.queueCapacity=70000
+  hedera.prefetch.threadPoolSize=4
+  hedera.profiles.active=PROD
+  hedera.realm=0
+  hedera.recordStream.isEnabled=true
+  hedera.recordStream.logDir=/opt/hgcapp/recordStreams
+  hedera.recordStream.logPeriod=1
+  hedera.recordStream.queueCapacity=5000
+  hedera.recordStream.recordFileVersion=5
+  hedera.recordStream.signatureFileVersion=5
+  hedera.shard=0
+  hedera.transaction.maxMemoUtf8Bytes=100
+  hedera.transaction.maxValidDuration=180
+  hedera.transaction.minValidDuration=15
+  hedera.transaction.minValidityBufferSecs=10
+  iss.resetPeriod=60
+  iss.roundsToLog=5000
+  ledger.autoRenewPeriod.maxDuration=8000001
+  ledger.autoRenewPeriod.minDuration=6999999
+  ledger.changeHistorian.memorySecs=20
+  ledger.fundingAccount=98
+  ledger.id=0x01
+  ledger.nftTransfers.maxLen=10
+  ledger.numSystemAccounts=100
+  ledger.records.maxQueryableByAccount=180
+  ledger.schedule.txExpiryTimeSecs=1800
+  ledger.tokenTransfers.maxLen=10
+  ledger.totalTinyBarFloat=5000000000000000000
+  ledger.transfers.maxLen=10
+  ledger.xferBalanceChanges.maxLen=20
+  netty.mode=DEV
+  netty.prod.flowControlWindow=10240
+  netty.prod.keepAliveTime=10
+  netty.prod.keepAliveTimeout=3
+  netty.prod.maxConcurrentCalls=10
+  netty.prod.maxConnectionAge=15
+  netty.prod.maxConnectionAgeGrace=5
+  netty.prod.maxConnectionIdle=10
+  netty.startRetries=90
+  netty.startRetryIntervalMs=1000
+  netty.tlsCrt.path=hedera.crt
+  netty.tlsKey.path=hedera.key
+  queries.blob.lookupRetries=3
+  rates.intradayChangeLimitPercent=25
+  rates.midnightCheckInterval=1
+  scheduling.longTermEnabled=false
+  scheduling.maxExpirationFutureSeconds=5356800
+  scheduling.maxNumber=500000000
+  scheduling.maxTxnPerSecond=100
+  scheduling.whitelist=[TokenBurn, ConsensusSubmitMessage, TokenMint, CryptoTransfer]
+  sigs.expandFromLastSignedState=true
+  staking.fees.nodeRewardPercentage=0
+  staking.fees.stakingRewardPercentage=0
+  staking.isEnabled=true
+  staking.maxDailyStakeRewardThPerH=17808
+  staking.nodeMaxToMinStakeRatios={}
+  staking.periodMins=1440
+  staking.requireMinStakeToReward=false
+  staking.rewardHistory.numStoredPeriods=365
+  staking.rewardRate=0
+  staking.startThreshold=25000000000000000
+  stats.consThrottlesToSample=[<GAS>, ThroughputLimits, CreationLimits]
+  stats.entityUtils.gaugeUpdateIntervalMs=3000
+  stats.executionTimesToTrack=0
+  stats.hapiOps.speedometerUpdateIntervalMs=3000
+  stats.hapiThrottlesToSample=[<GAS>, ThroughputLimits, OffHeapQueryLimits, CreationLimits, FreeQueryLimits]
+  stats.runningAvgHalfLifeSecs=10.0
+  stats.speedometerHalfLifeSecs=10.0
+  stats.throttleUtils.gaugeUpdateIntervalMs=1000
+  tokens.maxAggregateRels=500000000
+  tokens.maxCustomFeeDepth=2
+  tokens.maxCustomFeesAllowed=10
+  tokens.maxNumber=500000000
+  tokens.maxPerAccount=1000
+  tokens.maxRelsPerInfoQuery=1000
+  tokens.maxSymbolUtf8Bytes=100
+  tokens.maxTokenNameUtf8Bytes=100
+  tokens.nfts.areEnabled=true
+  tokens.nfts.maxAllowedMints=5000000
+  tokens.nfts.maxBatchSizeBurn=10
+  tokens.nfts.maxBatchSizeMint=10
+  tokens.nfts.maxBatchSizeWipe=10
+  tokens.nfts.maxMetadataBytes=100
+  tokens.nfts.maxQueryRange=100
+  tokens.nfts.mintThrottleScaleFactor=ThrottleReqOpsScaleFactor{scale=5:2}
+  tokens.nfts.useTreasuryWildcards=true
+  topics.maxNumber=500000000
+  upgrade.artifacts.path=/opt/hgcapp/services-hedera/HapiApp2.0/data/upgrade/current
+  utilPrng.isEnabled=true
+2022-11-12 12:55:05.047 INFO  320  ServicesState - Created prefetch processor
+2022-11-12 12:55:05.048 INFO  58   HashLogger - [SwirldState Hashes]
+Overall                :: null
+Accounts               :: null
+Storage                :: <N/A>
+Topics                 :: null
+Tokens                 :: null
+TokenAssociations      :: null
+SpecialFiles           :: eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+ScheduledTxs           :: null
+NetworkContext         :: 013004b77f9b088986bca7a17fab4604917a3c11d09570619ce7b358760ec5420aed46f53a860e0014c6155cabe184b1
+AddressBook            :: null
+RecordsRunningHashLeaf :: 0235e4aeda4e76d4bb92bdb4763e3e452b6695b2e02b2a4ee80171db5bc4ee4b0ccce25fbefb789814683dafe1cc1671
+  ↪ Running hash       :: fa4a699960c65df33a7b193a3c7c8099438e8b4246be1cca329c5d1f0d328456bcc3cb64087e3d8d66c894fd7d24b546
+UniqueTokens           :: null
+ContractStorage        :: <N/A>
+2022-11-12 12:55:05.061 INFO  448  ServicesState - The network context (state version 21) is,
+  Consensus time of last handled transaction :: 2022-11-12T12:42:24.516818943Z
+  Pending maintenance                        :: <NONE>
+    w/ NMT upgrade prepped                   :: <NONE>
+  Midnight rate set                          :: 1ℏ <-> 12¢ til 4102444800 | 1ℏ <-> 15¢ til 4102444800
+  Next entity number                         :: 1006
+  Last scanned entity                        :: 1000
+  Entities scanned last consensus second     :: 0
+  Entities touched last consensus second     :: 0
+  Throttle usage snapshots are               :: 
+    0 used (last decision time <N/A>)
+    0 used (last decision time <N/A>)
+    0 used (last decision time <N/A>)
+    0 used (last decision time <N/A>)
+    0 used (last decision time <N/A>)
+    0 gas used (last decision time <N/A>)
+  Congestion level start times are           :: 
+    <N/A>
+    <N/A>
+    <N/A>
+  Block number is                            :: 19225
+  Block timestamp is                         :: 2022-11-12T12:42:24.516818943Z
+  Trailing block hashes are                  :: [{"num": 18969, "hash": "973460120e9cc3110a3c0cba499961a20e9ec88e6e57a1c1cf7a6935f43c28bb"}, {"num": 18970, "hash": "5d9e60b091f0f51abbe45f10b8a76cb1aa36c4f5239f948ad2af0d65a69fbbe2"}, {"num": 18971, "hash": "00bcb7ed265364de320f089160a5576f2e286fac354803e34274b94f35a8ee34"}, {"num": 18972, "hash": "aca48ce27433cb9d25d5cab228992bdc99dee7cedb0cc81b7ddffb98b0e5241c"}, {"num": 18973, "hash": "2f057e751171280c40d50694ed8227e28e7b6985e0d3df08d17a9ca0ac8abf7f"}, {"num": 18974, "hash": "ce41f6d4ac36eaa8de54f99d2a5706c06125051ae6be1297fd7b1b2086f54f15"}, {"num": 18975, "hash": "5c1050613ddd6b2b2d71bf28a0714a2b6471c8680204fa893b1e3fe6d5fd50f3"}, {"num": 18976, "hash": "0d37b667ad282c6edea4433e6b4eebce87fa6c273120b6d4769d1bf97e63cf13"}, {"num": 18977, "hash": "9ea15796764fde22406911e7db9dc700907210a114ca2bd5eb5adfeb5dc8b7b9"}, {"num": 18978, "hash": "e06a2e1d6c316778adcba725969f3fd2bd5293c1e701af67d019ecc0b75661a4"}, {"num": 18979, "hash": "17d6bec9e4ed9ee89145e35e00031a2efdab336a2406ac104c455ead2a7c5660"}, {"num": 18980, "hash": "e33196a868ef94ea0eea6979d10ff282aaab47e971af053b2393ffad41cad534"}, {"num": 18981, "hash": "46ead89db598320d249913a96fa38d5a387e7e14097b1bbe4171fc8a2196c46a"}, {"num": 18982, "hash": "a7e66385fa77f0d2a6f91e29ec2be41d2ed9ca38698f134cbe527621a392ca24"}, {"num": 18983, "hash": "02578acf015b5553ae818b054e843be5111db057404933da6b7aebde0d4bf740"}, {"num": 18984, "hash": "bb7e97b9decf3abee9f4af330925113997a8720a19aa5fa1310f3d01e4bcfa80"}, {"num": 18985, "hash": "0ca559903a83e959c032b823b304f93dbeb90abc6c53fc88e56600d2c6ae520c"}, {"num": 18986, "hash": "6124ac7025842261fed9a49422750994c981aa4d4f706516472fe6fc74b94aff"}, {"num": 18987, "hash": "c37cb365fb884afad86548934bfc2a33d011d1a1d7720fc48703b9a9ecef6fa1"}, {"num": 18988, "hash": "6d816adb0b43cf3b59e8bfb4ac7401d6463cd2cd3494e116666cdfd83afb228a"}, {"num": 18989, "hash": "a6a507568869e55ead467954d06e5bf30ccee176fc27075bbf4a6ba5ba80028f"}, {"num": 18990, "hash": "fbd43804de6fbe00f387340998d8334b17896ae8f9103485cb2b1c353d9d5e38"}, {"num": 18991, "hash": "8a142947b832b288d0c2f003bd049db5887789038d7928c607e505147dc2eca0"}, {"num": 18992, "hash": "f04ef2c7d7de7ac6148707f985aa78ed98211663f72088ae455869d2a13ae29d"}, {"num": 18993, "hash": "b8e3fb19edd41a8d8fd628f587b5d6d1ec619df9a884bcd29cab1fcafde6dbd0"}, {"num": 18994, "hash": "4d467d4f9b3cc269c3c0fda3492133f88e99d20cc5393a48b13919afd7176714"}, {"num": 18995, "hash": "d95626d11879b0cc7824660048dcc6063bd91afbf5f2fc9d142fd2e07689fb95"}, {"num": 18996, "hash": "affdd4ec97e0d1369b55f87f5d5472bfd021b788e65cf3c74f6e2965e0e6376c"}, {"num": 18997, "hash": "5c4022a5aedad195649312e706fd6c52a5e45629060d155091d7575619abd82f"}, {"num": 18998, "hash": "be0d456f37f66c55c83c765245720847954e6b1c80804838a0a8724273b53bba"}, {"num": 18999, "hash": "9d4895c3b2e125bc0d4292306066840320e016fabf72e07db4d7fdc22600d81f"}, {"num": 19000, "hash": "97b76c68d1c5500e9e941b9b0fcfc1fdf4d43868570da0c45e69b59be6b46cdb"}, {"num": 19001, "hash": "27d13faccc2fd62180332f774e29e913cada09a5d3ac5849cae21985427fcd1a"}, {"num": 19002, "hash": "0e6b517d24b1fd4a15c51a9d651c97ce581483e226fd311ac5748d23f3cf29f1"}, {"num": 19003, "hash": "24df53101ba824e31b85006760ecbb3cc0973db5b541fc636b11c37be84e9a86"}, {"num": 19004, "hash": "0c0fb31b9da9858ec83891b59df02dcb82980afef95825afb10a46d08c3a5612"}, {"num": 19005, "hash": "987eb21d09ec70f4b4753fe629a634b150f7fd0bfa91d9da229f580103696216"}, {"num": 19006, "hash": "90aa60117b53514d685d42f1929cd6d8e9f762689bd52c97700c2205cb153d27"}, {"num": 19007, "hash": "d1f5fd5d1b55be2bc604032b924cb1aaf845d9c253fa3de0389c447ce317c617"}, {"num": 19008, "hash": "b3d483613c2963fcf8cb0bfe06951573c00c2928ed60f9d38ef6c8265d18aded"}, {"num": 19009, "hash": "d432966ddcd2530ec5d6debf1ef5e0069dc9ec67e0f778756eabdc2ec6edaa65"}, {"num": 19010, "hash": "1f829b5b3880e79dc9b3ece8edd513b3b3ab6b17deb045bb671e61e0ce5b2382"}, {"num": 19011, "hash": "d10ef75abf51e0fbb7203f07c3a2fee9e1549a4bc1ea3f35eee1f5b4300be4a3"}, {"num": 19012, "hash": "9278168aea75a532eadf5b3b442a0a484fa71da187e7ca8af99c7ef70448e0bd"}, {"num": 19013, "hash": "b4b7c1cc72723aada5c50180d13aeb4d2ffbad45ad0e595f3f62781d33c540cc"}, {"num": 19014, "hash": "4dc0d96a1c0eb36fdc2b65e7fe2e09c94d658b301d9734b5b1a6df5bfcb042f5"}, {"num": 19015, "hash": "6733043d237fa743bd0dc1d7812282c52bca581375790a4bc29cce093e7d0fa1"}, {"num": 19016, "hash": "95cbea8a67acd6ff754d71057821f629e8730b4abb0202d0c3fd8f3dc6332deb"}, {"num": 19017, "hash": "4c1e263ca29ba11d5d765c774c8198a3bce985e2f722450e86f542c96ab4dc28"}, {"num": 19018, "hash": "fe289add2c2331711f758f3d0d89f7de67b987d990dbbcd17d7410de167ba173"}, {"num": 19019, "hash": "2fd5f5a324f7ceff4a19ec30f879609302a96d257404b60077c57c4675072088"}, {"num": 19020, "hash": "ddc15ebbac1633eeb12bbb137d93a0931f9718bdcf70573fad2afe4ba85fc0d4"}, {"num": 19021, "hash": "92b9a30f0e29f4352257aa0162dc05c8370a2f499b020fe15d97036c9c60159b"}, {"num": 19022, "hash": "62c75deb04649eb28ffec4a40f13f43a48ae174cbffa4eea3d91f292f17e396c"}, {"num": 19023, "hash": "a1b96583518b53f85b42d4863bdc1775e09f1d8820bbdfdf74171a4d11e865ac"}, {"num": 19024, "hash": "676c8623eed08620ca832781f6ad3012225f96188d028497e11e08db99715b6e"}, {"num": 19025, "hash": "15a94806969d7ca222bbf354dadff84805af3f0ce33378244518af46b177b92b"}, {"num": 19026, "hash": "474c480d95f51a8a8b16e127e73c9881203c69e26c2e82c408df87af69e3666e"}, {"num": 19027, "hash": "ac487785514c298f269f82211b813277383d41fec1f25d148607b71a51a4da84"}, {"num": 19028, "hash": "09b757a967854e66a228a9a75758b8f845e9b6d5e4c3fd377107233f3ea291b3"}, {"num": 19029, "hash": "906d1130cde61282f31e0d7b0c2b84783cf4d4a13977248fac28b792ae1980db"}, {"num": 19030, "hash": "53e1ca4d25765002a355bcef570d9ea33b7cde3e0aecab1512a9f889fe035880"}, {"num": 19031, "hash": "2fd7d3c03a104ce50769a3b4967b8ca6049527a1c99f6c296cddab47ecfda91a"}, {"num": 19032, "hash": "28bafaff5327b4bdc2a49c3be5b22bdf5b664fe26312ab0721fbf02c58f2b931"}, {"num": 19033, "hash": "c25e0a3a663f0c9fab862cde5487296411c686df8f1f568c6cf36d8416ae0611"}, {"num": 19034, "hash": "5cb6f5eab1ed78faba3b1e7ada50f6486fefbf9eb7fc55b8b83d9ec8ecb25543"}, {"num": 19035, "hash": "702ad089524b021ddf7b788571d7d1b88fb1a78353c997c0d500a23040af2f1a"}, {"num": 19036, "hash": "18f5df07f0bd2db4defe281cc043a29a075b7bedfd7eee2c30673323d0dd9d08"}, {"num": 19037, "hash": "48fd13471614a214d4afcdcd381d298d621aa2397b05cba80fc41ca47adabad6"}, {"num": 19038, "hash": "98191b256e390fdc864cebd86874951b90bfe38aed9770099e78b085dab1a0c7"}, {"num": 19039, "hash": "d1f302ce6a477c71c0d7a7c41fa656445e654f0dca8623d7bc6fa1cf12b8b633"}, {"num": 19040, "hash": "a090b4d96c900a65b2fa5d55e742cbacf8d72ed9399426c63a7d0944d9f3eb33"}, {"num": 19041, "hash": "53b115ea73b810944911b2001aa721d112aa18a9b024b17bdb1cd3f5c9742693"}, {"num": 19042, "hash": "6fefa5ce5f09ca9f3f03e0800ff3258c9402f005ee1545e94326d43d7f26f037"}, {"num": 19043, "hash": "20e1096d0a24baead8040b67f0e8f735c3425895bb1e9f29c768ac788ce1d5fa"}, {"num": 19044, "hash": "1a284385aed5e43d410b7c80d47dd6c2b3b5a8d0cf7fd55eb0470f1d86a97f74"}, {"num": 19045, "hash": "ad4da87aa911256e943caf3d5657372b74c0d1c422891bb0f62d0877c42673eb"}, {"num": 19046, "hash": "042082c28a105554222ca1f28624fedda497409563b013d320aa14ee99e22ef5"}, {"num": 19047, "hash": "47c5096d914505326a00b6a2a39b13913507e0253d1eb2ba0fef729d99e41031"}, {"num": 19048, "hash": "cd38d885b7ebbb824ed9db30480d7cb1dda830f8a520fe628b789f25853dea28"}, {"num": 19049, "hash": "94464d99a5c4cff53f8c5ef91e6a30bcf055e4afcebcd26ee2cd1f095f408869"}, {"num": 19050, "hash": "ff2a4aa3363fb95fd2a6fea7ffba13a5de34730cd885627c8f220a7ad0ed183c"}, {"num": 19051, "hash": "915f49e8993dde375bf10d035ad2b51be2d0d8aad9ff1c482e55ab3240ee87dd"}, {"num": 19052, "hash": "54037cfb2f9ac19f5eaa1548a0f927fbdccb1354ce6feb23b71bf300e8235279"}, {"num": 19053, "hash": "0c95d4408c4d7d034daed6ed8c3c387dca5ac8d10b0521aca0a57ad0814ceb47"}, {"num": 19054, "hash": "52fc4ff4ab3b4812232736b5fc784e6defcbe37e61072373af7bbaa4a62087d1"}, {"num": 19055, "hash": "3cd85866717c14539df31e03984ac91814e644c5f39179264e266f6ae6480821"}, {"num": 19056, "hash": "cd4f5c6d0c351b8568a3d2298edabf8e6483b475ac3c54ea4d06cdf4f06cc82a"}, {"num": 19057, "hash": "8fa8d753ac2765ff73987c18339c5f96e4c863a2180d2f3a06b20e8db3337477"}, {"num": 19058, "hash": "ce6442ed0fb4142c5cf7440db596ac4766afffdadfdb2406a3edc57299377cdc"}, {"num": 19059, "hash": "10d9fbd394ed93f776f4c0b11dce210042c3a3ce8e1d911fb18f6ceed3291136"}, {"num": 19060, "hash": "435c87ca8357ca68ff37c9992b8faf95b549434663057fb89de8697f227c23ea"}, {"num": 19061, "hash": "fca88d9b853cf2f5545e1020400c7a42ddae1bdc65d1b86cf094fcb5d6315986"}, {"num": 19062, "hash": "d5f829a2b05f2753a365740f7ed8489377975c10996792587c406359240a68c5"}, {"num": 19063, "hash": "947d749006aabcd16bf2aad8be489527cea0bf93cfde057132de9814d52f96f1"}, {"num": 19064, "hash": "cb6271dad81d743cd32111480a4cd9917e338958cc9c85139fce8f1fdb92d447"}, {"num": 19065, "hash": "87d2b5e27fdc5a16a2b5737c297d459b19809b88fc44c7f83884426fcf5220b8"}, {"num": 19066, "hash": "d5885e6c30b58c13c0d748156582ee499b05d622a09c0ba953c9a6843ce9e56d"}, {"num": 19067, "hash": "5e40ec81687df0f243f8253ad32a21cb2ceda8ed6966bb53ca2eec23ba15d023"}, {"num": 19068, "hash": "6edded4ae2446d42e8c4707a89a654205db32a2098d051daac3632bf2e688c07"}, {"num": 19069, "hash": "f2310c548ea1d666c9d356b9d2fbb37e514163dee23aa55109e7133f5adc30f2"}, {"num": 19070, "hash": "8fd17f7109e795053e3a1e1eedd590c663b3956002066659e493f1a1128963b0"}, {"num": 19071, "hash": "bc933021a220d15488a64c5df377351a07138b862784a88102336e28b3aa3aed"}, {"num": 19072, "hash": "76f82fed709c7301c113d7a961b56214de7082445b0a9a514dc2535a6518fb44"}, {"num": 19073, "hash": "462133e380e75e7979f05032739b12a5b0cdeed53e7db52c7ad7d182a862578a"}, {"num": 19074, "hash": "9df802db43b82b7819fc9323576d547c074fb3777d12f759bc08a5db412d249d"}, {"num": 19075, "hash": "70cd96129c05bfdda18beec8a93ab1f8a58a534e4e5107f53ce617a8e59392fa"}, {"num": 19076, "hash": "27d52a2729b278abee455db8fdd4bfc6cf9aa92c1052803fcc058f3219244909"}, {"num": 19077, "hash": "d098f2257a38436bec2bf131bcd4cb93817401a6f5fea2a285ec9d984452ac80"}, {"num": 19078, "hash": "8ef95949ae1ede77c664efa589a72c7a8ffd42de8852d2197328cc230dfb30e9"}, {"num": 19079, "hash": "32f4b875192001a3195b1850ffbc6ec80018f8dda1603d4afb656977b2b577d6"}, {"num": 19080, "hash": "3440f38de8fcf12f7f2a000282cd96403b8af682d04e6751500931e60c1f6b49"}, {"num": 19081, "hash": "c997f2f418f32eb74e1a867559ec5ca82c12c7fed9ad8449d6984f597daac135"}, {"num": 19082, "hash": "b387b3574ed1684f35a78ed645f053ac6edf6d60f46ca19eb4b840b192f883c4"}, {"num": 19083, "hash": "d30999e17aceb74904cdccef5036e972f97b1071e62c9c69e831563795170964"}, {"num": 19084, "hash": "369228cf0c6321eac72808674046faa6bece254e365f3e68abbb4fef1bd22b45"}, {"num": 19085, "hash": "97f23fcfe92792f61e290cc426e71665b8b0265244723cd6fc84578c54edda7b"}, {"num": 19086, "hash": "1f8b66676432d52c7e676e64fa8d2497c88b934e33d3713fbc810a0bdb735a4c"}, {"num": 19087, "hash": "4b5eb2e2df057650a013078ab08d69bf4b724ee376abe0e191c33af1317cb7e4"}, {"num": 19088, "hash": "4f0f17ce35c917d9c1bc8e905976d5030daa799dd8250fe36c40a9620fc1d71c"}, {"num": 19089, "hash": "db8057dc4ecdd29c16c4c6ab762f66707dd9622f356152cecc2d9ae1da03854c"}, {"num": 19090, "hash": "f622d16818edfa6bf23f08560375ef55c09adb3a41f21642fca53d74a04f45aa"}, {"num": 19091, "hash": "73a4338ff803d73055baab57921d9b8c2f3eeaa6367ba98603149c56adcbb07a"}, {"num": 19092, "hash": "72b8381b32e02eb90ba95090e2e15d395a120b05191aef2e7e3244d71668a74d"}, {"num": 19093, "hash": "b15de429585b8b66e6af10645e1a2e2a80a9b857c61120d8be48946098a03e35"}, {"num": 19094, "hash": "cd796bdbdb293e573b44b237d28d45f476fb580586f03828c55e26c8336d096e"}, {"num": 19095, "hash": "4eb1369c638bf217388defc9ae0d5aadfcc448f84c40540c9b8380cff6f4a323"}, {"num": 19096, "hash": "c14c50a0a3a6b23bde5f6ce84c7e96bca85c25f7fc855bdbcef557de5ab480c0"}, {"num": 19097, "hash": "5a45fc309a1030680b15476c1f368253e6728bf79c768bc670b389066f16ee9a"}, {"num": 19098, "hash": "28c93d1cd3ff4a796e4a58fad3f220ef4e108f19503c6a0f6c7870ea70d0783d"}, {"num": 19099, "hash": "16e6d615677ca5b3c7893ec6ad61ca076e6d58d310e811b6a767d0a5b106bbea"}, {"num": 19100, "hash": "108bf17faaa8e8dd178bf1b66fd9759a05cc931cf8eb2648ff8c4befc7fe56ca"}, {"num": 19101, "hash": "8adeb567e2205dc80e5033fa99b30c9fe773889c11de7bfb201e524e91bf910b"}, {"num": 19102, "hash": "4b935a92cc6f784dc9b8030d2dba0a36205e2d99f26907fbd13a814c355e78ec"}, {"num": 19103, "hash": "da3ecc4719ccf8e5e848d8a451c2052a64d122ffa54e7c0de50d3c742fbc6b7a"}, {"num": 19104, "hash": "88a9ddab762ede4abd3e4dba9d02e4426f02bc1275e86d45de952122d45d7971"}, {"num": 19105, "hash": "58cfa40b4da4ac3e75497d40d7adc7dca904508a7b1ec8948a9bbe4cb8a098c6"}, {"num": 19106, "hash": "45900883fc955c12c6804b194d1e1f0b8801cf0dd8fdd1040a6c662d79f6c1a2"}, {"num": 19107, "hash": "193406e92dbb26f2c84a87a5b9abdb47fa51bf354b4a151a45153fc8b85adbe9"}, {"num": 19108, "hash": "765d8bea34bfcb7c63b07101a161393437d3f2110eb8177a54d91a01f704ee3b"}, {"num": 19109, "hash": "10a27b8b4d3631fa144b6071716fedd36c7385983b8b8edd1e6a980623a04deb"}, {"num": 19110, "hash": "6b91e94a5bf8a6f5bece2f8f36b9328a07cb22ecda186203512f3eccc37b3f3f"}, {"num": 19111, "hash": "1ce0c7217b2f9cf7876e7f88c8ba310e854c63b283efe6ed35cb8c352f0d03b6"}, {"num": 19112, "hash": "ae5d27acbce24fa5713f1bade1dfddff870e677fe80969332f8639c3653aab5b"}, {"num": 19113, "hash": "0662fd9ff44c290f7b19e34c70361e8215a368bd0cf89c745850c41e1a6c1696"}, {"num": 19114, "hash": "2a4e6733c67ca8899299880de4120bc2e6a728a8cbd8fcf9d7f3a3ac23311f1f"}, {"num": 19115, "hash": "14d9ea4386c93d43f7e841f4d87b314c9bf409f79af0c6981aec1594238641fd"}, {"num": 19116, "hash": "b1e806474f3293c1929afd4b264f6219f7a0d082d3eb81e457f7fa718382047a"}, {"num": 19117, "hash": "786bc0973197164088b89a39d8a6210577f57b8056f25d44ca7227f0e8d87ba0"}, {"num": 19118, "hash": "e0f82e4342e0b1380cea05b696b02c6eca281f94dc17751eacdec38008142571"}, {"num": 19119, "hash": "e590cbe0308009f1c2a7befc6b70372ed28ffe26cc809e61c4f79992f4970992"}, {"num": 19120, "hash": "0eaec2f426e8219ea60341e20ee8a934f944d505ee4dde0bb37874fd94f7491c"}, {"num": 19121, "hash": "f75bd517eb26c8639ab223fb804fb64acd652898ed1e96ad2b953dbb3033131b"}, {"num": 19122, "hash": "55e34fc2d84b5b8fb08fbf1dc368d05f311676a2fa5a6a656a6f52d49863e11e"}, {"num": 19123, "hash": "07e5e71651b08e19998a52134c2f3cfc860b4ebdbfb1a41eca4e01f088ffe3b0"}, {"num": 19124, "hash": "e0c298024fc3885809d9c4070fb046f0e136133bf804f80a33645ba868ff97f6"}, {"num": 19125, "hash": "dfbcc86914d062f2d20b5fda789d18cefce154009d53881ecdc13a71114bebc5"}, {"num": 19126, "hash": "369d684b152d0cc24d74d493c480f3bdc2aaf6f4b99c371130c2260dc6338f50"}, {"num": 19127, "hash": "fd3f61824565defc3b628d88bc4296dfc2b0e9bc695bbec25a6db6dd2d2d2f22"}, {"num": 19128, "hash": "643964a04969aef782bb3d361448938509f4f9b352dda71732c216d50e072bad"}, {"num": 19129, "hash": "1cbcf496e1bf9f0ef47eb62f237a1ef4d7163b9366e404c0c2396e181eed04fc"}, {"num": 19130, "hash": "12c1a4dbbc1fb7dd0b4e8ca9d5bdd514ffbe21a805d35641be69fad219829ca2"}, {"num": 19131, "hash": "fdc9309bf67a5b6eda8f8b0c0921525dac660e96164c471c1af57326885167a8"}, {"num": 19132, "hash": "81da3a6e862f5d1778070bb147ffd6e784b69b52967196c9d930dbac78685957"}, {"num": 19133, "hash": "69b438e4e9e65a609ce67eefe833a2f42bd920c0f93708830ffc8d7c4f7f937b"}, {"num": 19134, "hash": "966d6a9f2a0b5321a8bf6cb1625d3a9efb48714aebbb870493a9a7b272bcb353"}, {"num": 19135, "hash": "14245451f2b19be2340b53c610cb1716a768b0394ad2916b39de688c4db164c0"}, {"num": 19136, "hash": "3245490c6538470d9d1294a482506191e2f154d17e025381c3f5f24c61f60a77"}, {"num": 19137, "hash": "d4a19e2450802d660e0734db0c98c60b39b22da2bf3f758469e5b576d645f765"}, {"num": 19138, "hash": "2247e75c7a33a8a4754197221bee5802877227a275b5efd825b64df2f51da91d"}, {"num": 19139, "hash": "4482ecdbfe53a8a0721a89bc2e37178331c939d66e960e8690467e2b677bbe24"}, {"num": 19140, "hash": "5c7615a3c5b883baa1d2b31612b9e5ec3c38b697a8d85204e1eac83ceffcf9e6"}, {"num": 19141, "hash": "c1cb761f514bd89c3e9eb3f3f79269579e152bc9c682b27887b8ee234e88cc08"}, {"num": 19142, "hash": "5b41560b83fcf639023a92d6c6378e42ed51ef38c23e0d13ab6d1c1939a39fe1"}, {"num": 19143, "hash": "75b61778f5b8e4acda44339790162a52f5e1f59e8e313bc9fc9f767767ec6adc"}, {"num": 19144, "hash": "768861bc5eee4e487c63cf47e2a0582340218a1800f5174b1f65f4884f20f952"}, {"num": 19145, "hash": "a04b923c01327ff2da457abf622c4918977aa5025b2f342863074bdbebc56674"}, {"num": 19146, "hash": "1ffbc46a50564f55ef5664b70f4732553d2b0f6e8fbc5f675849235426323392"}, {"num": 19147, "hash": "717a7dc0a179097b6ed230b6e0419b9878dae67a748433b511ae43772a81d916"}, {"num": 19148, "hash": "37b9d9c2a331f1586835ebc84206ba05d67ad8ffcb4a383f1dbecf7f863edf77"}, {"num": 19149, "hash": "4431fddfe2e40007ef0bd0b8013ca985728bfcadeb253e5afd42f00e4a32e10b"}, {"num": 19150, "hash": "3b5ed3de3d49c513b1fa4dc92a99900b6c40438b536656878868c245a2737961"}, {"num": 19151, "hash": "ed01b1d7d3f1b6586ef75b884bf92b303f63a199e7430ce7c2a739d773631da0"}, {"num": 19152, "hash": "93f21185c467968cf47436dbb34df3f06a6862201eb068fb042641715c17ba04"}, {"num": 19153, "hash": "9750409784fc996864885347e6087bb5532b54d35f6b00daa51df1d60637c466"}, {"num": 19154, "hash": "3963393c6ed839b7c1ead264ad21fc17c86dadfbf2ec159d8a6fda75df3c6018"}, {"num": 19155, "hash": "8c0394e057a2d5d41a559a8747215035e49b2f6986205089903bfb0a6962e130"}, {"num": 19156, "hash": "c9748c6c9511530bdda1e28c2f4eaa87af78ef58c2278a909b6cc22160da042c"}, {"num": 19157, "hash": "9377a4ca33e112abbb8478354b2929ec6b3c512312583d6492b24600bac7220d"}, {"num": 19158, "hash": "7405c5e4107f1a35363f3797f6844f8b23d17d0c41b9e4ffffb0e3245ef04edd"}, {"num": 19159, "hash": "5e8270d029ac969446a6c57a1c0d08975ddb45dac9ad036813cb9f5fa3255d2d"}, {"num": 19160, "hash": "5247808fc5190b6e460063d4ca96d693a252566036709f8c281931a4c162efdd"}, {"num": 19161, "hash": "a42e913bdb002ec02a64d372a0f58e6dbe21237e4f20c40f90386cdfe1558ee0"}, {"num": 19162, "hash": "afd298ee25a4257dbbde6b2ab02a5c44ba304d55e05bcfc660fa82e72b234186"}, {"num": 19163, "hash": "7607feaca1e1a5966994a02767fd7c113dc4f4fedde4d7d19ac6e7428a1f8afe"}, {"num": 19164, "hash": "f314524ed7245fb49c4ecfbba44e752741f1de1ddd47be64980cd62336eac139"}, {"num": 19165, "hash": "75aa02f1f4b71b09651d24f3a18f2df54e8cdcc3befe0be5c34800187619b906"}, {"num": 19166, "hash": "26482377731ab10c30eacb1deddb783f4af6f0facd40e7384940dcb75a64a759"}, {"num": 19167, "hash": "cafd85fd344f4289693a5aab2c46b33d5d45375f1fd39f9e7ed43c0e979197b8"}, {"num": 19168, "hash": "ade0620b0d3e37985d74790758f436721827e54b715857888a9683edfe2d2c03"}, {"num": 19169, "hash": "a04ab265e4460cacd825f3aa9fab9a8638123b49ae34c0b589d232235162e932"}, {"num": 19170, "hash": "d7637bb3487102cebb4d1c0d0f1f2ac2765470731a31c05431a18b871c9bdb5f"}, {"num": 19171, "hash": "a13cb63fe2a5df44ea691f8c019864535594b9b32552212d44e21575a9c1b739"}, {"num": 19172, "hash": "8a143d480f7c31000ea914484ff7d186b59c74ec0356f24d468bb6437ed5724a"}, {"num": 19173, "hash": "0b45a25bd94c706a27995e16f589d7e7d20d21f6820ea9b049d70a5ef7e73582"}, {"num": 19174, "hash": "50c632edd5001cc19dc064cdc01646b62932a2ead3fb6ebe5d8abfcb65d70d90"}, {"num": 19175, "hash": "17c6751af6654205c705ada12c66049744918d1c353dda4774a0b906702cc11f"}, {"num": 19176, "hash": "000aef9f4c0ec27369246b79af1a854ecace36283b2c474f3a425c4953d9393a"}, {"num": 19177, "hash": "66460cb0b3b5b6335c689987acc8439ebdca910cfdcd74aaecbd16b07b773924"}, {"num": 19178, "hash": "71ad187629daa3d207572f03ae3d694b57d7f0456a580126c3ba2d5b57ca093b"}, {"num": 19179, "hash": "49bce934558d117310dad25e1b16066ed873dc9bde697babb134b979951118cb"}, {"num": 19180, "hash": "006031e0d11562b3821457c7afb00df56872f66e3488d8183848889cf5a6618c"}, {"num": 19181, "hash": "d3e8dbb78ff194ace7eecf07eb2b748eb3d491b4f9c75841b239bab04a3d4c2c"}, {"num": 19182, "hash": "74c0cfb7d55575bfcfc1e303520220152a55d97f188c10865c2181dabb9bd1d7"}, {"num": 19183, "hash": "aa88ac05c495fb7961748303621ea820297bbced5046e212e79b67d1215c0998"}, {"num": 19184, "hash": "5d621008ad9dfa4c38f7000903ba4ae2fb326b578d637cee79375a68a2ab0f7c"}, {"num": 19185, "hash": "4e355a36f13298af6edd864efa2e0ce58fd632c85480eff32c8e65b2e4ee4d52"}, {"num": 19186, "hash": "ba767c2e2abb29070a891bee5e9b6ad26f8f1ebf817579d4b30cd79da30f4438"}, {"num": 19187, "hash": "71ddc3cc27df5d97072a97b2f6126f93beccc3963aabe28d8d2a5f72ddfb02c3"}, {"num": 19188, "hash": "54f6b4a4ec20c52ca33945887757ce6abca7914e360e5095e71740e3386f1c61"}, {"num": 19189, "hash": "f9270bf6645fce5d193e94195ae01fed81e977e1075d9bc97e37d71b3337c8fa"}, {"num": 19190, "hash": "b9a9d6d84b36f9ebf461e13bf935f16230c1b721811667c1a8878b25167b306f"}, {"num": 19191, "hash": "76144cd92713cbdddfd763492445ba5f375af815e0e155b355b6b17e72de32bc"}, {"num": 19192, "hash": "dc9ee6d986f1752e0eb5f7b019743e33111b0ccce72b763509834d3a3add0775"}, {"num": 19193, "hash": "860705ae723673b9eac8fb1b28cb61484b598e79c0f15b57d717806d67c0c9ea"}, {"num": 19194, "hash": "bd5356866719616ed0462ff545fb6005a1ce0d3c3dc40d1fecc384a0ae7bb001"}, {"num": 19195, "hash": "0b8e271e474acb639285c51454672f141214fb3c3a8e274fef2d863dc3782f5d"}, {"num": 19196, "hash": "90cf291815eca851e0171612e27bc980e294de8d3c9a4f0f3aecd767afea96e2"}, {"num": 19197, "hash": "ea6158cd91ecc5bd4c6f09bbefaf332392521b3b9a29f9c4cc4617fd6ac6fbfe"}, {"num": 19198, "hash": "7f3381bbe56fb0a641d0a420baeb63e65dd40c3e63c254f1dc31716afa469636"}, {"num": 19199, "hash": "bba7ad74d5cdb4465f8b1cf3c0d5500a65e5fcf65ad439633401052a0ff47e4b"}, {"num": 19200, "hash": "8abceaa046bbfe099eac784f0d39382dfef608b99dab26b0fb66fbe94708234f"}, {"num": 19201, "hash": "556d1a557c1baf6bb9fc8e09c5fe5e2efc0489288fcafd3d840afdcd1b7eca65"}, {"num": 19202, "hash": "32bd5bd5a0dfe945003f7191a775e188202692f3bcfb560f0b5a530eba47010c"}, {"num": 19203, "hash": "625137a089409e413b537b741abff500fb41560187e49b9f69cc8c25ac325787"}, {"num": 19204, "hash": "a6851d6998d883b0b0b068a3cce5ca08e6c375574bab35fc3e436c26b27cef6d"}, {"num": 19205, "hash": "e5a8847ac9bcf504de2a155c5ff9669c0a58d34798c4b0a2ce644787c1653d96"}, {"num": 19206, "hash": "5f401957a9c3dba2807d4e88a0027260db08109489dd2ff8acce1632d9c41f92"}, {"num": 19207, "hash": "c0554a2c9b5778bdc6e4debfbd8cbac03480ba908ec7071620ec72b975928c12"}, {"num": 19208, "hash": "0e6f238a9f2e8d40fd15b68ff3bd2940fb16337c6655dde8e0845d4c5386e09f"}, {"num": 19209, "hash": "01762b03c7bf02fd8fb76ea9dae5a5cf8b6027dd816236a23da5fb8dce3ba118"}, {"num": 19210, "hash": "3311b4f0ff8f248e6a3774f028d765df16bb4d9a5254068ab488c6614c1c251c"}, {"num": 19211, "hash": "e227f8333e83729c38b3907ad40e548e78dd1d1bb5d9b9f6d21824b4bd67d2b3"}, {"num": 19212, "hash": "7c023ad976cc52d660910451702b867d50635ada7dc2a40d75c9c87cce57b730"}, {"num": 19213, "hash": "78fa0399de956d511cc88aed6f85ba397ebce9301ef0dbbe310288cb02d54f9b"}, {"num": 19214, "hash": "4e6cca900700a7cd6ba6d64d22f70c3bcd03c21c4ed3084495be6e17d76a4e26"}, {"num": 19215, "hash": "b1913397f97db93532f790a5a6f33938d0261c246980589733420d037cdce70b"}, {"num": 19216, "hash": "c87cc1f96723914a0b71b06232b684fc11729aac1d5582bf7b0dee6493ec5c2d"}, {"num": 19217, "hash": "14cea9a654e6fbb3ea501b58f213830bbac0e714ef9622f291222dc6ca7c6f02"}, {"num": 19218, "hash": "b97c2fb786b5c22264bfb569de2845550c029578e4ed9c688097ae5e2da2ee91"}, {"num": 19219, "hash": "86e39013d0f44188764dfab6e2e94c95f9845878fa5466167359c72adb991677"}, {"num": 19220, "hash": "8fae290d526c92e10f90541a9f53d0a87e668db36ccab95123a90eeaac97f71d"}, {"num": 19221, "hash": "980119d53a42f0a5a8921459b62f3da9576af821e2fa3db5e07666035be0c1f1"}, {"num": 19222, "hash": "1f24ec0f0decb022354cea2b070e318b8201952d751dcfdfbed16a10cb4c8123"}, {"num": 19223, "hash": "659f64142e1fb36c7abdb0885f9f163db3e794a8e6114dfc5b3190b90aa6b063"}, {"num": 19224, "hash": "ad3528cfef28b08f9bd82482ce26d5e974b6b28f82910d224b29fa45b10d9484"}]
+  Staking rewards activated                  :: false
+  Total stake reward start this period       :: 0
+  Total stake start this period              :: 0
+2022-11-12 12:55:05.064 INFO  323  ServicesState -   --> Context initialized accordingly on Services node 0
+2022-11-12 12:55:05.069 INFO  133  HfsSystemFilesManager - Updated node0 stake to 1
+2022-11-12 12:55:05.372 INFO  193  ServicesMain - Using context to initialize HederaNode#0...
+2022-11-12 12:55:05.385 INFO  135  ServicesMain - Ledger state ok
+2022-11-12 12:55:05.409 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI ThroughputLimits throttle bucket' under name 'hapiThroughputLimitsPercentUsed'
+2022-11-12 12:55:05.410 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI OffHeapQueryLimits throttle bucket' under name 'hapiOffHeapQueryLimitsPercentUsed'
+2022-11-12 12:55:05.411 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI CreationLimits throttle bucket' under name 'hapiCreationLimitsPercentUsed'
+2022-11-12 12:55:05.412 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI FreeQueryLimits throttle bucket' under name 'hapiFreeQueryLimitsPercentUsed'
+2022-11-12 12:55:05.413 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI Gas throttle bucket' under name 'hapiGasPercentUsed'
+2022-11-12 12:55:05.414 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in cons ThroughputLimits throttle bucket' under name 'consThroughputLimitsPercentUsed'
+2022-11-12 12:55:05.414 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in cons CreationLimits throttle bucket' under name 'consCreationLimitsPercentUsed'
+2022-11-12 12:55:05.414 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in cons Gas throttle bucket' under name 'consGasPercentUsed'
+2022-11-12 12:55:05.438 INFO  138  ServicesMain - Platform is configured w/ callbacks and stats registered
+2022-11-12 12:55:05.446 INFO  141  ServicesMain - Accounts exported (if requested)
+2022-11-12 12:55:05.447 INFO  53   ExecutionTimeTracker - Not tracking execution times (stats.executionTimesToTrack=0)
+2022-11-12 12:55:05.518 INFO  67   GrpcStarter - TLS is turned on by default on node 0
+2022-11-12 12:55:05.518 INFO  68   GrpcStarter - Active profile: PROD
+2022-11-12 12:55:05.523 INFO  93   GrpcStarter - Starting Netty on port 50211...
+2022-11-12 12:55:05.524 INFO  70   ConfigDrivenNettyFactory - Configuring a Netty server on port 50211 (TLS OFF) for DEV environment
+2022-11-12 12:55:06.000 INFO  93   GrpcStarter - ...done starting Netty on port 50211.
+2022-11-12 12:55:06.001 INFO  93   GrpcStarter - Starting Netty with TLS support on port 50212...
+2022-11-12 12:55:06.001 INFO  70   ConfigDrivenNettyFactory - Configuring a Netty server on port 50212 (TLS ON) for DEV environment
+2022-11-12 12:55:06.449 INFO  93   GrpcStarter - ...done starting Netty with TLS support on port 50212.
+2022-11-12 12:55:06.451 INFO  144  ServicesMain - Netty started (if appropriate)
+2022-11-12 12:55:06.626 INFO  76   ServicesMain - Now current platform status = ACTIVE in HederaNode#0.
+2022-11-12 12:55:06.627 INFO  246  RecordStreamManager - RecordStream inFreeze is set to be false 
+2022-11-12 12:55:21.237 INFO  62   CurrentRecordStreamType - Record stream file header is [5, 0, 28, 1]
+2022-11-12 13:00:03.289 INFO  147  SignedStateBalancesExporter - Took 2173ms to summarize signed state balances
+2022-11-12 13:00:03.524 INFO  169  SignedStateBalancesExporter -  -> Took 214ms to export and sign proto balances file at 2022-11-12T13:00:00.038603694Z
+2022-11-12 13:00:10.044 WARN  377  ServicesState - Unable to expand signatures, will be verified synchronously in handleTransaction
+com.swirlds.common.merkle.exceptions.ArchivedException: operation can not be performed after this object has been archived
+	at com.swirlds.common.merkle.interfaces.Archivable.throwIfArchived(Archivable.java:68) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.throwIfArchived(MerkleMap.java:385) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.get(MerkleMap.java:461) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.lookupAccountByNumber(StateChildrenSigMetadataLookup.java:234) ~[?:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.accountSigningMetaFor(StateChildrenSigMetadataLookup.java:145) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.orderForPayer(SigRequirements.java:231) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.keysForPayer(SigRequirements.java:157) ~[?:?]
+	at com.hedera.services.sigs.Expansion.expand(Expansion.java:113) ~[?:?]
+	at com.hedera.services.sigs.Expansion.execute(Expansion.java:76) ~[?:?]
+	at com.hedera.services.sigs.HederaToPlatformSigOps.expandIn(HederaToPlatformSigOps.java:87) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandFromSignedState(SigReqsManager.java:162) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.tryExpandFromSignedState(SigReqsManager.java:149) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandSigsInto(SigReqsManager.java:109) ~[?:?]
+	at com.hedera.services.ServicesState.expandSignatures(ServicesState.java:373) ~[?:?]
+	at com.swirlds.platform.state.SignatureExpanderImpl.expandSignatures(SignatureExpanderImpl.java:60) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.state.SwirldStateManagerDouble.expandSignatures(SwirldStateManagerDouble.java:303) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.eventhandling.PreConsensusEventHandler.preConsensusEvent(PreConsensusEventHandler.java:120) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.observers.EventObserverDispatcher.preConsensusEvent(EventObserverDispatcher.java:117) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventIntake.addEvent(EventIntake.java:126) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.handleNewEvent(EventCreator.java:186) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.createEvent(EventCreator.java:179) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventTaskDispatcher.dispatchTask(EventTaskDispatcher.java:96) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.QueueThreadImpl.doWork(QueueThreadImpl.java:234) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.doWork(StoppableThreadImpl.java:572) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.run(StoppableThreadImpl.java:203) ~[swirlds-common-0.28.1.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2022-11-12 13:00:24.752 WARN  377  ServicesState - Unable to expand signatures, will be verified synchronously in handleTransaction
+com.swirlds.common.merkle.exceptions.ArchivedException: operation can not be performed after this object has been archived
+	at com.swirlds.common.merkle.interfaces.Archivable.throwIfArchived(Archivable.java:68) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.throwIfArchived(MerkleMap.java:385) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.get(MerkleMap.java:461) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.lookupAccountByNumber(StateChildrenSigMetadataLookup.java:234) ~[?:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.aliasableAccountSigningMetaFor(StateChildrenSigMetadataLookup.java:169) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.includeIfNecessary(SigRequirements.java:1271) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.cryptoTransfer(SigRequirements.java:727) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.forCrypto(SigRequirements.java:268) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.keysForOtherParties(SigRequirements.java:199) ~[?:?]
+	at com.hedera.services.sigs.Expansion.expand(Expansion.java:113) ~[?:?]
+	at com.hedera.services.sigs.Expansion.execute(Expansion.java:84) ~[?:?]
+	at com.hedera.services.sigs.HederaToPlatformSigOps.expandIn(HederaToPlatformSigOps.java:87) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandFromSignedState(SigReqsManager.java:162) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.tryExpandFromSignedState(SigReqsManager.java:149) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandSigsInto(SigReqsManager.java:109) ~[?:?]
+	at com.hedera.services.ServicesState.expandSignatures(ServicesState.java:373) ~[?:?]
+	at com.swirlds.platform.state.SignatureExpanderImpl.expandSignatures(SignatureExpanderImpl.java:60) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.state.SwirldStateManagerDouble.expandSignatures(SwirldStateManagerDouble.java:303) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.eventhandling.PreConsensusEventHandler.preConsensusEvent(PreConsensusEventHandler.java:120) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.observers.EventObserverDispatcher.preConsensusEvent(EventObserverDispatcher.java:117) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventIntake.addEvent(EventIntake.java:126) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.handleNewEvent(EventCreator.java:186) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.createEvent(EventCreator.java:179) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventTaskDispatcher.dispatchTask(EventTaskDispatcher.java:96) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.QueueThreadImpl.doWork(QueueThreadImpl.java:234) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.doWork(StoppableThreadImpl.java:572) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.run(StoppableThreadImpl.java:203) ~[swirlds-common-0.28.1.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2022-11-12 13:06:40.185 INFO  147  SignedStateBalancesExporter - Took 25ms to summarize signed state balances
+2022-11-12 13:06:40.209 INFO  169  SignedStateBalancesExporter -  -> Took 20ms to export and sign proto balances file at 2022-11-12T13:06:40.048489718Z
+2022-11-12 13:13:20.330 INFO  147  SignedStateBalancesExporter - Took 174ms to summarize signed state balances
+2022-11-12 13:13:20.419 INFO  169  SignedStateBalancesExporter -  -> Took 66ms to export and sign proto balances file at 2022-11-12T13:13:20.018123034Z
+2022-11-12 13:18:08.155 WARN  377  ServicesState - Unable to expand signatures, will be verified synchronously in handleTransaction
+com.swirlds.common.merkle.exceptions.ArchivedException: operation can not be performed after this object has been archived
+	at com.swirlds.common.merkle.interfaces.Archivable.throwIfArchived(Archivable.java:68) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.throwIfArchived(MerkleMap.java:385) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.get(MerkleMap.java:461) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.lookupAccountByNumber(StateChildrenSigMetadataLookup.java:234) ~[?:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.aliasableAccountSigningMetaFor(StateChildrenSigMetadataLookup.java:169) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.includeIfNecessary(SigRequirements.java:1271) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.cryptoTransfer(SigRequirements.java:727) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.forCrypto(SigRequirements.java:268) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.keysForOtherParties(SigRequirements.java:199) ~[?:?]
+	at com.hedera.services.sigs.Expansion.expand(Expansion.java:113) ~[?:?]
+	at com.hedera.services.sigs.Expansion.execute(Expansion.java:84) ~[?:?]
+	at com.hedera.services.sigs.HederaToPlatformSigOps.expandIn(HederaToPlatformSigOps.java:87) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandFromSignedState(SigReqsManager.java:162) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.tryExpandFromSignedState(SigReqsManager.java:149) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandSigsInto(SigReqsManager.java:109) ~[?:?]
+	at com.hedera.services.ServicesState.expandSignatures(ServicesState.java:373) ~[?:?]
+	at com.swirlds.platform.state.SignatureExpanderImpl.expandSignatures(SignatureExpanderImpl.java:60) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.state.SwirldStateManagerDouble.expandSignatures(SwirldStateManagerDouble.java:303) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.eventhandling.PreConsensusEventHandler.preConsensusEvent(PreConsensusEventHandler.java:120) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.observers.EventObserverDispatcher.preConsensusEvent(EventObserverDispatcher.java:117) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventIntake.addEvent(EventIntake.java:126) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.handleNewEvent(EventCreator.java:186) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.createEvent(EventCreator.java:179) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventTaskDispatcher.dispatchTask(EventTaskDispatcher.java:96) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.QueueThreadImpl.waitForItem(QueueThreadImpl.java:249) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.QueueThreadImpl.doWork(QueueThreadImpl.java:229) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.doWork(StoppableThreadImpl.java:572) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.run(StoppableThreadImpl.java:203) ~[swirlds-common-0.28.1.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2022-11-12 13:20:00.323 INFO  147  SignedStateBalancesExporter - Took 127ms to summarize signed state balances
+2022-11-12 13:20:00.351 INFO  169  SignedStateBalancesExporter -  -> Took 25ms to export and sign proto balances file at 2022-11-12T13:20:00.028463516Z
+2022-11-12 13:21:54.010 WARN  377  ServicesState - Unable to expand signatures, will be verified synchronously in handleTransaction
+com.swirlds.common.merkle.exceptions.ArchivedException: operation can not be performed after this object has been archived
+	at com.swirlds.common.merkle.interfaces.Archivable.throwIfArchived(Archivable.java:68) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.throwIfArchived(MerkleMap.java:385) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.get(MerkleMap.java:461) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.lookupAccountByNumber(StateChildrenSigMetadataLookup.java:234) ~[?:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.aliasableAccountSigningMetaFor(StateChildrenSigMetadataLookup.java:169) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.includeIfNecessary(SigRequirements.java:1271) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.cryptoTransfer(SigRequirements.java:727) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.forCrypto(SigRequirements.java:268) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.keysForOtherParties(SigRequirements.java:199) ~[?:?]
+	at com.hedera.services.sigs.Expansion.expand(Expansion.java:113) ~[?:?]
+	at com.hedera.services.sigs.Expansion.execute(Expansion.java:84) ~[?:?]
+	at com.hedera.services.sigs.HederaToPlatformSigOps.expandIn(HederaToPlatformSigOps.java:87) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandFromSignedState(SigReqsManager.java:162) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.tryExpandFromSignedState(SigReqsManager.java:149) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandSigsInto(SigReqsManager.java:109) ~[?:?]
+	at com.hedera.services.ServicesState.expandSignatures(ServicesState.java:373) ~[?:?]
+	at com.swirlds.platform.state.SignatureExpanderImpl.expandSignatures(SignatureExpanderImpl.java:60) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.state.SwirldStateManagerDouble.expandSignatures(SwirldStateManagerDouble.java:303) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.eventhandling.PreConsensusEventHandler.preConsensusEvent(PreConsensusEventHandler.java:120) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.observers.EventObserverDispatcher.preConsensusEvent(EventObserverDispatcher.java:117) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventIntake.addEvent(EventIntake.java:126) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.handleNewEvent(EventCreator.java:186) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.createEvent(EventCreator.java:179) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventTaskDispatcher.dispatchTask(EventTaskDispatcher.java:96) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.QueueThreadImpl.doWork(QueueThreadImpl.java:234) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.doWork(StoppableThreadImpl.java:572) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.run(StoppableThreadImpl.java:203) ~[swirlds-common-0.28.1.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2022-11-12 13:26:32.159 WARN  377  ServicesState - Unable to expand signatures, will be verified synchronously in handleTransaction
+com.swirlds.common.merkle.exceptions.ArchivedException: operation can not be performed after this object has been archived
+	at com.swirlds.common.merkle.interfaces.Archivable.throwIfArchived(Archivable.java:68) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.throwIfArchived(MerkleMap.java:385) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.swirlds.merkle.map.MerkleMap.get(MerkleMap.java:461) ~[swirlds-merkle-0.28.1.jar:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.lookupAccountByNumber(StateChildrenSigMetadataLookup.java:234) ~[?:?]
+	at com.hedera.services.sigs.metadata.StateChildrenSigMetadataLookup.aliasableAccountSigningMetaFor(StateChildrenSigMetadataLookup.java:169) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.includeIfNecessary(SigRequirements.java:1271) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.cryptoTransfer(SigRequirements.java:727) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.forCrypto(SigRequirements.java:268) ~[?:?]
+	at com.hedera.services.sigs.order.SigRequirements.keysForOtherParties(SigRequirements.java:199) ~[?:?]
+	at com.hedera.services.sigs.Expansion.expand(Expansion.java:113) ~[?:?]
+	at com.hedera.services.sigs.Expansion.execute(Expansion.java:84) ~[?:?]
+	at com.hedera.services.sigs.HederaToPlatformSigOps.expandIn(HederaToPlatformSigOps.java:87) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandFromSignedState(SigReqsManager.java:162) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.tryExpandFromSignedState(SigReqsManager.java:149) ~[?:?]
+	at com.hedera.services.sigs.order.SigReqsManager.expandSigsInto(SigReqsManager.java:109) ~[?:?]
+	at com.hedera.services.ServicesState.expandSignatures(ServicesState.java:373) ~[?:?]
+	at com.swirlds.platform.state.SignatureExpanderImpl.expandSignatures(SignatureExpanderImpl.java:60) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.state.SwirldStateManagerDouble.expandSignatures(SwirldStateManagerDouble.java:303) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.eventhandling.PreConsensusEventHandler.preConsensusEvent(PreConsensusEventHandler.java:120) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.observers.EventObserverDispatcher.preConsensusEvent(EventObserverDispatcher.java:117) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventIntake.addEvent(EventIntake.java:126) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.handleNewEvent(EventCreator.java:186) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventCreator.createEvent(EventCreator.java:179) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.platform.components.EventTaskDispatcher.dispatchTask(EventTaskDispatcher.java:96) ~[swirlds-platform-core-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.QueueThreadImpl.doWork(QueueThreadImpl.java:234) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.doWork(StoppableThreadImpl.java:572) ~[swirlds-common-0.28.1.jar:?]
+	at com.swirlds.common.threading.framework.internal.StoppableThreadImpl.run(StoppableThreadImpl.java:203) ~[swirlds-common-0.28.1.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2022-11-12 13:26:40.187 INFO  147  SignedStateBalancesExporter - Took 46ms to summarize signed state balances
+2022-11-12 13:26:40.220 INFO  169  SignedStateBalancesExporter -  -> Took 23ms to export and sign proto balances file at 2022-11-12T13:26:40.024582915Z
+2022-11-12 13:33:20.393 INFO  147  SignedStateBalancesExporter - Took 160ms to summarize signed state balances
+2022-11-12 13:33:20.437 INFO  169  SignedStateBalancesExporter -  -> Took 37ms to export and sign proto balances file at 2022-11-12T13:33:20.018125231Z
+2022-11-12 13:40:00.189 INFO  147  SignedStateBalancesExporter - Took 52ms to summarize signed state balances
+2022-11-12 13:40:00.207 INFO  169  SignedStateBalancesExporter -  -> Took 14ms to export and sign proto balances file at 2022-11-12T13:40:00.023454838Z
+2022-11-12 13:46:40.184 INFO  147  SignedStateBalancesExporter - Took 28ms to summarize signed state balances
+2022-11-12 13:46:40.212 INFO  169  SignedStateBalancesExporter -  -> Took 24ms to export and sign proto balances file at 2022-11-12T13:46:40.041350696Z
+2022-11-12 13:53:20.235 INFO  147  SignedStateBalancesExporter - Took 106ms to summarize signed state balances
+2022-11-12 13:53:20.300 INFO  169  SignedStateBalancesExporter -  -> Took 63ms to export and sign proto balances file at 2022-11-12T13:53:20.015370095Z
+2022-11-12 13:58:50.194 INFO  246  ServicesState - Init called on Services node 0 WITHOUT Merkle saved state
+2022-11-12 13:58:50.266 INFO  121  BootstrapProperties - Resolved bootstrap properties:
+  accounts.addressBookAdmin=55
+  accounts.exchangeRatesAdmin=57
+  accounts.feeSchedulesAdmin=56
+  accounts.freezeAdmin=58
+  accounts.maxNumber=500000000
+  accounts.nodeRewardAccount=801
+  accounts.stakingRewardAccount=800
+  accounts.systemAdmin=50
+  accounts.systemDeleteAdmin=59
+  accounts.systemUndeleteAdmin=60
+  accounts.treasury=2
+  autoCreation.enabled=true
+  autoRemove.maxPurgedKvPairsPerTouch=10
+  autoRemove.maxReturnedNftsPerTouch=10
+  autoRenew.targetTypes=[]
+  autorenew.gracePeriod=604800
+  autorenew.maxNumberOfEntitiesToRenewOrDelete=2
+  autorenew.numberOfEntitiesToScan=100
+  balances.exportDir.path=/opt/hgcapp/accountBalances/
+  balances.exportEnabled=true
+  balances.exportPeriodSecs=400
+  balances.exportTokenBalances=true
+  balances.nodeBalanceWarningThreshold=0
+  bootstrap.feeSchedulesJson.resource=feeSchedules.json
+  bootstrap.genesisPublicKey=0aa8e21064c61eab86e2a9c164565b4e7a9a4146106e0a6cd03a8c395a110e92
+  bootstrap.hapiPermissions.path=data/config/api-permission.properties
+  bootstrap.networkProperties.path=data/config/application.properties
+  bootstrap.rates.currentCentEquiv=12
+  bootstrap.rates.currentExpiry=4102444800
+  bootstrap.rates.currentHbarEquiv=1
+  bootstrap.rates.nextCentEquiv=15
+  bootstrap.rates.nextExpiry=4102444800
+  bootstrap.rates.nextHbarEquiv=1
+  bootstrap.system.entityExpiry=1812637686
+  bootstrap.throttleDefsJson.resource=throttles.json
+  cache.records.ttl=180
+  consensus.handle.maxFollowingRecords=50
+  consensus.handle.maxPrecedingRecords=3
+  consensus.message.maxBytesAllowed=1024
+  contracts.allowAutoAssociations=false
+  contracts.allowCreate2=true
+  contracts.chainId=298
+  contracts.defaultLifetime=7890000
+  contracts.enableTraceability=false
+  contracts.knownBlockHash=KnownBlockValues{hash=, number=0}
+  contracts.localCall.estRetBytes=32
+  contracts.maxGasPerSec=15000000
+  contracts.maxKvPairs.aggregate=500000000
+  contracts.maxKvPairs.individual=163840
+  contracts.maxNumber=500000000
+  contracts.maxRefundPercentOfGasLimit=20
+  contracts.precompile.exchangeRateGasCost=100
+  contracts.precompile.exportRecordResults=true
+  contracts.precompile.htsDefaultGasCost=10000
+  contracts.precompile.htsEnableTokenCreate=true
+  contracts.redirectTokenCalls=true
+  contracts.scheduleThrottleMaxGasLimit=5000000
+  contracts.throttle.throttleByGas=true
+  dev.defaultListeningNodeAccount=0.0.3
+  dev.onlyDefaultNodeListens=true
+  entities.limitTokenAssociations=false
+  entities.maxLifetime=3153600000
+  entities.systemDeletable=[FILE]
+  fees.minCongestionPeriod=60
+  fees.percentCongestionMultipliers=CongestionMultipliers{10x @ >=90%, 25x @ >=95%, 100x @ >=99%}
+  fees.tokenTransferUsageMultiplier=380
+  files.addressBook=101
+  files.exchangeRates=112
+  files.feeSchedules=111
+  files.hapiPermissions=122
+  files.maxNumber=500000000
+  files.maxSizeKb=2048
+  files.networkProperties=121
+  files.nodeDetails=102
+  files.softwareUpdateRange=(150,159)
+  files.throttleDefinitions=123
+  grpc.port=50211
+  grpc.tlsPort=50212
+  hedera.accountsExportPath=data/onboard/exportedAccount.txt
+  hedera.allowances.isEnabled=true
+  hedera.allowances.maxAccountLimit=100
+  hedera.allowances.maxTransactionLimit=20
+  hedera.exportAccountsOnStartup=false
+  hedera.firstUserEntity=1001
+  hedera.prefetch.codeCacheTtlSecs=600
+  hedera.prefetch.queueCapacity=70000
+  hedera.prefetch.threadPoolSize=4
+  hedera.profiles.active=PROD
+  hedera.realm=0
+  hedera.recordStream.isEnabled=true
+  hedera.recordStream.logDir=/opt/hgcapp/recordStreams
+  hedera.recordStream.logPeriod=1
+  hedera.recordStream.queueCapacity=5000
+  hedera.recordStream.recordFileVersion=5
+  hedera.recordStream.signatureFileVersion=5
+  hedera.shard=0
+  hedera.transaction.maxMemoUtf8Bytes=100
+  hedera.transaction.maxValidDuration=180
+  hedera.transaction.minValidDuration=15
+  hedera.transaction.minValidityBufferSecs=10
+  iss.resetPeriod=60
+  iss.roundsToLog=5000
+  ledger.autoRenewPeriod.maxDuration=8000001
+  ledger.autoRenewPeriod.minDuration=6999999
+  ledger.changeHistorian.memorySecs=20
+  ledger.fundingAccount=98
+  ledger.id=0x01
+  ledger.nftTransfers.maxLen=10
+  ledger.numSystemAccounts=100
+  ledger.records.maxQueryableByAccount=180
+  ledger.schedule.txExpiryTimeSecs=1800
+  ledger.tokenTransfers.maxLen=10
+  ledger.totalTinyBarFloat=5000000000000000000
+  ledger.transfers.maxLen=10
+  ledger.xferBalanceChanges.maxLen=20
+  netty.mode=DEV
+  netty.prod.flowControlWindow=10240
+  netty.prod.keepAliveTime=10
+  netty.prod.keepAliveTimeout=3
+  netty.prod.maxConcurrentCalls=10
+  netty.prod.maxConnectionAge=15
+  netty.prod.maxConnectionAgeGrace=5
+  netty.prod.maxConnectionIdle=10
+  netty.startRetries=90
+  netty.startRetryIntervalMs=1000
+  netty.tlsCrt.path=hedera.crt
+  netty.tlsKey.path=hedera.key
+  queries.blob.lookupRetries=3
+  rates.intradayChangeLimitPercent=25
+  rates.midnightCheckInterval=1
+  scheduling.longTermEnabled=false
+  scheduling.maxExpirationFutureSeconds=5356800
+  scheduling.maxNumber=500000000
+  scheduling.maxTxnPerSecond=100
+  scheduling.whitelist=[ConsensusSubmitMessage, CryptoTransfer, TokenMint, TokenBurn]
+  sigs.expandFromLastSignedState=true
+  staking.fees.nodeRewardPercentage=0
+  staking.fees.stakingRewardPercentage=0
+  staking.isEnabled=true
+  staking.maxDailyStakeRewardThPerH=17808
+  staking.nodeMaxToMinStakeRatios={}
+  staking.periodMins=1440
+  staking.requireMinStakeToReward=false
+  staking.rewardHistory.numStoredPeriods=365
+  staking.rewardRate=0
+  staking.startThreshold=25000000000000000
+  stats.consThrottlesToSample=[<GAS>, ThroughputLimits, CreationLimits]
+  stats.entityUtils.gaugeUpdateIntervalMs=3000
+  stats.executionTimesToTrack=0
+  stats.hapiOps.speedometerUpdateIntervalMs=3000
+  stats.hapiThrottlesToSample=[<GAS>, ThroughputLimits, OffHeapQueryLimits, CreationLimits, FreeQueryLimits]
+  stats.runningAvgHalfLifeSecs=10.0
+  stats.speedometerHalfLifeSecs=10.0
+  stats.throttleUtils.gaugeUpdateIntervalMs=1000
+  tokens.maxAggregateRels=500000000
+  tokens.maxCustomFeeDepth=2
+  tokens.maxCustomFeesAllowed=10
+  tokens.maxNumber=500000000
+  tokens.maxPerAccount=1000
+  tokens.maxRelsPerInfoQuery=1000
+  tokens.maxSymbolUtf8Bytes=100
+  tokens.maxTokenNameUtf8Bytes=100
+  tokens.nfts.areEnabled=true
+  tokens.nfts.maxAllowedMints=5000000
+  tokens.nfts.maxBatchSizeBurn=10
+  tokens.nfts.maxBatchSizeMint=10
+  tokens.nfts.maxBatchSizeWipe=10
+  tokens.nfts.maxMetadataBytes=100
+  tokens.nfts.maxQueryRange=100
+  tokens.nfts.mintThrottleScaleFactor=ThrottleReqOpsScaleFactor{scale=5:2}
+  tokens.nfts.useTreasuryWildcards=true
+  topics.maxNumber=500000000
+  upgrade.artifacts.path=/opt/hgcapp/services-hedera/HapiApp2.0/data/upgrade/current
+  utilPrng.isEnabled=true
+2022-11-12 13:58:50.545 INFO  287  ServicesState - Dual state includes freeze time=null and last frozen=null
+2022-11-12 13:58:50.550 INFO  74   SemanticVersions - Discovered semantic versions {hedera.services.version=0.28.7, hapi.proto.version=0.28.1} from resource 'semantic-version.properties'
+2022-11-12 13:58:50.568 INFO  146  ServicesState -   (@ 0) # NFTs               = 0
+2022-11-12 13:58:50.571 INFO  150  ServicesState -   (@ 1) # token associations = 0
+2022-11-12 13:58:50.572 INFO  154  ServicesState -   (@ 2) # topics             = 0
+2022-11-12 13:58:50.573 INFO  155  ServicesState -   (@ 3) # blobs              = 0
+2022-11-12 13:58:50.574 INFO  156  ServicesState -   (@ 4) # accounts/contracts = 0
+2022-11-12 13:58:50.575 INFO  160  ServicesState -   (@ 5) # tokens             = 0
+2022-11-12 13:58:50.576 INFO  161  ServicesState -   (@ 8) # scheduled txns     = 0
+2022-11-12 13:58:50.576 INFO  165  ServicesState -   (@ 11) # contract K/V pairs = 0
+2022-11-12 13:58:50.596 INFO  42   ScreenedNodeFileProps - No overrides present at data/config/node.properties.
+2022-11-12 13:58:50.598 INFO  94   ScreenedNodeFileProps - Node-local properties overridden on disk are:
+  
+2022-11-12 13:58:50.709 INFO  188  RecordStreamManager - Finish initializing RecordStreamManager with: enableRecordStreaming: true, recordStreamDir: /opt/hgcapp/recordStreams/record0.0.3, recordsLogPeriod: 1 secs, recordStreamQueueCapacity: 5000, initialHash: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+2022-11-12 13:58:50.784 INFO  53   RecordCacheFactory - Constructing the node-local txn id cache with ttl=180s
+2022-11-12 13:58:51.255 INFO  68   StateInitializationFlow - Context updated with working state
+2022-11-12 13:58:51.256 INFO  260  RecordStreamManager - RecordStreamManager::setInitialHash: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+2022-11-12 13:58:51.256 INFO  72   StateInitializationFlow - Record running hash initialized
+2022-11-12 13:58:51.257 INFO  76   StateInitializationFlow - Registered 5 file update interceptors
+2022-11-12 13:58:51.264 INFO  70   StoreInitializationFlow - Backing stores rebuilt
+2022-11-12 13:58:51.270 INFO  196  AliasManager - Rebuild complete, re-mapped 0 aliases (0 from CREATE2, 0 externally owned accounts)
+2022-11-12 13:58:51.271 INFO  80   StoreInitializationFlow - Account aliases map rebuilt
+2022-11-12 13:58:51.274 INFO  46   EntitiesInitializationFlow - Payer records reviewed
+2022-11-12 13:58:51.282 INFO  49   EntitiesInitializationFlow - Short-lived entities reviewed
+2022-11-12 13:58:51.282 INFO  52   EntitiesInitializationFlow - Signature impact history invalidated
+2022-11-12 13:58:51.283 INFO  115  NetworkCtxManager - Observable files not yet loaded, doing now
+2022-11-12 13:58:51.290 INFO  370  HfsSystemFilesManager - Bootstrapping properties from 'data/config/application.properties':
+  autoRenew.targetTypes=
+2022-11-12 13:58:51.313 INFO  59   StandardizedPropertySources - Reloading global dynamic properties from 1 candidates
+2022-11-12 13:58:51.317 INFO  137  ScreenedSysFileProps - Global/dynamic properties overridden in system file are:
+  autoRenew.targetTypes=[]
+2022-11-12 13:58:51.336 INFO  222  DeterministicThrottling - Resolved HAPI gas throttle -
+  15000000 gas/sec (throttling ON)
+2022-11-12 13:58:51.337 INFO  222  DeterministicThrottling - Resolved CONSENSUS gas throttle -
+  15000000 gas/sec (throttling ON)
+2022-11-12 13:58:51.337 INFO  222  DeterministicThrottling - Resolved SCHEDULE gas throttle -
+  5000000 gas/sec (throttling ON)
+2022-11-12 13:58:51.340 INFO  115  ConfigCallbacks - Set node0 max/min stake to 5000000000000000000/1250000000000000000 ~ 4:1 ratio
+2022-11-12 13:58:51.344 INFO  370  HfsSystemFilesManager - Bootstrapping API permissions from 'data/config/api-permission.properties':
+  appendContent=0-*
+  approveAllowances=0-*
+  contractCallLocalMethod=0-*
+  contractCallMethod=0-*
+  contractGetBytecode=0-*
+  createAccount=0-*
+  createContract=0-*
+  createFile=0-*
+  createTopic=0-*
+  cryptoDelete=0-*
+  cryptoGetBalance=0-*
+  cryptoTransfer=0-*
+  deleteAllowances=0-*
+  deleteContract=0-*
+  deleteFile=0-*
+  deleteTopic=0-*
+  ethereumTransaction=0-*
+  freeze=2-58
+  getAccountDetails=2-50
+  getAccountInfo=0-*
+  getAccountRecords=0-*
+  getContractInfo=0-*
+  getFileContent=0-*
+  getFileInfo=0-*
+  getTopicInfo=0-*
+  getTransactionReceipts=0-*
+  getTxRecordByContractID=0-*
+  getTxRecordByTxID=0-*
+  getVersionInfo=0-*
+  networkGetExecutionTime=2-50
+  scheduleCreate=0-*
+  scheduleDelete=0-*
+  scheduleGetInfo=0-*
+  scheduleSign=0-*
+  submitMessage=0-*
+  systemDelete=2-59
+  systemUndelete=2-60
+  tokenAccountWipe=0-*
+  tokenAssociateToAccount=0-*
+  tokenBurn=0-*
+  tokenCreate=0-*
+  tokenDelete=0-*
+  tokenDissociateFromAccount=0-*
+  tokenFeeScheduleUpdate=0-*
+  tokenFreezeAccount=0-*
+  tokenGetAccountNftInfos=0-*
+  tokenGetInfo=0-*
+  tokenGetNftInfo=0-*
+  tokenGetNftInfos=0-*
+  tokenGrantKycToAccount=0-*
+  tokenMint=0-*
+  tokenPause=0-*
+  tokenRevokeKycFromAccount=0-*
+  tokenUnfreezeAccount=0-*
+  tokenUnpause=0-*
+  tokenUpdate=0-*
+  updateAccount=0-*
+  updateContract=0-*
+  updateFile=0-*
+  updateTopic=0-*
+  utilPrng=0-*
+2022-11-12 13:58:51.522 INFO  251  DeterministicThrottling - Resolved throttles for HAPI (after splitting capacity 1 ways) - 
+  ConsensusCreateTopic: min{10000.00 tps (ThroughputLimits), 5.00 tps (CreationLimits)}
+  ConsensusDeleteTopic: min{10000.00 tps (ThroughputLimits)}
+  ConsensusGetTopicInfo: min{10000.00 tps (ThroughputLimits)}
+  ConsensusSubmitMessage: min{10000.00 tps (ThroughputLimits)}
+  ConsensusUpdateTopic: min{10000.00 tps (ThroughputLimits)}
+  ContractCall: min{350.00 tps (ThroughputLimits)}
+  ContractCallLocal: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractCreate: min{350.00 tps (ThroughputLimits)}
+  ContractDelete: min{10000.00 tps (ThroughputLimits)}
+  ContractGetBytecode: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetRecords: min{10000.00 tps (ThroughputLimits)}
+  ContractUpdate: min{10000.00 tps (ThroughputLimits)}
+  CryptoApproveAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoCreate: min{10000.00 tps (ThroughputLimits), 2.00 tps (CreationLimits)}
+  CryptoDelete: min{10000.00 tps (ThroughputLimits)}
+  CryptoDeleteAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetAccountBalance: min{1000000.00 tps (FreeQueryLimits)}
+  CryptoGetAccountRecords: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetInfo: min{10000.00 tps (ThroughputLimits)}
+  CryptoTransfer: min{10000.00 tps (ThroughputLimits)}
+  CryptoUpdate: min{10000.00 tps (ThroughputLimits)}
+  EthereumTransaction: min{350.00 tps (ThroughputLimits)}
+  FileAppend: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileCreate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileDelete: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileGetContents: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileUpdate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  GetVersionInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleCreate: min{10000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  ScheduleDelete: min{10000.00 tps (ThroughputLimits)}
+  ScheduleGetInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleSign: min{100.00 tps (ThroughputLimits)}
+  TokenAccountWipe: min{3000.00 tps (ThroughputLimits)}
+  TokenAssociateToAccount: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenBurn: min{3000.00 tps (ThroughputLimits)}
+  TokenCreate: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenDelete: min{3000.00 tps (ThroughputLimits)}
+  TokenDissociateFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenFeeScheduleUpdate: min{3000.00 tps (ThroughputLimits)}
+  TokenFreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenGetAccountNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGetInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGrantKycToAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenMint: min{3000.00 tps (ThroughputLimits)}
+  TokenPause: min{3000.00 tps (ThroughputLimits)}
+  TokenRevokeKycFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnfreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnpause: min{3000.00 tps (ThroughputLimits)}
+  TokenUpdate: min{3000.00 tps (ThroughputLimits)}
+  TransactionGetReceipt: min{1000000.00 tps (FreeQueryLimits)}
+  TransactionGetRecord: min{10000.00 tps (ThroughputLimits)}
+  UtilPrng: min{10000.00 tps (ThroughputLimits)}
+2022-11-12 13:58:51.529 INFO  251  DeterministicThrottling - Resolved throttles for CONSENSUS (after splitting capacity 1 ways) - 
+  ConsensusCreateTopic: min{10000.00 tps (ThroughputLimits), 5.00 tps (CreationLimits)}
+  ConsensusDeleteTopic: min{10000.00 tps (ThroughputLimits)}
+  ConsensusGetTopicInfo: min{10000.00 tps (ThroughputLimits)}
+  ConsensusSubmitMessage: min{10000.00 tps (ThroughputLimits)}
+  ConsensusUpdateTopic: min{10000.00 tps (ThroughputLimits)}
+  ContractCall: min{350.00 tps (ThroughputLimits)}
+  ContractCallLocal: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractCreate: min{350.00 tps (ThroughputLimits)}
+  ContractDelete: min{10000.00 tps (ThroughputLimits)}
+  ContractGetBytecode: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  ContractGetRecords: min{10000.00 tps (ThroughputLimits)}
+  ContractUpdate: min{10000.00 tps (ThroughputLimits)}
+  CryptoApproveAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoCreate: min{10000.00 tps (ThroughputLimits), 2.00 tps (CreationLimits)}
+  CryptoDelete: min{10000.00 tps (ThroughputLimits)}
+  CryptoDeleteAllowance: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetAccountBalance: min{1000000.00 tps (FreeQueryLimits)}
+  CryptoGetAccountRecords: min{10000.00 tps (ThroughputLimits)}
+  CryptoGetInfo: min{10000.00 tps (ThroughputLimits)}
+  CryptoTransfer: min{10000.00 tps (ThroughputLimits)}
+  CryptoUpdate: min{10000.00 tps (ThroughputLimits)}
+  EthereumTransaction: min{350.00 tps (ThroughputLimits)}
+  FileAppend: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileCreate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileDelete: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  FileGetContents: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileGetInfo: min{10000.00 tps (ThroughputLimits), 700.00 tps (OffHeapQueryLimits)}
+  FileUpdate: min{13.00 tps (ThroughputLimits), 10.00 tps (PriorityReservations)}
+  GetVersionInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleCreate: min{10000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  ScheduleDelete: min{10000.00 tps (ThroughputLimits)}
+  ScheduleGetInfo: min{10000.00 tps (ThroughputLimits)}
+  ScheduleSign: min{100.00 tps (ThroughputLimits)}
+  TokenAccountWipe: min{3000.00 tps (ThroughputLimits)}
+  TokenAssociateToAccount: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenBurn: min{3000.00 tps (ThroughputLimits)}
+  TokenCreate: min{3000.00 tps (ThroughputLimits), 100.00 tps (CreationLimits)}
+  TokenDelete: min{3000.00 tps (ThroughputLimits)}
+  TokenDissociateFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenFeeScheduleUpdate: min{3000.00 tps (ThroughputLimits)}
+  TokenFreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenGetAccountNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGetInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfo: min{10000.00 tps (ThroughputLimits)}
+  TokenGetNftInfos: min{10000.00 tps (ThroughputLimits)}
+  TokenGrantKycToAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenMint: min{3000.00 tps (ThroughputLimits)}
+  TokenPause: min{3000.00 tps (ThroughputLimits)}
+  TokenRevokeKycFromAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnfreezeAccount: min{3000.00 tps (ThroughputLimits)}
+  TokenUnpause: min{3000.00 tps (ThroughputLimits)}
+  TokenUpdate: min{3000.00 tps (ThroughputLimits)}
+  TransactionGetReceipt: min{1000000.00 tps (FreeQueryLimits)}
+  TransactionGetRecord: min{10000.00 tps (ThroughputLimits)}
+  UtilPrng: min{10000.00 tps (ThroughputLimits)}
+2022-11-12 13:58:51.537 INFO  580  DeterministicThrottling - Schedule Throttles: 
+CreationLimits : ConsensusCreateTopic - 1 tps
+ThroughputLimits : ConsensusDeleteTopic - 72 tps
+ThroughputLimits : ConsensusSubmitMessage - 72 tps
+ThroughputLimits : ConsensusUpdateTopic - 72 tps
+ThroughputLimits : ContractCall - 2 tps
+ThroughputLimits : ContractCreate - 2 tps
+ThroughputLimits : ContractDelete - 72 tps
+ThroughputLimits : ContractUpdate - 72 tps
+ThroughputLimits : CryptoApproveAllowance - 72 tps
+CreationLimits : CryptoCreate - 1 tps
+ThroughputLimits : CryptoDelete - 72 tps
+ThroughputLimits : CryptoDeleteAllowance - 72 tps
+ThroughputLimits : CryptoTransfer - 72 tps
+ThroughputLimits : CryptoUpdate - 72 tps
+ThroughputLimits : EthereumTransaction - 2 tps
+PriorityReservations : FileAppend - 1 tps
+PriorityReservations : FileCreate - 1 tps
+PriorityReservations : FileDelete - 1 tps
+PriorityReservations : FileUpdate - 1 tps
+ThroughputLimits : ScheduleDelete - 72 tps
+ThroughputLimits : TokenAccountWipe - 21 tps
+CreationLimits : TokenAssociateToAccount - 1 tps
+ThroughputLimits : TokenBurn - 21 tps
+CreationLimits : TokenCreate - 1 tps
+ThroughputLimits : TokenDelete - 21 tps
+ThroughputLimits : TokenDissociateFromAccount - 21 tps
+ThroughputLimits : TokenFeeScheduleUpdate - 21 tps
+ThroughputLimits : TokenFreezeAccount - 21 tps
+ThroughputLimits : TokenGrantKycToAccount - 21 tps
+ThroughputLimits : TokenMint - 21 tps
+ThroughputLimits : TokenPause - 21 tps
+ThroughputLimits : TokenRevokeKycFromAccount - 21 tps
+ThroughputLimits : TokenUnfreezeAccount - 21 tps
+ThroughputLimits : TokenUnpause - 21 tps
+ThroughputLimits : TokenUpdate - 21 tps
+ThroughputLimits : UtilPrng - 72 tps
+2022-11-12 13:58:51.542 INFO  251  DeterministicThrottling - Resolved throttles for SCHEDULE (after splitting capacity 1 ways) - 
+  ConsensusCreateTopic: min{72.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  ConsensusDeleteTopic: min{72.00 tps (ThroughputLimits)}
+  ConsensusGetTopicInfo: min{72.00 tps (ThroughputLimits)}
+  ConsensusSubmitMessage: min{72.00 tps (ThroughputLimits)}
+  ConsensusUpdateTopic: min{72.00 tps (ThroughputLimits)}
+  ContractCall: min{2.00 tps (ThroughputLimits)}
+  ContractCallLocal: min{72.00 tps (ThroughputLimits)}
+  ContractCreate: min{2.00 tps (ThroughputLimits)}
+  ContractDelete: min{72.00 tps (ThroughputLimits)}
+  ContractGetBytecode: min{72.00 tps (ThroughputLimits)}
+  ContractGetInfo: min{72.00 tps (ThroughputLimits)}
+  ContractGetRecords: min{72.00 tps (ThroughputLimits)}
+  ContractUpdate: min{72.00 tps (ThroughputLimits)}
+  CryptoApproveAllowance: min{72.00 tps (ThroughputLimits)}
+  CryptoCreate: min{72.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  CryptoDelete: min{72.00 tps (ThroughputLimits)}
+  CryptoDeleteAllowance: min{72.00 tps (ThroughputLimits)}
+  CryptoGetAccountRecords: min{72.00 tps (ThroughputLimits)}
+  CryptoGetInfo: min{72.00 tps (ThroughputLimits)}
+  CryptoTransfer: min{72.00 tps (ThroughputLimits)}
+  CryptoUpdate: min{72.00 tps (ThroughputLimits)}
+  EthereumTransaction: min{2.00 tps (ThroughputLimits)}
+  FileAppend: min{1.00 tps (PriorityReservations)}
+  FileCreate: min{1.00 tps (PriorityReservations)}
+  FileDelete: min{1.00 tps (PriorityReservations)}
+  FileGetContents: min{72.00 tps (ThroughputLimits)}
+  FileGetInfo: min{72.00 tps (ThroughputLimits)}
+  FileUpdate: min{1.00 tps (PriorityReservations)}
+  GetVersionInfo: min{72.00 tps (ThroughputLimits)}
+  ScheduleCreate: min{72.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  ScheduleDelete: min{72.00 tps (ThroughputLimits)}
+  ScheduleGetInfo: min{72.00 tps (ThroughputLimits)}
+  TokenAccountWipe: min{21.00 tps (ThroughputLimits)}
+  TokenAssociateToAccount: min{21.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  TokenBurn: min{21.00 tps (ThroughputLimits)}
+  TokenCreate: min{21.00 tps (ThroughputLimits), 1.00 tps (CreationLimits)}
+  TokenDelete: min{21.00 tps (ThroughputLimits)}
+  TokenDissociateFromAccount: min{21.00 tps (ThroughputLimits)}
+  TokenFeeScheduleUpdate: min{21.00 tps (ThroughputLimits)}
+  TokenFreezeAccount: min{21.00 tps (ThroughputLimits)}
+  TokenGetAccountNftInfos: min{72.00 tps (ThroughputLimits)}
+  TokenGetInfo: min{72.00 tps (ThroughputLimits)}
+  TokenGetNftInfo: min{72.00 tps (ThroughputLimits)}
+  TokenGetNftInfos: min{72.00 tps (ThroughputLimits)}
+  TokenGrantKycToAccount: min{21.00 tps (ThroughputLimits)}
+  TokenMint: min{21.00 tps (ThroughputLimits)}
+  TokenPause: min{21.00 tps (ThroughputLimits)}
+  TokenRevokeKycFromAccount: min{21.00 tps (ThroughputLimits)}
+  TokenUnfreezeAccount: min{21.00 tps (ThroughputLimits)}
+  TokenUnpause: min{21.00 tps (ThroughputLimits)}
+  TokenUpdate: min{21.00 tps (ThroughputLimits)}
+  TransactionGetRecord: min{72.00 tps (ThroughputLimits)}
+  UtilPrng: min{72.00 tps (ThroughputLimits)}
+2022-11-12 13:58:51.544 INFO  241  TxnRateFeeMultiplierSource - The new cutoffs for congestion pricing are : 
+  (ThroughputLimits) When logical TPS exceeds:
+    2457000.00 TPS, multiplier is 10x
+    2593500.00 TPS, multiplier is 25x
+    2702700.00 TPS, multiplier is 100x
+2022-11-12 13:58:51.545 INFO  117  NetworkCtxManager - Loaded observable files
+2022-11-12 13:58:51.545 WARN  164  MerkleNetworkContext - There are 5 active throttles, but 0 usage snapshots from saved state. Not performing a reset!
+2022-11-12 13:58:51.547 INFO  241  TxnRateFeeMultiplierSource - The new cutoffs for congestion pricing are : 
+  (ThroughputLimits) When logical TPS exceeds:
+    2457000.00 TPS, multiplier is 10x
+    2593500.00 TPS, multiplier is 25x
+    2702700.00 TPS, multiplier is 100x
+2022-11-12 13:58:51.578 INFO  121  BootstrapProperties - Resolved bootstrap properties:
+  accounts.addressBookAdmin=55
+  accounts.exchangeRatesAdmin=57
+  accounts.feeSchedulesAdmin=56
+  accounts.freezeAdmin=58
+  accounts.maxNumber=500000000
+  accounts.nodeRewardAccount=801
+  accounts.stakingRewardAccount=800
+  accounts.systemAdmin=50
+  accounts.systemDeleteAdmin=59
+  accounts.systemUndeleteAdmin=60
+  accounts.treasury=2
+  autoCreation.enabled=true
+  autoRemove.maxPurgedKvPairsPerTouch=10
+  autoRemove.maxReturnedNftsPerTouch=10
+  autoRenew.targetTypes=[]
+  autorenew.gracePeriod=604800
+  autorenew.maxNumberOfEntitiesToRenewOrDelete=2
+  autorenew.numberOfEntitiesToScan=100
+  balances.exportDir.path=/opt/hgcapp/accountBalances/
+  balances.exportEnabled=true
+  balances.exportPeriodSecs=400
+  balances.exportTokenBalances=true
+  balances.nodeBalanceWarningThreshold=0
+  bootstrap.feeSchedulesJson.resource=feeSchedules.json
+  bootstrap.genesisPublicKey=0aa8e21064c61eab86e2a9c164565b4e7a9a4146106e0a6cd03a8c395a110e92
+  bootstrap.hapiPermissions.path=data/config/api-permission.properties
+  bootstrap.networkProperties.path=data/config/application.properties
+  bootstrap.rates.currentCentEquiv=12
+  bootstrap.rates.currentExpiry=4102444800
+  bootstrap.rates.currentHbarEquiv=1
+  bootstrap.rates.nextCentEquiv=15
+  bootstrap.rates.nextExpiry=4102444800
+  bootstrap.rates.nextHbarEquiv=1
+  bootstrap.system.entityExpiry=1812637686
+  bootstrap.throttleDefsJson.resource=throttles.json
+  cache.records.ttl=180
+  consensus.handle.maxFollowingRecords=50
+  consensus.handle.maxPrecedingRecords=3
+  consensus.message.maxBytesAllowed=1024
+  contracts.allowAutoAssociations=false
+  contracts.allowCreate2=true
+  contracts.chainId=298
+  contracts.defaultLifetime=7890000
+  contracts.enableTraceability=false
+  contracts.knownBlockHash=KnownBlockValues{hash=, number=0}
+  contracts.localCall.estRetBytes=32
+  contracts.maxGasPerSec=15000000
+  contracts.maxKvPairs.aggregate=500000000
+  contracts.maxKvPairs.individual=163840
+  contracts.maxNumber=500000000
+  contracts.maxRefundPercentOfGasLimit=20
+  contracts.precompile.exchangeRateGasCost=100
+  contracts.precompile.exportRecordResults=true
+  contracts.precompile.htsDefaultGasCost=10000
+  contracts.precompile.htsEnableTokenCreate=true
+  contracts.redirectTokenCalls=true
+  contracts.scheduleThrottleMaxGasLimit=5000000
+  contracts.throttle.throttleByGas=true
+  dev.defaultListeningNodeAccount=0.0.3
+  dev.onlyDefaultNodeListens=true
+  entities.limitTokenAssociations=false
+  entities.maxLifetime=3153600000
+  entities.systemDeletable=[FILE]
+  fees.minCongestionPeriod=60
+  fees.percentCongestionMultipliers=CongestionMultipliers{10x @ >=90%, 25x @ >=95%, 100x @ >=99%}
+  fees.tokenTransferUsageMultiplier=380
+  files.addressBook=101
+  files.exchangeRates=112
+  files.feeSchedules=111
+  files.hapiPermissions=122
+  files.maxNumber=500000000
+  files.maxSizeKb=2048
+  files.networkProperties=121
+  files.nodeDetails=102
+  files.softwareUpdateRange=(150,159)
+  files.throttleDefinitions=123
+  grpc.port=50211
+  grpc.tlsPort=50212
+  hedera.accountsExportPath=data/onboard/exportedAccount.txt
+  hedera.allowances.isEnabled=true
+  hedera.allowances.maxAccountLimit=100
+  hedera.allowances.maxTransactionLimit=20
+  hedera.exportAccountsOnStartup=false
+  hedera.firstUserEntity=1001
+  hedera.prefetch.codeCacheTtlSecs=600
+  hedera.prefetch.queueCapacity=70000
+  hedera.prefetch.threadPoolSize=4
+  hedera.profiles.active=PROD
+  hedera.realm=0
+  hedera.recordStream.isEnabled=true
+  hedera.recordStream.logDir=/opt/hgcapp/recordStreams
+  hedera.recordStream.logPeriod=1
+  hedera.recordStream.queueCapacity=5000
+  hedera.recordStream.recordFileVersion=5
+  hedera.recordStream.signatureFileVersion=5
+  hedera.shard=0
+  hedera.transaction.maxMemoUtf8Bytes=100
+  hedera.transaction.maxValidDuration=180
+  hedera.transaction.minValidDuration=15
+  hedera.transaction.minValidityBufferSecs=10
+  iss.resetPeriod=60
+  iss.roundsToLog=5000
+  ledger.autoRenewPeriod.maxDuration=8000001
+  ledger.autoRenewPeriod.minDuration=6999999
+  ledger.changeHistorian.memorySecs=20
+  ledger.fundingAccount=98
+  ledger.id=0x01
+  ledger.nftTransfers.maxLen=10
+  ledger.numSystemAccounts=100
+  ledger.records.maxQueryableByAccount=180
+  ledger.schedule.txExpiryTimeSecs=1800
+  ledger.tokenTransfers.maxLen=10
+  ledger.totalTinyBarFloat=5000000000000000000
+  ledger.transfers.maxLen=10
+  ledger.xferBalanceChanges.maxLen=20
+  netty.mode=DEV
+  netty.prod.flowControlWindow=10240
+  netty.prod.keepAliveTime=10
+  netty.prod.keepAliveTimeout=3
+  netty.prod.maxConcurrentCalls=10
+  netty.prod.maxConnectionAge=15
+  netty.prod.maxConnectionAgeGrace=5
+  netty.prod.maxConnectionIdle=10
+  netty.startRetries=90
+  netty.startRetryIntervalMs=1000
+  netty.tlsCrt.path=hedera.crt
+  netty.tlsKey.path=hedera.key
+  queries.blob.lookupRetries=3
+  rates.intradayChangeLimitPercent=25
+  rates.midnightCheckInterval=1
+  scheduling.longTermEnabled=false
+  scheduling.maxExpirationFutureSeconds=5356800
+  scheduling.maxNumber=500000000
+  scheduling.maxTxnPerSecond=100
+  scheduling.whitelist=[ConsensusSubmitMessage, CryptoTransfer, TokenMint, TokenBurn]
+  sigs.expandFromLastSignedState=true
+  staking.fees.nodeRewardPercentage=0
+  staking.fees.stakingRewardPercentage=0
+  staking.isEnabled=true
+  staking.maxDailyStakeRewardThPerH=17808
+  staking.nodeMaxToMinStakeRatios={}
+  staking.periodMins=1440
+  staking.requireMinStakeToReward=false
+  staking.rewardHistory.numStoredPeriods=365
+  staking.rewardRate=0
+  staking.startThreshold=25000000000000000
+  stats.consThrottlesToSample=[<GAS>, ThroughputLimits, CreationLimits]
+  stats.entityUtils.gaugeUpdateIntervalMs=3000
+  stats.executionTimesToTrack=0
+  stats.hapiOps.speedometerUpdateIntervalMs=3000
+  stats.hapiThrottlesToSample=[<GAS>, ThroughputLimits, OffHeapQueryLimits, CreationLimits, FreeQueryLimits]
+  stats.runningAvgHalfLifeSecs=10.0
+  stats.speedometerHalfLifeSecs=10.0
+  stats.throttleUtils.gaugeUpdateIntervalMs=1000
+  tokens.maxAggregateRels=500000000
+  tokens.maxCustomFeeDepth=2
+  tokens.maxCustomFeesAllowed=10
+  tokens.maxNumber=500000000
+  tokens.maxPerAccount=1000
+  tokens.maxRelsPerInfoQuery=1000
+  tokens.maxSymbolUtf8Bytes=100
+  tokens.maxTokenNameUtf8Bytes=100
+  tokens.nfts.areEnabled=true
+  tokens.nfts.maxAllowedMints=5000000
+  tokens.nfts.maxBatchSizeBurn=10
+  tokens.nfts.maxBatchSizeMint=10
+  tokens.nfts.maxBatchSizeWipe=10
+  tokens.nfts.maxMetadataBytes=100
+  tokens.nfts.maxQueryRange=100
+  tokens.nfts.mintThrottleScaleFactor=ThrottleReqOpsScaleFactor{scale=5:2}
+  tokens.nfts.useTreasuryWildcards=true
+  topics.maxNumber=500000000
+  upgrade.artifacts.path=/opt/hgcapp/services-hedera/HapiApp2.0/data/upgrade/current
+  utilPrng.isEnabled=true
+2022-11-12 13:58:51.611 INFO  320  ServicesState - Created prefetch processor
+2022-11-12 13:58:51.615 INFO  58   HashLogger - [SwirldState Hashes]
+Overall                :: null
+Accounts               :: null
+Storage                :: <N/A>
+Topics                 :: null
+Tokens                 :: null
+TokenAssociations      :: null
+SpecialFiles           :: 38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b
+ScheduledTxs           :: null
+NetworkContext         :: ce082d87d7078fecdedd6d7c93cb350709d63a8c83864a82cca69bc896a47da1bf7309b2ed48bda23bdc033fbcb9beb3
+AddressBook            :: null
+RecordsRunningHashLeaf :: null
+  ↪ Running hash       :: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+UniqueTokens           :: null
+ContractStorage        :: <N/A>
+2022-11-12 13:58:51.630 INFO  448  ServicesState - The network context (state version 21) is,
+  Consensus time of last handled transaction :: <N/A>
+  Pending maintenance                        :: <NONE>
+    w/ NMT upgrade prepped                   :: <NONE>
+  Midnight rate set                          :: 1ℏ <-> 12¢ til 4102444800 | 1ℏ <-> 15¢ til 4102444800
+  Next entity number                         :: 1001
+  Last scanned entity                        :: 1000
+  Entities scanned last consensus second     :: 0
+  Entities touched last consensus second     :: 0
+  Throttle usage snapshots are               :: <N/A>
+  Congestion level start times are           :: <N/A>
+  Block number is                            :: 0
+  Block timestamp is                         :: <N/A>
+  Trailing block hashes are                  :: []
+  Staking rewards activated                  :: false
+  Total stake reward start this period       :: 0
+  Total stake start this period              :: 0
+2022-11-12 13:58:51.631 INFO  323  ServicesState -   --> Context initialized accordingly on Services node 0
+2022-11-12 13:58:51.851 INFO  78   TreasuryCloner - Created 501 zero-balance accounts cloning treasury properties in the 200-750 range (skipped 0 pre-existing accounts)
+2022-11-12 13:58:51.857 INFO  116  BackedSystemAccountsCreator - Ledger float is 5000000000000000000 tinyBars in 704 accounts.
+2022-11-12 13:58:51.886 INFO  133  HfsSystemFilesManager - Updated node0 stake to 1
+2022-11-12 13:58:51.942 INFO  193  ServicesMain - Using context to initialize HederaNode#0...
+2022-11-12 13:58:51.992 INFO  135  ServicesMain - Ledger state ok
+2022-11-12 13:58:52.014 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI ThroughputLimits throttle bucket' under name 'hapiThroughputLimitsPercentUsed'
+2022-11-12 13:58:52.016 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI OffHeapQueryLimits throttle bucket' under name 'hapiOffHeapQueryLimitsPercentUsed'
+2022-11-12 13:58:52.022 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI CreationLimits throttle bucket' under name 'hapiCreationLimitsPercentUsed'
+2022-11-12 13:58:52.023 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI FreeQueryLimits throttle bucket' under name 'hapiFreeQueryLimitsPercentUsed'
+2022-11-12 13:58:52.024 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in HAPI Gas throttle bucket' under name 'hapiGasPercentUsed'
+2022-11-12 13:58:52.025 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in cons ThroughputLimits throttle bucket' under name 'consThroughputLimitsPercentUsed'
+2022-11-12 13:58:52.033 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in cons CreationLimits throttle bucket' under name 'consCreationLimitsPercentUsed'
+2022-11-12 13:58:52.033 INFO  157  ThrottleGauges - Registered LIVE gauge for 'instantaneous % used in cons Gas throttle bucket' under name 'consGasPercentUsed'
+2022-11-12 13:58:52.063 INFO  138  ServicesMain - Platform is configured w/ callbacks and stats registered
+2022-11-12 13:58:52.064 INFO  141  ServicesMain - Accounts exported (if requested)
+2022-11-12 13:58:52.065 INFO  53   ExecutionTimeTracker - Not tracking execution times (stats.executionTimesToTrack=0)
+2022-11-12 13:58:52.119 INFO  67   GrpcStarter - TLS is turned on by default on node 0
+2022-11-12 13:58:52.119 INFO  68   GrpcStarter - Active profile: PROD
+2022-11-12 13:58:52.123 INFO  93   GrpcStarter - Starting Netty on port 50211...
+2022-11-12 13:58:52.132 INFO  70   ConfigDrivenNettyFactory - Configuring a Netty server on port 50211 (TLS OFF) for DEV environment
+2022-11-12 13:58:52.800 INFO  93   GrpcStarter - ...done starting Netty on port 50211.
+2022-11-12 13:58:52.800 INFO  93   GrpcStarter - Starting Netty with TLS support on port 50212...
+2022-11-12 13:58:52.800 INFO  70   ConfigDrivenNettyFactory - Configuring a Netty server on port 50212 (TLS ON) for DEV environment
+2022-11-12 13:58:53.099 INFO  93   GrpcStarter - ...done starting Netty with TLS support on port 50212.
+2022-11-12 13:58:53.100 INFO  144  ServicesMain - Netty started (if appropriate)
+2022-11-12 13:58:53.421 INFO  76   ServicesMain - Now current platform status = ACTIVE in HederaNode#0.
+2022-11-12 13:58:53.422 INFO  246  RecordStreamManager - RecordStream inFreeze is set to be false 
+2022-11-12 13:59:07.466 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for staking fund account 0.0.800
+2022-11-12 13:59:07.468 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for staking fund account 0.0.801
+2022-11-12 13:59:07.469 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.200
+2022-11-12 13:59:07.469 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.201
+2022-11-12 13:59:07.470 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.202
+2022-11-12 13:59:07.470 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.203
+2022-11-12 13:59:07.471 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.204
+2022-11-12 13:59:07.471 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.205
+2022-11-12 13:59:07.471 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.206
+2022-11-12 13:59:07.471 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.207
+2022-11-12 13:59:07.472 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.208
+2022-11-12 13:59:07.472 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.209
+2022-11-12 13:59:07.473 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.210
+2022-11-12 13:59:07.473 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.211
+2022-11-12 13:59:07.473 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.212
+2022-11-12 13:59:07.473 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.213
+2022-11-12 13:59:07.474 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.214
+2022-11-12 13:59:07.474 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.215
+2022-11-12 13:59:07.474 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.216
+2022-11-12 13:59:07.474 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.217
+2022-11-12 13:59:07.474 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.218
+2022-11-12 13:59:07.475 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.219
+2022-11-12 13:59:07.475 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.220
+2022-11-12 13:59:07.475 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.221
+2022-11-12 13:59:07.475 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.222
+2022-11-12 13:59:07.476 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.223
+2022-11-12 13:59:07.476 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.224
+2022-11-12 13:59:07.477 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.225
+2022-11-12 13:59:07.477 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.226
+2022-11-12 13:59:07.477 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.227
+2022-11-12 13:59:07.478 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.228
+2022-11-12 13:59:07.478 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.229
+2022-11-12 13:59:07.478 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.230
+2022-11-12 13:59:07.479 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.231
+2022-11-12 13:59:07.479 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.232
+2022-11-12 13:59:07.479 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.233
+2022-11-12 13:59:07.480 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.234
+2022-11-12 13:59:07.480 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.235
+2022-11-12 13:59:07.480 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.236
+2022-11-12 13:59:07.481 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.237
+2022-11-12 13:59:07.481 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.238
+2022-11-12 13:59:07.482 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.239
+2022-11-12 13:59:07.482 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.240
+2022-11-12 13:59:07.482 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.241
+2022-11-12 13:59:07.482 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.242
+2022-11-12 13:59:07.482 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.243
+2022-11-12 13:59:07.483 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.244
+2022-11-12 13:59:07.483 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.245
+2022-11-12 13:59:07.483 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.246
+2022-11-12 13:59:07.484 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.247
+2022-11-12 13:59:07.484 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.248
+2022-11-12 13:59:07.484 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.249
+2022-11-12 13:59:07.484 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.250
+2022-11-12 13:59:07.485 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.251
+2022-11-12 13:59:07.485 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.252
+2022-11-12 13:59:07.485 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.253
+2022-11-12 13:59:07.485 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.254
+2022-11-12 13:59:07.486 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.255
+2022-11-12 13:59:07.486 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.256
+2022-11-12 13:59:07.486 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.257
+2022-11-12 13:59:07.487 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.258
+2022-11-12 13:59:07.487 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.259
+2022-11-12 13:59:07.487 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.260
+2022-11-12 13:59:07.488 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.261
+2022-11-12 13:59:07.488 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.262
+2022-11-12 13:59:07.488 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.263
+2022-11-12 13:59:07.489 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.264
+2022-11-12 13:59:07.489 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.265
+2022-11-12 13:59:07.489 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.266
+2022-11-12 13:59:07.490 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.267
+2022-11-12 13:59:07.490 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.268
+2022-11-12 13:59:07.490 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.269
+2022-11-12 13:59:07.491 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.270
+2022-11-12 13:59:07.491 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.271
+2022-11-12 13:59:07.492 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.272
+2022-11-12 13:59:07.492 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.273
+2022-11-12 13:59:07.492 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.274
+2022-11-12 13:59:07.492 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.275
+2022-11-12 13:59:07.493 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.276
+2022-11-12 13:59:07.493 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.277
+2022-11-12 13:59:07.493 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.278
+2022-11-12 13:59:07.494 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.279
+2022-11-12 13:59:07.494 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.280
+2022-11-12 13:59:07.494 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.281
+2022-11-12 13:59:07.494 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.282
+2022-11-12 13:59:07.495 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.283
+2022-11-12 13:59:07.495 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.284
+2022-11-12 13:59:07.495 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.285
+2022-11-12 13:59:07.495 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.286
+2022-11-12 13:59:07.495 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.287
+2022-11-12 13:59:07.495 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.288
+2022-11-12 13:59:07.496 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.289
+2022-11-12 13:59:07.496 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.290
+2022-11-12 13:59:07.496 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.291
+2022-11-12 13:59:07.496 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.292
+2022-11-12 13:59:07.497 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.293
+2022-11-12 13:59:07.497 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.294
+2022-11-12 13:59:07.497 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.295
+2022-11-12 13:59:07.498 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.296
+2022-11-12 13:59:07.498 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.297
+2022-11-12 13:59:07.498 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.298
+2022-11-12 13:59:07.498 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.299
+2022-11-12 13:59:07.499 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.300
+2022-11-12 13:59:07.499 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.301
+2022-11-12 13:59:07.500 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.302
+2022-11-12 13:59:07.500 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.303
+2022-11-12 13:59:07.500 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.304
+2022-11-12 13:59:07.500 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.305
+2022-11-12 13:59:07.501 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.306
+2022-11-12 13:59:07.501 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.307
+2022-11-12 13:59:07.501 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.308
+2022-11-12 13:59:07.501 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.309
+2022-11-12 13:59:07.501 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.310
+2022-11-12 13:59:07.501 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.311
+2022-11-12 13:59:07.502 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.312
+2022-11-12 13:59:07.502 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.313
+2022-11-12 13:59:07.502 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.314
+2022-11-12 13:59:07.503 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.315
+2022-11-12 13:59:07.503 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.316
+2022-11-12 13:59:07.503 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.317
+2022-11-12 13:59:07.503 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.318
+2022-11-12 13:59:07.504 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.319
+2022-11-12 13:59:07.504 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.320
+2022-11-12 13:59:07.505 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.321
+2022-11-12 13:59:07.505 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.322
+2022-11-12 13:59:07.505 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.323
+2022-11-12 13:59:07.505 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.324
+2022-11-12 13:59:07.506 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.325
+2022-11-12 13:59:07.506 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.326
+2022-11-12 13:59:07.506 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.327
+2022-11-12 13:59:07.506 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.328
+2022-11-12 13:59:07.506 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.329
+2022-11-12 13:59:07.507 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.330
+2022-11-12 13:59:07.507 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.331
+2022-11-12 13:59:07.508 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.332
+2022-11-12 13:59:07.508 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.333
+2022-11-12 13:59:07.509 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.334
+2022-11-12 13:59:07.509 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.335
+2022-11-12 13:59:07.510 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.336
+2022-11-12 13:59:07.510 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.337
+2022-11-12 13:59:07.511 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.338
+2022-11-12 13:59:07.511 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.339
+2022-11-12 13:59:07.512 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.340
+2022-11-12 13:59:07.512 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.341
+2022-11-12 13:59:07.513 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.342
+2022-11-12 13:59:07.513 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.343
+2022-11-12 13:59:07.513 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.344
+2022-11-12 13:59:07.514 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.345
+2022-11-12 13:59:07.514 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.346
+2022-11-12 13:59:07.514 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.347
+2022-11-12 13:59:07.515 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.348
+2022-11-12 13:59:07.515 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.349
+2022-11-12 13:59:07.516 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.400
+2022-11-12 13:59:07.517 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.401
+2022-11-12 13:59:07.519 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.402
+2022-11-12 13:59:07.519 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.403
+2022-11-12 13:59:07.519 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.404
+2022-11-12 13:59:07.519 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.405
+2022-11-12 13:59:07.520 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.406
+2022-11-12 13:59:07.520 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.407
+2022-11-12 13:59:07.520 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.408
+2022-11-12 13:59:07.521 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.409
+2022-11-12 13:59:07.521 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.410
+2022-11-12 13:59:07.522 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.411
+2022-11-12 13:59:07.522 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.412
+2022-11-12 13:59:07.522 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.413
+2022-11-12 13:59:07.523 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.414
+2022-11-12 13:59:07.523 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.415
+2022-11-12 13:59:07.523 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.416
+2022-11-12 13:59:07.524 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.417
+2022-11-12 13:59:07.525 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.418
+2022-11-12 13:59:07.525 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.419
+2022-11-12 13:59:07.525 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.420
+2022-11-12 13:59:07.526 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.421
+2022-11-12 13:59:07.526 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.422
+2022-11-12 13:59:07.526 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.423
+2022-11-12 13:59:07.527 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.424
+2022-11-12 13:59:07.528 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.425
+2022-11-12 13:59:07.529 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.426
+2022-11-12 13:59:07.530 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.427
+2022-11-12 13:59:07.530 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.428
+2022-11-12 13:59:07.531 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.429
+2022-11-12 13:59:07.531 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.430
+2022-11-12 13:59:07.531 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.431
+2022-11-12 13:59:07.532 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.432
+2022-11-12 13:59:07.532 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.433
+2022-11-12 13:59:07.532 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.434
+2022-11-12 13:59:07.533 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.435
+2022-11-12 13:59:07.533 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.436
+2022-11-12 13:59:07.533 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.437
+2022-11-12 13:59:07.534 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.438
+2022-11-12 13:59:07.534 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.439
+2022-11-12 13:59:07.535 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.440
+2022-11-12 13:59:07.535 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.441
+2022-11-12 13:59:07.536 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.442
+2022-11-12 13:59:07.536 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.443
+2022-11-12 13:59:07.536 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.444
+2022-11-12 13:59:07.536 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.445
+2022-11-12 13:59:07.536 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.446
+2022-11-12 13:59:07.536 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.447
+2022-11-12 13:59:07.537 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.448
+2022-11-12 13:59:07.537 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.449
+2022-11-12 13:59:07.537 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.450
+2022-11-12 13:59:07.537 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.451
+2022-11-12 13:59:07.537 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.452
+2022-11-12 13:59:07.538 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.453
+2022-11-12 13:59:07.538 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.454
+2022-11-12 13:59:07.538 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.455
+2022-11-12 13:59:07.538 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.456
+2022-11-12 13:59:07.539 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.457
+2022-11-12 13:59:07.539 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.458
+2022-11-12 13:59:07.540 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.459
+2022-11-12 13:59:07.541 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.460
+2022-11-12 13:59:07.542 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.461
+2022-11-12 13:59:07.542 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.462
+2022-11-12 13:59:07.542 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.463
+2022-11-12 13:59:07.542 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.464
+2022-11-12 13:59:07.543 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.465
+2022-11-12 13:59:07.543 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.466
+2022-11-12 13:59:07.544 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.467
+2022-11-12 13:59:07.544 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.468
+2022-11-12 13:59:07.544 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.469
+2022-11-12 13:59:07.544 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.470
+2022-11-12 13:59:07.545 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.471
+2022-11-12 13:59:07.545 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.472
+2022-11-12 13:59:07.545 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.473
+2022-11-12 13:59:07.546 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.474
+2022-11-12 13:59:07.546 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.475
+2022-11-12 13:59:07.547 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.476
+2022-11-12 13:59:07.547 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.477
+2022-11-12 13:59:07.547 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.478
+2022-11-12 13:59:07.548 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.479
+2022-11-12 13:59:07.549 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.480
+2022-11-12 13:59:07.549 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.481
+2022-11-12 13:59:07.549 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.482
+2022-11-12 13:59:07.550 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.483
+2022-11-12 13:59:07.550 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.484
+2022-11-12 13:59:07.550 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.485
+2022-11-12 13:59:07.551 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.486
+2022-11-12 13:59:07.551 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.487
+2022-11-12 13:59:07.551 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.488
+2022-11-12 13:59:07.551 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.489
+2022-11-12 13:59:07.552 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.490
+2022-11-12 13:59:07.552 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.491
+2022-11-12 13:59:07.552 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.492
+2022-11-12 13:59:07.553 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.493
+2022-11-12 13:59:07.553 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.494
+2022-11-12 13:59:07.553 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.495
+2022-11-12 13:59:07.554 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.496
+2022-11-12 13:59:07.554 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.497
+2022-11-12 13:59:07.554 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.498
+2022-11-12 13:59:07.555 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.499
+2022-11-12 13:59:07.555 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.500
+2022-11-12 13:59:07.556 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.501
+2022-11-12 13:59:07.556 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.502
+2022-11-12 13:59:07.556 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.503
+2022-11-12 13:59:07.556 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.504
+2022-11-12 13:59:07.557 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.505
+2022-11-12 13:59:07.557 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.506
+2022-11-12 13:59:07.557 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.507
+2022-11-12 13:59:07.557 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.508
+2022-11-12 13:59:07.557 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.509
+2022-11-12 13:59:07.558 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.510
+2022-11-12 13:59:07.558 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.511
+2022-11-12 13:59:07.558 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.512
+2022-11-12 13:59:07.558 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.513
+2022-11-12 13:59:07.559 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.514
+2022-11-12 13:59:07.559 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.515
+2022-11-12 13:59:07.559 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.516
+2022-11-12 13:59:07.560 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.517
+2022-11-12 13:59:07.560 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.518
+2022-11-12 13:59:07.560 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.519
+2022-11-12 13:59:07.561 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.520
+2022-11-12 13:59:07.561 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.521
+2022-11-12 13:59:07.561 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.522
+2022-11-12 13:59:07.562 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.523
+2022-11-12 13:59:07.563 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.524
+2022-11-12 13:59:07.563 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.525
+2022-11-12 13:59:07.563 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.526
+2022-11-12 13:59:07.564 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.527
+2022-11-12 13:59:07.564 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.528
+2022-11-12 13:59:07.564 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.529
+2022-11-12 13:59:07.565 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.530
+2022-11-12 13:59:07.565 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.531
+2022-11-12 13:59:07.565 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.532
+2022-11-12 13:59:07.565 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.533
+2022-11-12 13:59:07.566 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.534
+2022-11-12 13:59:07.566 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.535
+2022-11-12 13:59:07.566 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.536
+2022-11-12 13:59:07.567 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.537
+2022-11-12 13:59:07.567 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.538
+2022-11-12 13:59:07.567 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.539
+2022-11-12 13:59:07.567 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.540
+2022-11-12 13:59:07.568 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.541
+2022-11-12 13:59:07.568 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.542
+2022-11-12 13:59:07.568 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.543
+2022-11-12 13:59:07.568 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.544
+2022-11-12 13:59:07.569 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.545
+2022-11-12 13:59:07.569 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.546
+2022-11-12 13:59:07.569 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.547
+2022-11-12 13:59:07.569 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.548
+2022-11-12 13:59:07.572 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.549
+2022-11-12 13:59:07.573 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.550
+2022-11-12 13:59:07.573 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.551
+2022-11-12 13:59:07.574 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.552
+2022-11-12 13:59:07.574 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.553
+2022-11-12 13:59:07.574 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.554
+2022-11-12 13:59:07.574 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.555
+2022-11-12 13:59:07.575 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.556
+2022-11-12 13:59:07.575 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.557
+2022-11-12 13:59:07.575 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.558
+2022-11-12 13:59:07.576 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.559
+2022-11-12 13:59:07.576 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.560
+2022-11-12 13:59:07.577 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.561
+2022-11-12 13:59:07.577 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.562
+2022-11-12 13:59:07.577 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.563
+2022-11-12 13:59:07.577 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.564
+2022-11-12 13:59:07.578 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.565
+2022-11-12 13:59:07.578 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.566
+2022-11-12 13:59:07.578 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.567
+2022-11-12 13:59:07.579 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.568
+2022-11-12 13:59:07.579 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.569
+2022-11-12 13:59:07.580 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.570
+2022-11-12 13:59:07.580 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.571
+2022-11-12 13:59:07.581 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.572
+2022-11-12 13:59:07.581 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.573
+2022-11-12 13:59:07.581 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.574
+2022-11-12 13:59:07.583 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.575
+2022-11-12 13:59:07.583 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.576
+2022-11-12 13:59:07.583 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.577
+2022-11-12 13:59:07.583 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.578
+2022-11-12 13:59:07.584 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.579
+2022-11-12 13:59:07.585 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.580
+2022-11-12 13:59:07.585 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.581
+2022-11-12 13:59:07.585 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.582
+2022-11-12 13:59:07.585 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.583
+2022-11-12 13:59:07.586 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.584
+2022-11-12 13:59:07.586 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.585
+2022-11-12 13:59:07.586 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.586
+2022-11-12 13:59:07.586 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.587
+2022-11-12 13:59:07.587 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.588
+2022-11-12 13:59:07.587 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.589
+2022-11-12 13:59:07.587 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.590
+2022-11-12 13:59:07.588 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.591
+2022-11-12 13:59:07.588 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.592
+2022-11-12 13:59:07.588 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.593
+2022-11-12 13:59:07.588 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.594
+2022-11-12 13:59:07.588 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.595
+2022-11-12 13:59:07.588 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.596
+2022-11-12 13:59:07.589 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.597
+2022-11-12 13:59:07.589 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.598
+2022-11-12 13:59:07.589 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.599
+2022-11-12 13:59:07.590 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.600
+2022-11-12 13:59:07.590 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.601
+2022-11-12 13:59:07.590 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.602
+2022-11-12 13:59:07.591 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.603
+2022-11-12 13:59:07.591 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.604
+2022-11-12 13:59:07.592 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.605
+2022-11-12 13:59:07.592 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.606
+2022-11-12 13:59:07.592 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.607
+2022-11-12 13:59:07.592 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.608
+2022-11-12 13:59:07.593 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.609
+2022-11-12 13:59:07.593 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.610
+2022-11-12 13:59:07.593 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.611
+2022-11-12 13:59:07.593 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.612
+2022-11-12 13:59:07.594 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.613
+2022-11-12 13:59:07.594 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.614
+2022-11-12 13:59:07.594 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.615
+2022-11-12 13:59:07.595 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.616
+2022-11-12 13:59:07.595 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.617
+2022-11-12 13:59:07.595 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.618
+2022-11-12 13:59:07.595 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.619
+2022-11-12 13:59:07.595 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.620
+2022-11-12 13:59:07.596 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.621
+2022-11-12 13:59:07.596 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.622
+2022-11-12 13:59:07.596 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.623
+2022-11-12 13:59:07.596 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.624
+2022-11-12 13:59:07.597 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.625
+2022-11-12 13:59:07.597 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.626
+2022-11-12 13:59:07.597 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.627
+2022-11-12 13:59:07.598 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.628
+2022-11-12 13:59:07.598 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.629
+2022-11-12 13:59:07.598 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.630
+2022-11-12 13:59:07.598 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.631
+2022-11-12 13:59:07.598 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.632
+2022-11-12 13:59:07.599 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.633
+2022-11-12 13:59:07.599 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.634
+2022-11-12 13:59:07.599 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.635
+2022-11-12 13:59:07.600 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.636
+2022-11-12 13:59:07.602 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.637
+2022-11-12 13:59:07.603 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.638
+2022-11-12 13:59:07.604 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.639
+2022-11-12 13:59:07.604 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.640
+2022-11-12 13:59:07.604 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.641
+2022-11-12 13:59:07.605 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.642
+2022-11-12 13:59:07.605 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.643
+2022-11-12 13:59:07.606 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.644
+2022-11-12 13:59:07.606 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.645
+2022-11-12 13:59:07.606 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.646
+2022-11-12 13:59:07.607 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.647
+2022-11-12 13:59:07.607 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.648
+2022-11-12 13:59:07.607 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.649
+2022-11-12 13:59:07.608 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.650
+2022-11-12 13:59:07.608 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.651
+2022-11-12 13:59:07.609 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.652
+2022-11-12 13:59:07.609 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.653
+2022-11-12 13:59:07.609 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.654
+2022-11-12 13:59:07.610 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.655
+2022-11-12 13:59:07.612 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.656
+2022-11-12 13:59:07.612 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.657
+2022-11-12 13:59:07.612 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.658
+2022-11-12 13:59:07.613 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.659
+2022-11-12 13:59:07.613 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.660
+2022-11-12 13:59:07.613 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.661
+2022-11-12 13:59:07.614 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.662
+2022-11-12 13:59:07.614 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.663
+2022-11-12 13:59:07.614 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.664
+2022-11-12 13:59:07.615 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.665
+2022-11-12 13:59:07.615 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.666
+2022-11-12 13:59:07.615 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.667
+2022-11-12 13:59:07.616 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.668
+2022-11-12 13:59:07.616 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.669
+2022-11-12 13:59:07.616 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.670
+2022-11-12 13:59:07.617 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.671
+2022-11-12 13:59:07.617 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.672
+2022-11-12 13:59:07.617 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.673
+2022-11-12 13:59:07.617 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.674
+2022-11-12 13:59:07.618 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.675
+2022-11-12 13:59:07.618 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.676
+2022-11-12 13:59:07.618 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.677
+2022-11-12 13:59:07.618 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.678
+2022-11-12 13:59:07.619 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.679
+2022-11-12 13:59:07.619 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.680
+2022-11-12 13:59:07.619 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.681
+2022-11-12 13:59:07.619 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.682
+2022-11-12 13:59:07.619 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.683
+2022-11-12 13:59:07.620 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.684
+2022-11-12 13:59:07.620 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.685
+2022-11-12 13:59:07.621 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.686
+2022-11-12 13:59:07.621 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.687
+2022-11-12 13:59:07.621 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.688
+2022-11-12 13:59:07.622 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.689
+2022-11-12 13:59:07.622 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.690
+2022-11-12 13:59:07.622 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.691
+2022-11-12 13:59:07.622 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.692
+2022-11-12 13:59:07.623 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.693
+2022-11-12 13:59:07.623 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.694
+2022-11-12 13:59:07.623 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.695
+2022-11-12 13:59:07.623 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.696
+2022-11-12 13:59:07.623 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.697
+2022-11-12 13:59:07.623 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.698
+2022-11-12 13:59:07.624 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.699
+2022-11-12 13:59:07.624 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.700
+2022-11-12 13:59:07.624 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.701
+2022-11-12 13:59:07.624 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.702
+2022-11-12 13:59:07.625 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.703
+2022-11-12 13:59:07.625 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.704
+2022-11-12 13:59:07.625 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.705
+2022-11-12 13:59:07.625 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.706
+2022-11-12 13:59:07.626 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.707
+2022-11-12 13:59:07.626 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.708
+2022-11-12 13:59:07.626 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.709
+2022-11-12 13:59:07.626 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.710
+2022-11-12 13:59:07.627 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.711
+2022-11-12 13:59:07.627 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.712
+2022-11-12 13:59:07.627 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.713
+2022-11-12 13:59:07.628 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.714
+2022-11-12 13:59:07.628 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.715
+2022-11-12 13:59:07.629 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.716
+2022-11-12 13:59:07.629 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.717
+2022-11-12 13:59:07.629 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.718
+2022-11-12 13:59:07.629 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.719
+2022-11-12 13:59:07.629 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.720
+2022-11-12 13:59:07.630 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.721
+2022-11-12 13:59:07.630 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.722
+2022-11-12 13:59:07.630 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.723
+2022-11-12 13:59:07.630 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.724
+2022-11-12 13:59:07.630 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.725
+2022-11-12 13:59:07.630 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.726
+2022-11-12 13:59:07.631 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.727
+2022-11-12 13:59:07.631 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.728
+2022-11-12 13:59:07.631 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.729
+2022-11-12 13:59:07.631 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.730
+2022-11-12 13:59:07.632 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.731
+2022-11-12 13:59:07.632 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.732
+2022-11-12 13:59:07.632 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.733
+2022-11-12 13:59:07.632 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.734
+2022-11-12 13:59:07.632 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.735
+2022-11-12 13:59:07.633 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.736
+2022-11-12 13:59:07.633 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.737
+2022-11-12 13:59:07.633 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.738
+2022-11-12 13:59:07.633 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.739
+2022-11-12 13:59:07.634 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.740
+2022-11-12 13:59:07.634 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.741
+2022-11-12 13:59:07.634 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.742
+2022-11-12 13:59:07.635 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.743
+2022-11-12 13:59:07.639 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.744
+2022-11-12 13:59:07.639 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.745
+2022-11-12 13:59:07.639 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.746
+2022-11-12 13:59:07.640 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.747
+2022-11-12 13:59:07.640 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.748
+2022-11-12 13:59:07.641 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.749
+2022-11-12 13:59:07.642 INFO  202  MigrationRecordsManager - Published synthetic CryptoCreate for treasury clone account 0.0.750
+2022-11-12 13:59:07.643 INFO  87   EndOfStakingPeriodCalculator - Updating node stakes for a just-finished period @ 2022-11-12T13:59:07.342819722Z
+2022-11-12 13:59:07.643 INFO  104  EndOfStakingPeriodCalculator - The reward rate for the period was 0 tb (0 tb/hbar for nodes with in-range stake, given 0 total stake reward start)
+2022-11-12 13:59:07.645 INFO  180  MerkleStakingInfo -    > Non-zero reward sum history is now []
+2022-11-12 13:59:07.645 INFO  132  EndOfStakingPeriodCalculator - For node0, the tb/hbar reward rate was 0 for 0 pending, with stake reward start 0 -> 0
+2022-11-12 13:59:07.647 INFO  158  EndOfStakingPeriodCalculator - Total stake start is now 0 (0 rewarded), pending rewards are 0 vs 0.0.800 balance 0
+2022-11-12 13:59:07.651 INFO  169  EndOfStakingPeriodCalculator - Exporting:
+[max_stake: 5000000000000000000
+min_stake: 1250000000000000000
+]
+2022-11-12 13:59:07.713 INFO  62   CurrentRecordStreamType - Record stream file header is [5, 0, 28, 1]
+2022-11-12 14:00:00.283 INFO  147  SignedStateBalancesExporter - Took 143ms to summarize signed state balances
+2022-11-12 14:00:00.367 INFO  169  SignedStateBalancesExporter -  -> Took 76ms to export and sign proto balances file at 2022-11-12T14:00:00.017862244Z
+2022-11-12 14:06:40.201 INFO  147  SignedStateBalancesExporter - Took 55ms to summarize signed state balances
+2022-11-12 14:06:40.222 INFO  169  SignedStateBalancesExporter -  -> Took 19ms to export and sign proto balances file at 2022-11-12T14:06:40.033752976Z

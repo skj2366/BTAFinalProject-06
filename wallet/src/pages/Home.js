@@ -47,6 +47,7 @@ export const Home = () => {
 
   const getAccountTransactions = async () => {
     const result = await api.getTransactions(accountId)
+    console.log(result.data.transactions)
     setTransactions(result.data.transactions)
   }
 
