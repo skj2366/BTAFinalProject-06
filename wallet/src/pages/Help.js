@@ -12,18 +12,16 @@ import {changeClient} from "../redux/client";
 import {Header} from "../components/header";
 import {Home} from "./Home";
 
-
-// gauge beauty victory holiday flock prepare double join idea admit celery tired
 export const Help = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     async function checkLogin() {
-      await storage.get([ StoredKey.PASSWORD, StoredKey.ACCOUNT_ID, StoredKey.CLIENT, StoredKey.LOCK ],  (result) => {
-        console.log(result)
+      await storage.get([ StoredKey.PASSWORD, StoredKey.ACCOUNT_ID, StoredKey.LOCK, StoredKey.CLIENT],  (result) => {
+        console.log(result.client)
+        dispatch(changeClient(result.client ? result.client :  ClientTypeName.TEST_NET))
         if (result.password && result.accountId) {
           dispatch(changeAccount(result.accountId))
-          dispatch(changeClient(result.client || ClientTypeName.TEST_NET))
           if (result.lock) goTo(Login)
           else goTo(Home)
         }

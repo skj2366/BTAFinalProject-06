@@ -1,6 +1,5 @@
 import * as crypto from 'crypto-js';
-import {ClientTypeName, StoredKey} from "./enum";
-import {AccountId, Client} from "@hashgraph/sdk";
+import {StoredKey} from "./enum";
 
 export const storage = {
   set: async (key, data) => {
@@ -50,5 +49,10 @@ export const removeStorage = async () => {
   await storage.remove(StoredKey.PUBLIC_KEY);
   await storage.remove(StoredKey.ACCOUNT_ID);
   await storage.remove(StoredKey.MNEMONIC);
+}
+
+export const convertToDate = (timestamp) => {
+  const ts = new Date(Number(timestamp) * 1000)
+  return ts.toLocaleString()
 }
 

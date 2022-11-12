@@ -9,6 +9,7 @@ import {
 } from "@hashgraph/sdk";
 import {ClientTypeName} from "../utill/enum";
 import axios from "axios";
+import {act} from "react-dom/test-utils";
 
 export class Api {
   constructor(client) {
@@ -21,8 +22,8 @@ export class Api {
       case ClientTypeName.LOCAL_NET:
         const operatorId = process.env.LOCAL_OPERATOR_ID
         const operatorKey = process.env.LOCAL_OPERATOR_KEY
-        const node = { "http://127.0.0.1:50211": new AccountId(3) };
-        const client = Client.forNetwork(node).setMirrorNetwork("http://127.0.0.1:5600");
+        const node = { "127.0.0.1:50211": new AccountId(3) };
+        const client = Client.forNetwork(node).setMirrorNetwork("127.0.0.1:5600");
         client.setOperator(operatorId, operatorKey)
         return client
       default: {
@@ -36,7 +37,7 @@ export class Api {
   }
   getUrl (client) {
     if (client === ClientTypeName.LOCAL_NET)
-      return '127.0.0.1:5600'
+      return 'http://local-node.com:5600'
     else return 'https://testnet.mirrornode.hedera.com/api/v1'
   }
   async generateAccount (mnemonic) {
@@ -129,20 +130,12 @@ export class Api {
 
   async getTransactions(currentAccountId) {
     const option = {
-      url: this.url + `/transactions`,
+      url: this.url + `/transactions/?account.id=${currentAccountId}`,
       method: 'GET',
       header: {
         'Accept': 'application/json',
         'Content-Type': 'application/json;charset=UTP-8'
       },
-      data: {
-        queryParams: {
-          account: {
-            id: currentAccountId,
-          },
-          transactionType: 'CRYPTOTRANSFER',
-        }
-      }
     }
     return await axios(option)
   }

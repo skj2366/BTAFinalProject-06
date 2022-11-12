@@ -27,7 +27,7 @@ module.exports = class ConnectionCheck {
   /**
    * Check connection to given host and port
    */
-  static checkConnection(port, host = "127.0.0.1") {
+  static checkConnection(port = 50211, host = "127.0.0.1") {
     return new Promise(function (resolve, reject) {
       const timeout = 3000;
       let timer = setTimeout(function () {
