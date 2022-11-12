@@ -16,6 +16,7 @@ import {changeAccount} from "../redux/accountInfo";
 
 export const RecoverAccount = () => {
   const { client } = useSelector(state => state.clientReducer);
+  console.log(client)
   const api = new Api(client);
   const MNEMONIC_ARRAY_LENGTH = 12
   const [step, setStep] = useState(1)
@@ -86,7 +87,7 @@ export const RecoverAccount = () => {
 
   return (
     <>
-      <Header/>
+      <Header showBackBtn={true}/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar

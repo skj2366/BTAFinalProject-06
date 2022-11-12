@@ -14,6 +14,7 @@ import {Help} from "./Help";
 import {changeClient} from "../redux/client";
 import {WalletButton} from "../components/walletButton";
 import {ButtonProgress} from "../components/buttonProgress";
+import {Header} from "../components/header";
 
 
 //destroy knife property strategy clerk honey raise rural buffalo current armed already
@@ -43,11 +44,12 @@ export const Login = () => {
   const handleCheckPassword = async () => {
     const shaPassword = sha256(inputPassword);
     setLoadingTransfer(true);
-    await storage.get(StoredKey.PASSWORD, (result) => {
+    await storage.get(StoredKey.PASSWORD, async (result) => {
       setLogin(true);
       if (shaPassword === result.password) {
         console.log('Ok');
         setLoadingTransfer(false);
+        await storage.remove(StoredKey.LOCK)
         goTo(Home);
       } else {
         console.log('Nope');
@@ -59,6 +61,7 @@ export const Login = () => {
 
   return (
     <>
+      <Header showBackBtn={false}/>
       <Box sx={{textAlign: 'center', padding: '80px 30px 30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar

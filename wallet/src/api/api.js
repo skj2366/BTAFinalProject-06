@@ -1,38 +1,55 @@
-
 import {
   AccountBalanceQuery,
   AccountCreateTransaction,
   AccountId,
   Client,
   Hbar,
-  Mnemonic, PrivateKey, ScheduleCreateTransaction, ScheduleSignTransaction,
+  Mnemonic, PublicKey, ScheduleCreateTransaction, ScheduleSignTransaction,
   TransferTransaction
 } from "@hashgraph/sdk";
 import {ClientTypeName} from "../utill/enum";
 import axios from "axios";
 
-
 export class Api {
   constructor(client) {
+    this.client = this.getClient(client)
+    this.url = this.getUrl(client)
+    console.log(this.url)
+  }
+  getClient (client)  {
     switch (client) {
       case ClientTypeName.LOCAL_NET:
-        this.client = Client.forNetwork({"127.0.0.1:50211": new AccountId(3)})
+        const operatorId = process.env.LOCAL_OPERATOR_ID
+        const operatorKey = process.env.LOCAL_OPERATOR_KEY
+        const node = { "http://127.0.0.1:50211": new AccountId(3) };
+        const client = Client.forNetwork(node).setMirrorNetwork("http://127.0.0.1:5600");
+        client.setOperator(operatorId, operatorKey)
+        return client
       default: {
         const operatorId = process.env.WALLET_ACCOUNT_ID
         const operatorKey = process.env.WALLET_PRIVATE_KEY
-        this.client = Client.forTestnet()
-        this.client.setOperator(operatorId, operatorKey)
+        const client = Client.forTestnet()
+        client.setOperator(operatorId, operatorKey)
+        return client
       }
     }
+  }
+  getUrl (client) {
+    if (client === ClientTypeName.LOCAL_NET)
+      return '127.0.0.1:5600'
+    else return 'https://testnet.mirrornode.hedera.com/api/v1'
   }
   async generateAccount (mnemonic) {
     const createMnemonice = await Mnemonic.fromString(mnemonic);
     const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
     const accountPublicKey = accountPrivateKey.publicKey;
-    const transaction = new AccountCreateTransaction()
+
+    const accountCreateTransaction = await new AccountCreateTransaction()
       .setKey(accountPublicKey)
-    const txResponse = await transaction.execute(this.client)
-    const receipt = await txResponse.getReceipt(this.client)
+      .setInitialBalance(Hbar.fromTinybars(1000))
+      .execute(this.client)
+
+    const receipt = await accountCreateTransaction.getReceipt(this.client)
     return {
       accountId : receipt.accountId.toString(),
       accountPublicKey: accountPrivateKey.toString(),
@@ -45,13 +62,7 @@ export class Api {
     const accountBalance = await query.execute(this.client);
     return accountBalance.hbars.toString()
   }
-  async subscribeTransaction(txId) {
-
-  }
   async requestFaucet(walletAddress) {
-
-  }
-  async getAccountStxTransaction(walletAddress) {
 
   }
   async transfer(recipientId, myAccountId, mnemonic, amount, memo) {
@@ -70,6 +81,8 @@ export class Api {
 
     const transactionStatus = receipt.status;
     console.log(transactionStatus)
+    if (transactionStatus !== 22)
+      throw '전송 실패'
   }
   async scheduleTransfer(recipientId, myAccountId, mnemonic, amount, memo, isoTime) {
     const createMnemonice = await Mnemonic.fromString(mnemonic);
@@ -98,11 +111,13 @@ export class Api {
     const signTxResponse = await signTransaction.execute(this.client)
     const signReceipt = await signTxResponse.getReceipt(this.client)
     const transactionStatus = signReceipt.status
+    if (transactionStatus !== 22)
+      throw '예약 트랜잭션 생성 실패'
   }
 
-  async getAccount(pubkey) {
+  async getAccount(publicKey) {
     const option = {
-      url: process.env.API_URL+'/accounts?account.publicKey='+pubkey,
+      url: this.url + `/accounts?account.publicKey=${publicKey}`,
       method: 'GET',
       header: {
         'Accept': 'application/json',
@@ -110,5 +125,39 @@ export class Api {
       }
     }
     return await axios(option);
+  }
+
+  async getTransactions(currentAccountId) {
+    const option = {
+      url: this.url + `/transactions`,
+      method: 'GET',
+      header: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json;charset=UTP-8'
+      },
+      data: {
+        queryParams: {
+          account: {
+            id: currentAccountId,
+          },
+          transactionType: 'CRYPTOTRANSFER',
+        }
+      }
+    }
+    return await axios(option)
+  }
+
+  async addAccount (mnemonic) {
+    const createMnemonice = await Mnemonic.fromString(mnemonic);
+    const accountPrivateKey = await createMnemonice.toEd25519PrivateKey()
+
+    const newAccount  = await new AccountCreateTransaction()
+      .setKey(accountPrivateKey.publicKey)
+      .setInitialBalance(Hbar.fromTinybars(1000))
+      .execute(this.client);
+
+    const receipt = await newAccount.getReceipt(this.client)
+    const transactionStatus = receipt.status
+    console.log(transactionStatus)
   }
 }

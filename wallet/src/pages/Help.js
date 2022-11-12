@@ -9,6 +9,8 @@ import {storage} from "../utill/common";
 import {ClientTypeName, StoredKey} from "../utill/enum";
 import {changeAccount} from "../redux/accountInfo";
 import {changeClient} from "../redux/client";
+import {Header} from "../components/header";
+import {Home} from "./Home";
 
 
 // gauge beauty victory holiday flock prepare double join idea admit celery tired
@@ -17,12 +19,13 @@ export const Help = () => {
 
   useEffect(() => {
     async function checkLogin() {
-      await storage.get([ StoredKey.PASSWORD, StoredKey.ACCOUNT_ID, StoredKey.CLIENT ],  (result) => {
+      await storage.get([ StoredKey.PASSWORD, StoredKey.ACCOUNT_ID, StoredKey.CLIENT, StoredKey.LOCK ],  (result) => {
         console.log(result)
         if (result.password && result.accountId) {
           dispatch(changeAccount(result.accountId))
           dispatch(changeClient(result.client || ClientTypeName.TEST_NET))
-          goTo(Login);
+          if (result.lock) goTo(Login)
+          else goTo(Home)
         }
       })
     }
@@ -39,6 +42,7 @@ export const Help = () => {
 
   return (
     <>
+      <Header showBackBtn={false}/>
       <Box sx={{textAlign: 'center', padding: '80px 30px 30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar

@@ -14,6 +14,7 @@ import ErrorIcon from '@mui/icons-material/Error';
 import moment from "moment";
 import {Home} from "./Home";
 import {goTo} from "react-chrome-extension-router";
+import {Header} from "../components/header";
 
 export const Transfer = () => {
   // TODO reducx에 값을 변경할 때 사용
@@ -91,6 +92,7 @@ export const Transfer = () => {
 
   return (
     <>
+      <Header showBackBtn={false}/>
       <Box sx={{padding: '30px 30px 60px', overflow: 'auto',}}>
         <Box sx={{margin: '0 auto 30px'}}>
          <Logo/>

@@ -16,7 +16,7 @@ export const TransactionList = (props) => {
             return (
               <ListItem
                 alignItems="flex-start"
-                key={transaction.tx.tx_id}
+                key={transaction.transaction_id}
               >
                 <ListItemAvatar>
                   {

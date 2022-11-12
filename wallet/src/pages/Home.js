@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Navigation} from "../components/navigation";
-import {Page, StoredKey} from "../utill/enum";
-import {Avatar, Box, Button, CircularProgress, Stack, Typography} from "@mui/material";
+import {Page} from "../utill/enum";
+import {Avatar, Box, Stack, Typography} from "@mui/material";
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import InvertColorsIcon from '@mui/icons-material/InvertColors';
 import SendIcon from '@mui/icons-material/Send';
@@ -11,13 +11,10 @@ import {Transfer} from "./Transfer";
 import {useDispatch, useSelector} from "react-redux";
 import copy from 'copy-to-clipboard'
 import {openSnackBar} from "../redux/snackBar";
-import {TransactionList} from "../components/transactionList";
-import {AccountBalanceQuery} from "@hashgraph/sdk";
-import {clientReducer} from "../redux/client";
-import {balanceReducer, updateBalance} from "../redux/balance";
-import {getClient, storage} from "../utill/common";
-import {accountReducer} from "../redux/accountInfo";
+import {updateBalance} from "../redux/balance";
 import {WalletButton} from "../components/walletButton";
+import {Header} from "../components/header";
+import {TransactionList} from "../components/transactionList";
 
 
 export const Home = () => {
@@ -32,8 +29,10 @@ export const Home = () => {
   const api = new Api(client)
 
   useEffect(() => {
-    initBalance().catch(e => console.log(e))
-    getAccountStxTransaction().catch(e => console.log(e))
+    if (accountId) {
+      initBalance().catch(e => console.log(e))
+      getAccountTransactions().catch(e => console.log(e))
+    }
   },[])
 
   const initBalance = async () => {
@@ -46,12 +45,9 @@ export const Home = () => {
     }
   }
 
-  const faucetStx = async () => {
-
-  }
-
-  const getAccountStxTransaction = async () => {
-
+  const getAccountTransactions = async () => {
+    const result = await api.getTransactions(accountId)
+    setTransactions(result.data.transactions)
   }
 
   const handleClickCopyAddress = () => {
@@ -63,8 +59,13 @@ export const Home = () => {
     goTo(Transfer)
   }
 
+  const faucetHedera = () => {
+
+  }
+
   return (
     <>
+      <Header showBackBtn={false}/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar
@@ -87,7 +88,7 @@ export const Home = () => {
             <WalletButton variant="outlined"
                     disabled={loadingFaucet}
                     startIcon={<InvertColorsIcon />}
-                    onClick={faucetStx}>
+                    onClick={faucetHedera}>
               {
                 loadingFaucet &&
                 <WalletButton size={24}/>
@@ -100,7 +101,9 @@ export const Home = () => {
           </Stack>
         </Box>
       </Box>
-
+      <Box sx={{padding: '0 10px 55px'}}>
+        <TransactionList transactions = {transactions}/>
+      </Box>
       <Navigation page={Page.HOME}/>
     </>
   )

@@ -5,7 +5,7 @@ import {openSnackBar} from "../redux/snackBar";
 import {Header} from "../components/header";
 import {WalletButton} from "../components/walletButton";
 import {Logo} from "../components/logo";
-import {getClient, storage, storeByEncryptPassword} from "../utill/common";
+import {storage, storeByEncryptPassword} from "../utill/common";
 import {AccountCreateTransaction, Client, Hbar, Mnemonic} from "@hashgraph/sdk";
 import {StoredKey} from "../utill/enum";
 import {goTo} from "react-chrome-extension-router";
@@ -59,7 +59,7 @@ export const ConfirmMnemonic = (props) => {
         encPassword = result.password
       })
 
-      const result = api.generateAccount(mnemonic)
+      const result = await api.generateAccount(mnemonic)
       const {accountId, accountPublicKey, accountPrivateKey} = result
 
       await storage.set(StoredKey.ACCOUNT_ID, accountId)
@@ -87,7 +87,7 @@ export const ConfirmMnemonic = (props) => {
 
   return (
     <>
-      <Header/>
+      <Header showBackBtn={true}/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
         <Logo/>
         <Box sx={{margin: '20px auto'}}>

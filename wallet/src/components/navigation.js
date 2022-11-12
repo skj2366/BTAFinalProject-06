@@ -33,6 +33,7 @@ export const Navigation = (props) => {
       <BottomNavigation
         value={page}
         onChange={(event, newValue) => {
+          console.log(newValue)
           goToPage(newValue)
         }}
       >

@@ -26,7 +26,7 @@ export const CheckMnemonic = (props) => {
 
   return (
     <>
-      <Header/>
+      <Header showBackBtn={true}/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar

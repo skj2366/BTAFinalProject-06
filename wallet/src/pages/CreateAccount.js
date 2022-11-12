@@ -33,7 +33,7 @@ export const CreateAccount = () => {
 
   return (
     <>
-      <Header/>
+      <Header showBackBtn={true}/>
       <Box sx={{textAlign: 'center', padding: '60px 30px 30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar

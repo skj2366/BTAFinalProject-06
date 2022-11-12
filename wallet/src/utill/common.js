@@ -44,17 +44,11 @@ export const decryptByEncryptPassword = (value, encryptPassword) => {
   return decSecretKey.toString(crypto.enc.Utf8)
 }
 
-export const getClient = async (client) => {
-  switch (client) {
-    case ClientTypeName.LOCAL_NET:
-      return Client.forNetwork({"127.0.0.1:50211": new AccountId(3)})
-    default: {
-      const operatorId = process.env.WALLET_ACCOUNT_ID
-      const operatorKey = process.env.WALLET_PRIVATE_KEY
-      const client = Client.forTestnet()
-      client.setOperator(operatorId, operatorKey)
-      return client
-    }
-  }
+export const removeStorage = async () => {
+  await storage.remove(StoredKey.PASSWORD);
+  await storage.remove(StoredKey.PRIVATE_KEY);
+  await storage.remove(StoredKey.PUBLIC_KEY);
+  await storage.remove(StoredKey.ACCOUNT_ID);
+  await storage.remove(StoredKey.MNEMONIC);
 }
 

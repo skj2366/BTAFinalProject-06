@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Avatar, Box, Button, Typography} from "@mui/material";
 import {Mnemonic} from '@hashgraph/sdk';
+import {Header} from "../components/header";
 
 const CreateMenm = () => {
   const [mnem, setMnem] = useState([]);
@@ -23,6 +24,7 @@ const CreateMenm = () => {
   }
   return (
     <>
+      <Header showBackBtn={false}/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
           <Avatar
