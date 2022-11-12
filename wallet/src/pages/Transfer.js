@@ -91,7 +91,7 @@ export const Transfer = () => {
 
   return (
     <>
-      <Box sx={{padding: '30px'}}>
+      <Box sx={{padding: '30px 30px 60px', overflow: 'auto',}}>
         <Box sx={{margin: '0 auto 30px'}}>
          <Logo/>
         </Box>
