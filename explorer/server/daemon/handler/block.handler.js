@@ -41,7 +41,7 @@ module.exports = async () => {
         const lastBlockFromChain = await getLastblockNumberFromChain();
         const lastBlockFromDB = (await getLastBlockFromDB() | 0);
     
-        if(lastBlockFromChain === lastBlockFromDB) {
+        if(lastBlockFromChain <= lastBlockFromDB) {
             console.log(`블록과 동기화할 새로운 데이터가 없습니다.`);
             return;
         }
@@ -50,7 +50,7 @@ module.exports = async () => {
          
         const blockInfo = await Promise.all(
             data.blocks.map(
-                async ({gas_used, hash, number, name, previous_hash, size, timestamp}) => {
+                async ({gas_used, hash, number, name, previous_hash, size, timestamp, count}) => {
                     let newBlock = new Block({
                         gas_used,
                         hash,
@@ -60,6 +60,7 @@ module.exports = async () => {
                         size,
                         timestamp_from: timestamp.from,
                         timestamp_to: timestamp.to,
+                        count
                     });
                     // block db에 저장
                     const createdBlock = await newBlock.save();

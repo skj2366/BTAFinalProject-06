@@ -41,7 +41,7 @@ module.exports = async () => {
         const lastTimestampFromChain = await getLastTimestampFromChain();
         const lastTimestampFromDB = (await getLastTimestampFromDB() | 0);
     
-        if(lastTimestampFromChain === lastTimestampFromDB) {
+        if(Number(lastTimestampFromChain) <= Number(lastTimestampFromDB)) {
             console.log(`트랜잭션과 동기화할 새로운 데이터가 없습니다.`);
             return;
         }
