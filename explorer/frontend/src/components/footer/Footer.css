@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    display: flex;
+    user-select: none;
+    width: 100%;
+    align-items: center;
+    height: 4rem;
+    letter-spacing: 2.5px;
+    background-color: var(--second-bg);
+    color: var(--primary-color);
+    box-shadow: var(--dark-shadow); 
+}
+.footer__content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.hedera{
+    display: flex;
+    align-items: center;
+}
+.hedera>a{
+    margin-left: 1rem;
+}
+.hedera_text {
+    letter-spacing: 1.5px;
+}
+.developer {
+    display: flex;
+    align-items: center;
+}
+.developer>a {
+    margin-left: 1rem;
+}
+.developer>a:hover {
+    color: var(--primary-blue) !important;
+}
