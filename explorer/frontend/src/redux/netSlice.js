@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export const netSlice = createSlice({
     name: 'net',
@@ -7,9 +7,9 @@ export const netSlice = createSlice({
     },
     reducers: {
         selectNet(state, action) {
-            state.net = action.payload
-        }
-    }
-})
+            state.net = action.payload;
+        },
+    },
+});
 
-export const {selectNet} = netSlice.actions
+export const { selectNet } = netSlice.actions;
