@@ -32,7 +32,7 @@ export const TransactionList = (props) => {
 
   const handleClickTransaction = (transactionId) => {
     if (client === ClientTypeName.LOCAL_NET) {
-
+      window.open(`http://localhost:3000/transaction/${transactionId}`)
     } else {
       window.open(`https://hashscan.io/testnet/transaction/${transactionId}`)
     }

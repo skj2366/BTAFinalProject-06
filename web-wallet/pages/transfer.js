@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {Navigation} from "../components/navigation";
 import {Page, StoredKey} from "../utill/enum";
-import {Box, Button, FormControl, FormControlLabel, InputAdornment, Switch, TextField, Typography} from "@mui/material";
-import {useDispatch, useSelector} from "react-redux";
-import {Api} from "../api/api";
+import {Box, FormControlLabel, Switch, Typography} from "@mui/material";
+import {useDispatch} from "react-redux";
 import {ButtonProgress} from "../components/buttonProgress";
 import {WalletButton} from "../components/walletButton";
 import {FormInput} from "../components/formInput";
@@ -149,7 +148,7 @@ export default function Transfer() {
           <FormInput
             fullWidth
             onChange={handleChangeTransferAmount}
-            label={'수량'}
+            label={'수량(단위 Hbar)'}
           />
           <Box sx={{marginTop: '15px'}}/>
           <FormInput
