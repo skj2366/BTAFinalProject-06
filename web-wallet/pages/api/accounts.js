@@ -17,7 +17,7 @@ export default async function handler(req, res) {
 
     const newAccount  = await new AccountCreateTransaction()
       .setKey(accountPrivateKey.publicKey)
-      .setInitialBalance(Hbar.fromTinybars(1000))
+      .setInitialBalance(new Hbar(1000))
       .execute(currentClient);
 
     const receipt = await newAccount.getReceipt(currentClient)
