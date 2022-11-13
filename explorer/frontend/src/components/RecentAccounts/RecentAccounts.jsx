@@ -65,7 +65,7 @@ const RecentAccounts = () => {
         (elem) => <Account  
         key={elem.account}
         id={elem.account} 
-        balance={elem.balance.balance != 0 ? (elem.balance.balance) : elem.balance.balance}
+        balance={elem.balance.balance != 0 ? (elem.balance.balance / Math.pow(10, 8)) : elem.balance.balance}
         keyName={elem.key != null ? (Array.isArray(elem.key) ? elem.key.substr(0,60) : elem.key.key.substr(0,60)) : ''}
         alias={elem.alias}
         evmAddress = {elem.evm_address} 

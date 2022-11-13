@@ -101,7 +101,7 @@ const AccountPage = () => {
         <h4 className='info_title'>ACCOUNT</h4>
         <div className='content page'> 
             <InfoRow title='Account ID:' value={data[0]?.account ? data[0].account : 'None'} />
-            <InfoRow title='Balance:' value={<div>{(data[0]?.balance?.balance >= 0 ? data[0].balance.balance  : 'None')} <span className='hbar'> &#8463; </span></div>} />
+            <InfoRow title='Balance:' value={<div>{(data[0]?.balance?.balance >= 0 ? data[0].balance.balance / 100000000 : 'None')} <span className='hbar'> &#8463; </span></div>} />
             
             <InfoRow title={`Key (${data[0]?.key?._type ? data[0].key._type : 'None'}):`} value = {data[0]?.key?.key ? data[0].key.key : 'None'} />
             <InfoRow title='Alias:' value={data[0]?.alias ? data[0].alias : 'None'} />
