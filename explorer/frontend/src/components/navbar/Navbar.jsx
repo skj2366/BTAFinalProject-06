@@ -1,25 +1,42 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useRef, useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Button, notification } from 'antd';
 import { InfoOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
 import './Navbar.css';
 import { useDispatch } from 'react-redux';
 import { selectNet } from '../../redux/netSlice';
-import Search from 'antd/lib/transfer/search';
+import Search from 'antd/lib/input/Search';
 
 const Navbar = () => {
   const { Option } = Select;
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [searchValue, setSearchValue] = useState('');
 
-  // const openNotification = () => {
-  //     const args = {
-  //         message: 'Beta',
-  //         description: '사이트는 베타 테스트 중입니다. 버그를 발견하면 개발자에게 보고하세요.',
-  //         duration: 6,
-  //     };
-  //     notification.open(args);
-  // };
+  const searchInput = useRef();
+
+  const searchHandle = (value) => {
+    let page = 'transaction';
+    console.log(value);
+    if (!value) {
+      const args = {
+        message: `Search Error`,
+        description: 'Please enter a search value',
+        duration: 2,
+      };
+      return notification.open(args);
+    } else {
+      value = value.trim();
+      const regBlock = /^[0-9]+$/;
+      const regTrans = /[-]/g;
+      const regAcc = /^[0][.][0][.]\d{1,10}$/;
+      if (regBlock.test(value)) page = 'block';
+      else if (regTrans.test(value)) page = 'transaction';
+      if (regAcc.test(value)) page = 'account';
+    }
+    navigate(`${page}/${value}`);
+  };
 
   return (
     <nav className='navbar'>
@@ -55,25 +72,17 @@ const Navbar = () => {
           <Button type='link' ghost={true} size='small'>
             <NavLink to={`/blocks`}>Blocks</NavLink>
           </Button>
-
-          <Search
-            placeholder='AccountId or TxId or Block Number'
-            // onChange={(e) => setAcc(e.target.value)}
-            // onSearch={(e) => searchHandle('account', acc)}
-            style={{ width: 300 }}
-          />
-
-          {/* <Button
-            type='primary'
-            danger={true}
-            ghost={true}
-            size='small'
-            shape='circle'
-            onClick={openNotification}
-            icon={<InfoOutlined style={{ fontSize: '16px' }} />}
-          ></Button> */}
+          <div style={{ marginTop: 10 }}></div>
+          <div className='info_inp'>
+            <Search
+              placeholder='AccountId or TxId or Block Number'
+              ref={searchInput}
+              onChange={(e) => setSearchValue(e.target.value)}
+              onSearch={(e) => searchHandle(searchValue)}
+              style={{ width: 600 }}
+            />
+          </div>
         </div>
-        {/* <Switch id='switcher' className='navbar__switch' onChange={changeTheme}/> */}
       </div>
     </nav>
   );
