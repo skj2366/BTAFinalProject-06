@@ -67,10 +67,11 @@ const AccountPage = () => {
       }); 
     }
     const getAccountLocalList = async() => {
-      await axios.get(`http://localhost:8080/account?accountId=${acc}`)
+      //await axios.get(`http://localhost:8080/account?accountId=${acc}`)
+      await axios.get(`http://localhost:5551/api/v1/accounts?account.id=${acc}&order=desc`)
       .then((res) => {
-          console.log(res.data.data)
-          setData(res.data.data);
+          console.log(res.data.accounts)
+          setData(res.data.accounts);
       })
       .catch((e)=> {
         console.log(e);
