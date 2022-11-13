@@ -25,10 +25,10 @@ const TransactionPage = () => {
       getTxList();
     },[]);
     const getTxList = async() => {
-      console.log(`http://localhost:5551/api/v1/transactions/${id}`)
-      await axios.get(`http://localhost:5551/api/v1/transactions/${id}`)
+      console.log(`http://localhost:8080/tx/${id}`)
+      await axios.get(`http://localhost:8080/tx/${id}`)
       .then((res) => {
-        setDataLocal(res.data.transactions[0]);
+        setDataLocal(res.data.data[0]);
       })
       .catch((e)=> {
         console.log(e);
@@ -54,8 +54,8 @@ const TransactionPage = () => {
             <div className='transction_page__content page'>
                 <InfoRow title= 'ID:' value={dataLocal.transaction_id} />
                 <InfoRow title= 'Hash:' value={dataLocal.transaction_hash} />
-                <InfoRow title= 'Type:' value={dataLocal.name} />
-                {/* <InfoRow title= 'Consensus At:' value={getTime(dataLocal.consensus_timestamp)} /> */}
+                <InfoRow title= 'Type:' value={dataLocal.type} />
+                <InfoRow title= 'Consensus At:'  value={getTime(dataLocal.consensus_timestamp) } />
                 <InfoRow title= 'Duration:' value={dur} />
                 <InfoRow title= 'Status:' value={dataLocal.result} />
                 <InfoRow title= 'Node Account:' value={<div className='link'> <NavLink to={`/account/${dataLocal.node}`}>{dataLocal.node}</NavLink></div>} />
@@ -63,7 +63,7 @@ const TransactionPage = () => {
                 <InfoRow title= 'Fee:' value={<div>{dataLocal.charged_tx_fee / Math.pow(10, 8)} <span className='hbar'> &#8463; </span></div>} />
                 <InfoRow title= 'Max Fee:' value={<div>{dataLocal.max_fee / Math.pow(10, 8)} <span className='hbar'> &#8463; </span></div>} />
                 <h5>TRANSFERS</h5>
-                {/* <Transfers transfers = {dataLocal.transfers} node = {dataLocal.node} operator = {id.split('-')[0]} /> */}
+                <Transfers transfers = {dataLocal.transfers} node = {dataLocal.node} operator = {id.split('-')[0]} />
             </div>
         </div>
       )

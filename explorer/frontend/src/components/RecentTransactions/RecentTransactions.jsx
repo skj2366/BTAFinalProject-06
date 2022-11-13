@@ -3,7 +3,7 @@ import './RecentTransactions.css'
 import Transaction from './Transaction';
 
 const RecentTransactions = ({trans, transLocal, net}) => {
-    console.log(net);
+    //console.log(net);
     let transactions;
     if (net === 'localnet') {
         transactions = transLocal.map(
