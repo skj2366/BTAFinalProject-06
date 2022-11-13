@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Header} from "../components/header";
 import {Avatar, Box} from "@mui/material";
 import {InputPassword} from "../components/InputPassword";
@@ -17,7 +17,13 @@ export default function CreateAccount (){
   const dispatch = useDispatch();
   const [step, setStep] = useState(0)
   const [mnemonic, setMnemonic] = useState('')
+  const [client, setClient] = useState('')
   const router = useRouter()
+
+  useEffect(() => {
+    const storedClient = storage.get(StoredKey.CLIENT)
+    setClient(storedClient)
+  }, [])
 
   const handleGetWalletBtnClick = async (password) => {
     try {
@@ -67,6 +73,7 @@ export default function CreateAccount (){
           {
             step === 2 &&
             <ConfirmMnemonic
+              client={client}
               mnemonic = {mnemonic}
             />
           }

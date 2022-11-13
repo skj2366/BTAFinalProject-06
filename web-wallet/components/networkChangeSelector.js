@@ -6,18 +6,22 @@ import {removeStorage, storage} from "../utill/common";
 import {useRouter} from "next/router";
 
 export const NetworkChangeSelector = () => {
-  const dispatch = useDispatch();
   const router = useRouter()
   const [client, setClient] = useState('')
 
   useEffect(() => {
     const storedClient = storage.get(StoredKey.CLIENT)
-    console.log(storedClient)
-    setClient(storedClient || ClientTypeName.TEST_NET)
+    if (storedClient) {
+      setClient(storedClient)
+    } else {
+      setClient(ClientTypeName.TEST_NET)
+      storage.set(StoredKey.CLIENT, ClientTypeName.TEST_NET)
+    }
   },[])
 
   const handleChangeNetwork = (e) => {
     const selectClient = e.target.value;
+    console.log(selectClient)
     storage.set(StoredKey.CLIENT, selectClient)
     removeStorage()
     router.push('/')
@@ -27,7 +31,7 @@ export const NetworkChangeSelector = () => {
     <FormControl>
       <NativeSelect
         onChange={handleChangeNetwork}
-        defaultValue={client}
+        value={client}
       >
         <option value={ClientTypeName.TEST_NET}>Testnet</option>
         <option value={ClientTypeName.LOCAL_NET}>Localnet</option>

@@ -16,11 +16,10 @@ import axios from "axios";
 export const ConfirmMnemonic = (props) => {
   const dispatch = useDispatch();
   const router = useRouter()
-  const { client } = useSelector(state => state.clientReducer);
   const [originalWords, setOriginalWords] = useState([]);
   const [randomWords, setRandomWords] = useState([]);
   const [formats, setFormats] = useState([]);
-  const {mnemonic} = props
+  const {mnemonic, client} = props
 
   useEffect(() => {
     const mnemonicArray = mnemonic.split(" ");
@@ -55,7 +54,8 @@ export const ConfirmMnemonic = (props) => {
     if (resultCompare) {
       const encPassword = storage.get(StoredKey.PASSWORD)
       await axios.post("/api/account", {
-        mnemonic: mnemonic
+        mnemonic: mnemonic,
+        client: client
       }).then(response => {
         const {accountId, accountPublicKey, accountPrivateKey} = response.data
         storage.set(StoredKey.ACCOUNT_ID, accountId)

@@ -2,14 +2,11 @@ import React from "react";
 import DownloadIcon from '@mui/icons-material/Download';
 import UploadIcon from '@mui/icons-material/Upload';
 import {Box, List, ListItem, ListItemAvatar, ListItemText, Typography} from "@mui/material";
-import {LAMPORTS_PER_STX} from "../utill/enum";
 import {convertToDate} from "../utill/common";
-import {WalletButton} from "./walletButton";
-import {useSelector} from "react-redux";
+import {ClientTypeName} from "../utill/enum";
 
 export const TransactionList = (props) => {
-  const { accountId } = useSelector(state => state.accountReducer);
-  const {transactions} = props
+  const {transactions, accountId, client} = props
 
   const getTransactionInfo = (transfers) => {
     const candidate1 = transfers[transfers.length - 2];
@@ -33,6 +30,14 @@ export const TransactionList = (props) => {
     }
   }
 
+  const handleClickTransaction = (transactionId) => {
+    if (client === ClientTypeName.LOCAL_NET) {
+
+    } else {
+      window.open(`https://hashscan.io/testnet/transaction/${transactionId}`)
+    }
+  }
+
   return (
     <>
       <List sx={{ width: '100%'}}>
@@ -44,6 +49,8 @@ export const TransactionList = (props) => {
               <ListItem
                 alignItems="flex-start"
                 key={index}
+                sx={{cusor: 'pointer'}}
+                onClick={() => handleClickTransaction(transaction.transaction_id)}
               >
                 <ListItemAvatar>
                   {

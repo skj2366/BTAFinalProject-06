@@ -49,7 +49,7 @@ export default function Help() {
         </Box>
         <Box sx={{margin: '20px auto'}}>
           <Typography variant={'h6'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            <b>FullStacks</b>가 처음이세요?
+            <b>Ehra</b>가 처음이세요?
           </Typography>
         </Box>
         <Stack direction="row" spacing={2} sx={{alignItems: "stretch"}}>

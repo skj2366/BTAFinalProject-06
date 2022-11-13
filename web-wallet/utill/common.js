@@ -66,3 +66,9 @@ export const getClient = (client) => {
     }
   }
 }
+
+export const getUrl = (client) => {
+  if (client === ClientTypeName.LOCAL_NET)
+    return 'http://localhost:5511/api/v1'
+  else return 'https://testnet.mirrornode.hedera.com/api/v1'
+}

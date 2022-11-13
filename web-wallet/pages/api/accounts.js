@@ -1,5 +1,7 @@
 import {AccountCreateTransaction, Hbar, Mnemonic, TransferTransaction} from "@hashgraph/sdk";
-import {getClient} from "../../utill/common";
+import {getClient, getUrl} from "../../utill/common";
+import axios from "axios";
+import {getURL} from "next/dist/shared/lib/utils";
 const logger = require('tracer').console();
 
 export default async function handler(req, res) {
@@ -21,8 +23,34 @@ export default async function handler(req, res) {
     const receipt = await newAccount.getReceipt(currentClient)
     const transactionStatus = receipt.status
     logger.info(transactionStatus)
-    return res.status(200).json({
-      result: 'ok'
+
+    if (transactionStatus._code === 22) {
+      return res.status(200).json({
+        complete : 'ok'
+      })
+    } else {
+      return res.status(423)
+    }
+  } else if (method === 'GET') {
+    const publicKey = req.query.publicKey
+    const client = req.query.client
+
+    const option = {
+      url: getUrl(client) + `/accounts?${encodeURIComponent(`account.publickey=${publicKey}`)}`,
+      method: 'GET',
+      header: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json;charset=UTP-8'
+      }
+    }
+    axios(option).then(response => {
+      logger.info(response.data)
+
+    }).catch(e => {
+      logger.info(e)
+      return res.status(424).json({
+        result : 'fail'
+      })
     })
   }
 }

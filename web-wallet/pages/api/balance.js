@@ -14,7 +14,7 @@ export default async function handler(req, res) {
       .setAccountId(accountId);
     const accountBalance = await query.execute(currentClient);
 
-    res.status(200)
+    return res.status(200)
       .json({
         balance: accountBalance.hbars.toString()
       })

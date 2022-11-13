@@ -1,22 +1,25 @@
-import {AccountRecordsQuery, AccountInfoQuery} from "@hashgraph/sdk";
-import {getClient} from "../../utill/common";
+import {getUrl} from "../../utill/common";
+import axios from "axios";
 
 const logger = require('tracer').console();
-export default async function handler(req, res) {
+export default function handler(req, res) {
   const {method} = req
   if (method === 'GET') {
     const accountId = req.query.accountId
     const client = req.query.client
-    const currentClient = getClient(client)
 
-    const query = await new AccountInfoQuery()
-      .setAccountId(accountId)
-
-    const accountRecords = await query.execute(currentClient);
-
-    res.status(200)
-      .json({
-        test: accountRecords
+    axios.get( getUrl(client) + `/transactions?account.id=${accountId}`)
+      .then(response => {
+        logger.info(response.data.transactions)
+        return res.status(200)
+          .json({
+            transactions: response.data.transactions,
+          })
+    }).catch(e => {
+      logger.info(e)
+      return res.status(423).json({
+        result : 'fail'
       })
+    })
   }
 }

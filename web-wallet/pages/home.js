@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {Navigation} from "../components/navigation";
 import {Page, StoredKey} from "../utill/enum";
-import {Avatar, Box, Stack, Typography} from "@mui/material";
+import {Box, Stack, Typography} from "@mui/material";
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import InvertColorsIcon from '@mui/icons-material/InvertColors';
 import SendIcon from '@mui/icons-material/Send';
-import {Api} from "../api/api";
+import ExploreIcon from '@mui/icons-material/Explore';
 import {Transfer} from "./transfer";
 import {useDispatch} from "react-redux";
 import copy from 'copy-to-clipboard'
@@ -18,6 +17,7 @@ import {storage} from "../utill/common";
 import {Logo} from "../components/logo";
 import axios from "axios";
 import {SimpleSnackBar} from "../components/simpleSnackBar";
+import {Api} from "../api/api";
 
 
 export default function Home() {
@@ -71,8 +71,13 @@ export default function Home() {
     await axios.get(`/api/transactions?accountId=${accountId}&client=${client}`)
       .then(response => {
         console.log(response)
-      })
+      }).catch(e => console.log(e))
 
+    const api = new Api(client)
+    await api.getTransactions(accountId)
+      .then(response => {
+        setTransactions(response.data.transactions)
+      })
   }
 
   const handleClickCopyAddress = () => {
@@ -84,8 +89,8 @@ export default function Home() {
     router.push('/transfer')
   }
 
-  const faucetHedera = () => {
-
+  const goToExplorer = () => {
+    window.open('http://localhost:3000')
   }
 
   return (
@@ -109,14 +114,9 @@ export default function Home() {
         <Box sx={{marginTop: '10px'}}>
           <Stack direction="row" spacing={2} sx={{justifyContent: 'center'}}>
             <WalletButton variant="outlined"
-                    disabled={loadingFaucet}
-                    startIcon={<InvertColorsIcon />}
-                    onClick={faucetHedera}>
-              {
-                loadingFaucet &&
-                <WalletButton size={24}/>
-              }
-              Faucet
+                    startIcon={<ExploreIcon />}
+                    onClick={goToExplorer}>
+              Ehra Explorer
             </WalletButton>
             <WalletButton variant="contained" endIcon={<SendIcon />} onClick={goToTransfer}>
               Send
@@ -125,7 +125,7 @@ export default function Home() {
         </Box>
       </Box>
       <Box sx={{padding: '0 10px 55px'}}>
-        <TransactionList transactions = {transactions}/>
+        <TransactionList transactions = {transactions} accountId={accountId} client={client}/>
       </Box>
       <Navigation page={Page.HOME}/>
     </>

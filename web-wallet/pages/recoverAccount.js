@@ -100,7 +100,7 @@ export default function RecoverAccount () {
         </Box>
         {
           step === 1 &&
-          <Box>
+          <Box sx={{maxWidth: '725px', margin: '0 auto'}}>
             <Grid
               container
               rowSpacing={1}
@@ -129,7 +129,7 @@ export default function RecoverAccount () {
         }
         {
           step === 2 &&
-          <Box>
+          <Box sx={{maxWidth: '725px', margin: '0 auto'}}>
             <InputPassword
               buttonMessage={'지갑 가져오기'}
               completeProcess={handleGetWalletBtnClick}
