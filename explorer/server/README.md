@@ -11,5 +11,13 @@ npm start
 ```bash
 npm run daemon
 ```
+etc
+도커 사용시 
+```bash
+docker-compose up -d
+```
 
-
+도커 삭제 시
+```bash
+docker-compose down -v
+```

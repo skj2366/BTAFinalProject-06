@@ -1,31 +1,23 @@
-import React, {useEffect, useState} from "react";
-import {
-  goTo
-} from "react-chrome-extension-router";
-import {Avatar, Box, Button, CircularProgress, FormControl, Input, InputLabel, Typography} from "@mui/material";
-import {Home} from "./home";
-import {RecoverAccount} from "./recoverAccount";
+import React, {useState} from "react";
+
+import {Avatar, Box, Button, FormControl, Input, InputLabel, Typography} from "@mui/material";
 import {useDispatch} from "react-redux";
-import {storage} from "../utill/common";
-import {ClientTypeName, StoredKey} from "../utill/enum";
-import sha256 from "sha256";
+import {encryptPassword, storage} from "../utill/common";
+import {StoredKey} from "../utill/enum";
 import {openSnackBar} from "../redux/modules/snackBar";
-import {Help} from "./Help";
-import {changeClient} from "../redux/modules/client";
 import {WalletButton} from "../components/walletButton";
 import {ButtonProgress} from "../components/buttonProgress";
 import {Header} from "../components/header";
+import {useRouter} from "next/router";
 
-
-//destroy knife property strategy clerk honey raise rural buffalo current armed already
-export const Login = () => {
+export default function Login () {
   const dispatch = useDispatch();
+  const router = useRouter()
   const [inputPassword, setInputPassword] = useState('');
   const [loadingTransfer, setLoadingTransfer] = useState(false);
-  const [login, setLogin] = useState(false);
 
   const handleClickRecoverAccount = () => {
-    goTo(RecoverAccount)
+    router.push('/recoverAccount')
   }
 
   const handleChangePassword = (e) => {
@@ -38,25 +30,23 @@ export const Login = () => {
     await storage.remove(StoredKey.PUBLIC_KEY);
     await storage.remove(StoredKey.ACCOUNT_ID);
     await storage.remove(StoredKey.MNEMONIC);
-    goTo(Help);
+    router.push('/')
   }
 
   const handleCheckPassword = async () => {
-    const shaPassword = sha256(inputPassword);
+    const shaPassword = encryptPassword(inputPassword)
     setLoadingTransfer(true);
-    await storage.get(StoredKey.PASSWORD, async (result) => {
-      setLogin(true);
-      if (shaPassword === result.password) {
-        console.log('Ok');
-        setLoadingTransfer(false);
-        await storage.remove(StoredKey.LOCK)
-        goTo(Home);
-      } else {
-        console.log('Nope');
-        dispatch(openSnackBar('error', '비밀번호를 확인해주세요.'));
-        setLoadingTransfer(false);
-      }
-    })
+    const encPassword = storage.get(StoredKey.PASSWORD)
+    if (shaPassword === encPassword) {
+      console.log('Ok');
+      setLoadingTransfer(false);
+      await storage.remove(StoredKey.LOCK)
+      router.push('/home')
+    } else {
+      console.log('Nope');
+      dispatch(openSnackBar('error', '비밀번호를 확인해주세요.'));
+      setLoadingTransfer(false);
+    }
   }
 
   return (
