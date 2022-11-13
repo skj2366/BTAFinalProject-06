@@ -5,7 +5,7 @@
     color: var(--primary-blue);
 }
 .table {
-    margin: 0 auto;
+    margin: 10 auto;
 }
 .caption {
     user-select: none;
