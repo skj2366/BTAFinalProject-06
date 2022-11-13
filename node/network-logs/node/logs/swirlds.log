@@ -1819,3 +1819,431 @@ Round = 1299, number of consensus events = 1299, consensus timestamp = 2022-11-1
    2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
 2022-11-12 14:00:00.405 795      INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":1299,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
 2022-11-12 14:00:00.415 796      INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 1299' to disk
+2022-11-13 07:10:14.551 1        INFO  STARTUP          <main> Browser: there are 1 nodes with local IP addresses
+2022-11-13 07:10:21.087 2        INFO  STARTUP          <main> SwirldsPlatform: startUpEventFrozenEndTime: 2022-11-13T07:10:31.087137355Z
+2022-11-13 07:10:21.089 3        INFO  STARTUP          <main> SwirldsPlatform: initialize eventStreamManager
+2022-11-13 07:10:24.128 26       INFO  STARTUP          <<platform-core: CsvWriter 0>> CsvWriter: CsvWriter: Initializing statistics output in CSV format [ writePeriod = '3000', csvOutputFolder = '/opt/hgcapp/services-hedera/HapiApp2.0/data/stats', csvFileName = 'MainNetStats0.csv' ]
+2022-11-13 07:10:24.176 35       INFO  PLATFORM_STATUS  <<platform-core: syncCaller-0 0>> SwirldsPlatform: Platform status changed. {"oldStatus":"","newStatus":"ACTIVE"} [com.swirlds.logging.payloads.PlatformStatusPayload]
+2022-11-13 07:10:24.188 36       INFO  PLATFORM_STATUS  <<platform-core: syncCaller-0 0>> SwirldsPlatform: Platform status changed to: ACTIVE
+2022-11-13 07:10:24.449 37       INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 1' to disk
+2022-11-13 07:10:24.458 38       INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/1 that is not empty
+2022-11-13 07:10:24.581 41       INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons d46867a390c3c6f56bd57ccd81ee7706bfc1213f9bdaa2bde86fa94b28c63158a1c5b1c3dd09f49d8e54fad402ee4756, starting with local events
+2022-11-13 07:10:24.585 42       INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 1, number of consensus events = 1, consensus timestamp = 2022-11-13T07:10:24.190651606Z, last timestamp = 2022-11-13T07:10:24.190651606Z, consensus Events running hash = d46867a390c3c6f56bd57ccd81ee7706bfc1213f9bdaa2bde86fa94b28c63158a1c5b1c3dd09f49d8e54fad402ee4756, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State c85f60c5422053b7a78f9ecd70fc97bc90aaee80285f5d82f4bb40b2c166fba8f260e1b0f470609c80ff6b2b87a52e90
+   0 ServicesState 75182d3f7322b78bb787d528dd13ad0c3851d16b2b26a1f3f32e9c0ef4dede7ee3838d40752f85a159fd23101228231a
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap b8ff0fbd9eb78bd721295dbd0f5623f7409d8c51df71508f7145e0a57e5f08dfc4288f7f42b230a5e02c3b26f073adeb
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext ce082d87d7078fecdedd6d7c93cb350709d63a8c83864a82cca69bc896a47da1bf7309b2ed48bda23bdc033fbcb9beb3
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf ea0658b10ca6f9f3d419b3f3717dd68f35acb6dc5745ec694370fddacde5eb1a1f75db6e2f91fd452fd7fb823d2e15ee
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState e0f5da259e295ee136c6287f1b0555a2e9ed297078fa00fabe4a1ca226314bebbe5055853823a5d42483d8a982fa206c
+      0 PlatformData 0665f0eb3b5b42065c4716ec0e5582b6b53e7ca6b1cfa8af1d9ff0ab5ac3cf03ada7dcd138ead48b6b0946551e737bfd
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 07:10:24.588 43       INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":1,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 07:10:24.591 44       INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 1' to disk
+2022-11-13 07:15:00.152 3146     INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 5478' to disk
+2022-11-13 07:15:00.154 3147     INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/5478 that is not empty
+2022-11-13 07:15:00.203 3154     INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons 8e1d31df21be1034eb5723507d2e181372490e74125c7c77c77d188e7242c450112042d4440ae3cfe067286fadb3ed1d, starting with local events
+2022-11-13 07:15:00.204 3155     INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 5478, number of consensus events = 5478, consensus timestamp = 2022-11-13T07:15:00.037713279Z, last timestamp = 2022-11-13T07:15:00.037713279Z, consensus Events running hash = 8e1d31df21be1034eb5723507d2e181372490e74125c7c77c77d188e7242c450112042d4440ae3cfe067286fadb3ed1d, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State b9a45f03b365d1d830f3c0423d5877dfe1157e5e55ef38818857f2ee9c1221de04ca59519fb90977d5e3549bc8fee5ba
+   0 ServicesState 249876505fae28ce75e9faa2dd7554d44ccfcf45ce182a85416fa0d247423f1bfe25c7b65317458e644d225f6cb2b96c
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 29c661c5d5f3c28e2d5b990ecd40d7887888e0badd5436916967d84f18f07463cf8ae45d0526eb5ad96508629ab43884
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 0b6802ccf944f708ebb25d32488a60334acaaffa7e1921b97ed1cd613e6b7a9c2012b5eb8c8fc80dee4c7f9a42ddd9e0
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 585ba5f3d11203d3b6c5eb6a742c38c71afbe40bcd4891b9c6484b268a89a5c4397ee0d8d3407cea5b21bac080aa8b02
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 7a3e60c97371c5c18ba0d649eee2fe667f6654ba29504cc6eaf437ff319f2c862765bd5719074cfbde675dcd01deb80d
+      0 PlatformData bb293b911b7759dd68ed0ae11845b7ac875d5f2206f8502899da8ba03e4c39c6b017c22d93a106d44902ab5405ee8e9a
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 07:15:00.206 3156     INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":5478,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 07:15:00.210 3157     INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 5478' to disk
+2022-11-13 07:30:00.165 13288    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 23327' to disk
+2022-11-13 07:30:00.167 13291    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/23327 that is not empty
+2022-11-13 07:30:00.233 13294    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons 275f20f2d708d85845c4310b7484b33b58ce5c641b8bcdbe3750b74ee283fb8e1405e4cf91a85e29ece6a354633efe4e, starting with local events
+2022-11-13 07:30:00.235 13295    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 23327, number of consensus events = 23327, consensus timestamp = 2022-11-13T07:30:00.047493250Z, last timestamp = 2022-11-13T07:30:00.047493250Z, consensus Events running hash = 275f20f2d708d85845c4310b7484b33b58ce5c641b8bcdbe3750b74ee283fb8e1405e4cf91a85e29ece6a354633efe4e, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State 286a87095010ff1ae58f22343976b2b0f750c74c3c8d6bc89d1287db405351f909b34c840632f5c1693d97c52e36d6cf
+   0 ServicesState a5875fcbac03bca11cba5b86ab6c07bc13c60729e1dd8d428cdc5f41aa62fb62fe34bb936b6dd24f8c149436082ed4d7
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 712b7131bf34fffdab9aeb80fe9af291e298efc7be8ce4bf95e7b1930d109203dd565359968a35bc8ff5b2e6d4684ddf
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 02b45960eba1be46199dc4541e8bbc044eddc78bfeecd3fe8a3af55752614ae666b840bec7c35ded0406d1cb50df64e9
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 255e3cbea7529beb58e4722c03e4938e59162056a89fc904812f534da79a803f68f5dc1d3e4a81e5664257e79946b83f
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 89f79deb7e0984af30ba620223a89532392b019548fdc6fab7fbfac078f1ac03e05b8133adde8254134a083f723ef138
+      0 PlatformData d6f18a6daac606d6472ff407419d159396eda25d8be1a806dec06a7ceeeb62f831850e1a7ed560df3c9851611bda07ca
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 07:30:00.242 13296    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":23327,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 07:30:00.248 13297    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 23327' to disk
+2022-11-13 07:45:00.127 23414    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 41122' to disk
+2022-11-13 07:45:00.128 23415    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/41122 that is not empty
+2022-11-13 07:45:00.178 23426    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons cbb5a0ce5c4908fbb260976e9c76d9d2748a0b10f257a5c99f452ae30915577c5d66f27459cb5f20ae08bc2935405818, starting with local events
+2022-11-13 07:45:00.178 23427    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 41122, number of consensus events = 41122, consensus timestamp = 2022-11-13T07:45:00.018774304Z, last timestamp = 2022-11-13T07:45:00.018774304Z, consensus Events running hash = cbb5a0ce5c4908fbb260976e9c76d9d2748a0b10f257a5c99f452ae30915577c5d66f27459cb5f20ae08bc2935405818, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State 588d484d2a75599696209412746b33a33745bf248ce2ca8bc8580ddd013e23ddbe7842700f55f6921512ad72fe5fd5b0
+   0 ServicesState 5bb9972bc1c103da3a9e3077629f9e0f7b0ed47e7805b7e32e60c7b33eea4781596efe1ec78bec4a7efb1f198753f7ae
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 86f7a3fbfe8b04ffb6284218ce532fcfbb141dcde48e7299f8bd7bded2fefcb2f6f7ad081fc0093b83c5b3f60d39fdff
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext f75a896930e0e41a86caacdc37149e9fa1b3709f5ba3c5d7eac5341ce305e1f40a2c6cc5269f2e57f8ad67a46b7d92fe
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf c00defbd08af548b64202271885bc8889cdcb1dda19bfb8693eea4d2f5d2cbb5751cf2f9778c7801c44c102fa05ac2d0
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 37777320032c8fb50606bec3b5d35f2631bf2891fac39dff51b7779e0bacc2f218ee1febd2698f0f2a704d8abbecd1ef
+      0 PlatformData a894732629b7d3a9f01acf48210d6f318e1ab1fdc82e2760d58405c632a1e03291344ae1445588926f6ebaffce8d3f4f
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 07:45:00.181 23428    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":41122,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 07:45:00.183 23429    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 41122' to disk
+2022-11-13 08:00:00.164 33558    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 58986' to disk
+2022-11-13 08:00:00.170 33562    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/58986 that is not empty
+2022-11-13 08:00:00.398 33568    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons 1b31de947b6f7f42f800bd1779e6a7e5834ec41676e457fe34b34e102d5914fc2474f22608520332d1aeb39d29a904a0, starting with local events
+2022-11-13 08:00:00.433 33569    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 58986, number of consensus events = 58986, consensus timestamp = 2022-11-13T08:00:00.041913192Z, last timestamp = 2022-11-13T08:00:00.041913192Z, consensus Events running hash = 1b31de947b6f7f42f800bd1779e6a7e5834ec41676e457fe34b34e102d5914fc2474f22608520332d1aeb39d29a904a0, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State a760f9471f02b5f6de371c26ab0bebbc2601ae116406baca5424692f7d61e4e57ae7d314aa5126c049d6f7e5b3880f7c
+   0 ServicesState 5e9fbf5cad0f3cb6505a66c0e5522bf222882da7d59b5243eedc2f9c899a29cfae4adf5a512da711f697d0e034997924
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 76ad9a5553a196e50030e0691b856b5d0104a8181c014694db70ba74d1e358de73c2191faf9032c039678b1c330d1144
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 9983cd78ba6c5a9dd38c6bc0e0b927daeca3aa7476784694d6d8133ba69d8833c36b4ad676d8c176dc922c41d616130d
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 5f5ea9fd622fcc8adf5ac6dc5d1e4b5a1735d2e25d2b6d6b7221b2d771ff25ca94b2d6c477ddcb425442e137218027aa
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState ba0e33d9077ede98edbb8e96a6289591b5a929b797cd2f8d0f34c8e2653bd7c1073bdef377ad7417b10bab9f0487f43b
+      0 PlatformData 7db23a6efbe9d5f26f073fb476ce0d70fe0ab897e27a24244f2a562af6eba573e6c76a0155915d7472fb2561e7ce125b
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 08:00:00.448 33570    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":58986,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 08:00:00.468 33571    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 58986' to disk
+2022-11-13 08:15:00.142 43698    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 76846' to disk
+2022-11-13 08:15:00.144 43699    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/76846 that is not empty
+2022-11-13 08:15:00.276 43710    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons f6243f08da9f04ab35531c0ff02b1fccfcd9ccf22efe19fa55edca5986d7d1c595d6d0c71b6effe4b04d3dd6f9772320, starting with local events
+2022-11-13 08:15:00.277 43711    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 76846, number of consensus events = 76846, consensus timestamp = 2022-11-13T08:15:00.032320704Z, last timestamp = 2022-11-13T08:15:00.032320704Z, consensus Events running hash = f6243f08da9f04ab35531c0ff02b1fccfcd9ccf22efe19fa55edca5986d7d1c595d6d0c71b6effe4b04d3dd6f9772320, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State 9986884f5b2d46b638a341e5743a826cad9d2e6c5776afd0356a3dfbf673eb99fc2574566fa85f4c4846e4097c8ad1f3
+   0 ServicesState 5c9634ae741e93646e2d95d6006b2d7da5430884b31631493cf6cc290606b6d15fd5bb9a59d6bbc0fa8334d1e2b66b1b
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap f4454ce1477c7d1446d4efa09537336a9d87896ee3c5d78fb83bb2af59dae2ed00d28a39f5f3cd69dfa370b7bb5896ce
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 8792414e92d81a8f845957b0136267dbd58397a96c35d8420cd018ff2c1e28303ab97eee44e4395200cfda81947a7e0b
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 4dc6fe39e6adaa67ee5180fa76af92fedeb77bd0a5d71e20861f3a6da0320d2cc196e25a4df30ff754cade9b321e16cf
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState eb6720b9813f5e96a356ad633617ec09f58c3158a6a5d6c1e068ed8300503e37d847542667534062cf5142383a99e3b7
+      0 PlatformData 7929234dea3c1a325b0c97a022e436c5e13b5f2a25d6e601bda050580ea0adb8ea2e7ae44c13bf073479ab2f70820000
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 08:15:00.287 43712    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":76846,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 08:15:00.293 43713    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 76846' to disk
+2022-11-13 08:15:00.294 43714    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/1
+2022-11-13 08:15:00.300 43715    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/1
+2022-11-13 08:30:00.150 53833    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 94611' to disk
+2022-11-13 08:30:00.158 53834    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/94611 that is not empty
+2022-11-13 08:30:00.406 53841    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons b6919ddc2b13a0fdf06276b06d0669caaa5611f908e52a4021fabc28232fb0953811a93a5ff87612123935155155321c, starting with local events
+2022-11-13 08:30:00.408 53842    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 94611, number of consensus events = 94611, consensus timestamp = 2022-11-13T08:30:00.033050384Z, last timestamp = 2022-11-13T08:30:00.033050384Z, consensus Events running hash = b6919ddc2b13a0fdf06276b06d0669caaa5611f908e52a4021fabc28232fb0953811a93a5ff87612123935155155321c, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State 340257b78d3069a047463275490b98cb2972212a597270d2d091be937b0421b6765e4571cbf72c4c3c1d4443ec40f72b
+   0 ServicesState 0fc6358328bd6df92721b1cc1a08260c76a476b60d3293ac09603170d406653945f02013e9a192f990ab9d5dae7708a0
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 8d515c422ccecd8129238f68a3ec92b9c6c0b34e526daba18f7799e950e312c9c551c1969fc55fc09e2821bc38cc8267
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 09d9cf224cf2f135cacd5d8ec88e39c61e164249bdee38995e8de9a5e290041b351d92d2abd73e8541ab5c55009c3395
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf ced7974a9dc4bf04551489ced44279d2d91468fde3bbc9e1a9e54abdd3ca57982bea9840b5b11114d7f2ca47366f04e3
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 0e1762922e74eed89854d101f34a3039651d4f702ff4da8f3a295a6af19f5259149d004027b7c4d8010a5ef1977f00e4
+      0 PlatformData 2a3918cf9f6f36d7655fbd633c6ae1d6d7c9869129025b943399d69cb8f03bd40036651bde16e741392a34e739706748
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 08:30:00.412 53843    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":94611,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 08:30:00.421 53844    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 94611' to disk
+2022-11-13 08:30:00.422 53845    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/5478
+2022-11-13 08:30:00.441 53846    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/5478
+2022-11-13 08:45:00.155 63976    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 112470' to disk
+2022-11-13 08:45:00.158 63977    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/112470 that is not empty
+2022-11-13 08:45:00.224 63984    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons 310e2d413f12e876d46a79575dbc0153e02cfc2b1689b1085252c0bad9efd00836c673c7c5f10b5fd9694547b3a2673b, starting with local events
+2022-11-13 08:45:00.225 63985    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 112470, number of consensus events = 112470, consensus timestamp = 2022-11-13T08:45:00.042312521Z, last timestamp = 2022-11-13T08:45:00.042312521Z, consensus Events running hash = 310e2d413f12e876d46a79575dbc0153e02cfc2b1689b1085252c0bad9efd00836c673c7c5f10b5fd9694547b3a2673b, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State 255275b802af4d6f7f73690be1cf6bce67bb41f1c2e01fd848455eeb22cf8334eb4562e9ae9fa2620e54a689cea3d97a
+   0 ServicesState 9c7b1c96ce7bc463ce56e00bb8c41c8709c36cd8efcc08abae593a755158bfbe4a8097cc7e831cab9c5f9ebc855c2f91
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap f19537bb9f3632f3976aa1ac495d8b8f62c53f364eb88b879d92475599f4740b9a32005088b24b7a3b05e803b583615b
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 7b9a128b44c7bc66a6918940cef06e3629f51afdf12bdf3daa96066146d9a2a249dfba96dcd12f6f732454423d7e2ff8
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 053c79a93d91cd8fe18ad2ef59e5997ac112f62d4358cd7a469bf178c3d11a2b68529923c38b4d497168e8b66b6be7ff
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState c2d79107a2eaadd6e2147b258a86bb5fd59214f44015e7602ccf5110b4a5481f6043db10c37e74966281e53cb83fdbe8
+      0 PlatformData f550dd408d0295a8fdc5dbf629df9426e7beb4caa5d1d284ee0261bd75d9874d26e9451ec6e4a74c4e329c54b716d4fe
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 08:45:00.229 63986    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":112470,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 08:45:00.235 63987    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 112470' to disk
+2022-11-13 08:45:00.235 63988    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/23327
+2022-11-13 08:45:00.246 63989    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/23327
+2022-11-13 09:00:00.134 74106    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 130281' to disk
+2022-11-13 09:00:00.137 74107    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/130281 that is not empty
+2022-11-13 09:00:00.254 74118    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons 26a89bf32d072ab815945868589e69b14881850957fc6628f54b6c93a68ec810381ba901d96104f336297c22aeee76b4, starting with local events
+2022-11-13 09:00:00.255 74119    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 130281, number of consensus events = 130281, consensus timestamp = 2022-11-13T09:00:00.022159284Z, last timestamp = 2022-11-13T09:00:00.022159284Z, consensus Events running hash = 26a89bf32d072ab815945868589e69b14881850957fc6628f54b6c93a68ec810381ba901d96104f336297c22aeee76b4, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State 419572cd83fa9ea84cf62686a975568e6464f2bb487bd02572a8eb67c8ca987935cf553460a925322885be6ada454fc5
+   0 ServicesState bf26eb3f5ca5164510118d5b2c2bf0d212364c461ab01e8141af130b110bfa51628297564c27341fa63141897ea3e767
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap be78e2f359c35167bd49f0b51e7225fe758e4c5f2a0071943e96c3d4e3519b1b9a82de3a78c76fb991c79fee237c50ce
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext cf866b14167fd55db04351c7a7afa06826f68213bf3e4d6bfa5211a45b9e7fe1d6b2b6d5e5a22277dad39b017278b383
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 50d2d335f5e1278f8c45ca03b5214bfa093c74920023699168cc47dbe6ff0c0a220bd300f6eb9d25b423706cd8ce0a73
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 69f6fb65c5c329a1c2200dce5f7f2263ee03069601f43d690ea84b41804eae10176abf1231c316ef8f032d7b505b71b3
+      0 PlatformData 47bc445072ba58310288e9f2dab335d62c22d299de325cc80052043499607e432bee77ff10cda3ec2ef17d34cc6e138c
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 09:00:00.265 74120    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":130281,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 09:00:00.271 74121    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 130281' to disk
+2022-11-13 09:00:00.271 74122    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/41122
+2022-11-13 09:00:00.290 74123    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/41122
+2022-11-13 09:15:00.122 84243    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 148094' to disk
+2022-11-13 09:15:00.125 84244    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/148094 that is not empty
+2022-11-13 09:15:00.268 84253    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons cedb843ce394cd906f010cf7a026034371684728f99db001004f9e0161c4fb00b9a35531a8feb76d55cbc690038e3595, starting with local events
+2022-11-13 09:15:00.285 84254    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 148094, number of consensus events = 148094, consensus timestamp = 2022-11-13T09:15:00.005501546Z, last timestamp = 2022-11-13T09:15:00.005501546Z, consensus Events running hash = cedb843ce394cd906f010cf7a026034371684728f99db001004f9e0161c4fb00b9a35531a8feb76d55cbc690038e3595, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State ab2e8d3ca0c8f94fd360001f5413cf52db1e39607e186ee528fde6b265c657b2eef4e9133fa4afbfec9158ed0c514eff
+   0 ServicesState b0cd6b1e5bd13dc9508218e0cca743dd1d0d4cc6c887d074fef9f4ef5daa77b37b4958abe3df0e36679736469088ac2b
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 8486a6819b894d3b4f06124cf25c2e6591245583719324db540e5d068f2b615f039993e57c80ae1aa6f715ade6124e71
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext a4182bca3f607d81a7783ca381a2d576f4c8fb8953f88182ba2398441be43ad17ef450f7e5c99666b5b75b8c9d7eef30
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf e318541c23d628778e4aa755cde7514f14aa80831b4bc9c5f3123d019ff1b4858fcc0c058663c9e448438665206ce35d
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 1d6cdadad727ccb0a7760fe5d2cb61856d62afc2d8788e866f445d3ed21437272847fcff69044b763388c8c601f8e9b6
+      0 PlatformData 265908c4bd6a7786c80ac56fef7dc546325ac4396e3de19520625f036878fd15e7f6006e87e8653da46e3e35f80ea6d1
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 09:15:00.296 84255    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":148094,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 09:15:00.311 84256    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 148094' to disk
+2022-11-13 09:15:00.311 84257    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/58986
+2022-11-13 09:15:00.360 84258    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/58986
+2022-11-13 09:30:00.125 94385    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 165941' to disk
+2022-11-13 09:30:00.133 94386    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/165941 that is not empty
+2022-11-13 09:30:00.256 94397    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons 1451e545e01c6824bb64b1c874fa3e8784113ccc247067e627f4501aea4c00931d235d0b8d3b24320a3eddacb1c9684e, starting with local events
+2022-11-13 09:30:00.257 94398    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 165941, number of consensus events = 165941, consensus timestamp = 2022-11-13T09:30:00.006906184Z, last timestamp = 2022-11-13T09:30:00.006906184Z, consensus Events running hash = 1451e545e01c6824bb64b1c874fa3e8784113ccc247067e627f4501aea4c00931d235d0b8d3b24320a3eddacb1c9684e, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State f2421b411b50a7fe60d50831e7d80508035a5eeb2410f7011921201759aa4a2fc685ea42ba8ff8317d4541200aa1568d
+   0 ServicesState c8420d1e8d56372dd5b856c31cb3b06f3b77f797f42a65d1e608de6eaf5ed523b8921d480a223bdfb286e382e13e413b
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 8d6b9711d6ad423acc73b503035bd9203a0e9d2f8052818e06e34fcb02bd03b2b0f44b42f4b285726c20acc156f61885
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 1b7fb1ab159c5ab5b6c3959652cd49724adf9b0b9a3349b8a2f1d91c08ab1ff62c6f2a9e5c416aac25e1d619be8f42cb
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf bdc482cfdcdac30234ac0e93ea1806baba5e06b2b14d9ffab95b233d4123211fb2a8fe7be10b480270b69d59fbb497c7
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 510c6d64620a1c72b5505fb2c6b3351db02560449fcc64692d6e07aebbdaa8e0a85a539124d35768472fd252997e4017
+      0 PlatformData f9626caee29724f764bda1abc96e2b1831affedaf65c63b1c28451eeab556fc440cee38631c4a3725291029abc13d02a
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 09:30:00.267 94399    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":165941,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 09:30:00.275 94400    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 165941' to disk
+2022-11-13 09:30:00.275 94401    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/76846
+2022-11-13 09:30:00.307 94402    INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/76846
+2022-11-13 09:45:00.130 104528   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Started writing 'Signed state for round 183795' to disk
+2022-11-13 09:45:00.132 104529   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> MerkleDataOutputStream: merkle tree being written to directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/183795 that is not empty
+2022-11-13 09:45:00.207 104540   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Done writing saved state with HashEventsCons ab0c52b1b144e76ccb618658d8eb70e779a903428063c6dc20e05e4a6d20967071cade1a26da2926d2405293430b3e58, starting with local events
+2022-11-13 09:45:00.208 104541   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Information for state written to disk:
+Round = 183795, number of consensus events = 183795, consensus timestamp = 2022-11-13T09:45:00.019759029Z, last timestamp = 2022-11-13T09:45:00.019759029Z, consensus Events running hash = ab0c52b1b144e76ccb618658d8eb70e779a903428063c6dc20e05e4a6d20967071cade1a26da2926d2405293430b3e58, address book hash = 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+(root) State f09782e880d360c0547c75fced0ea92f8c561afbb4d76b3d4f600f001c214e510aa202042f0c8ac3333a61d7502e70ef
+   0 ServicesState dbd4e8f50716a52d19489814a7015c940d506a49614c70e55d4241f044df76f1b682265a83ef26a4904931ecd1378cfc
+      0 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      2 MerkleMap d501223f991251aac2d00f9aa62c0bc1120e41deb8a62b8af11d1b249464601d000c0bafe50f2ae7a9b1da75430f3de0
+      3 VirtualMap acfa741af4f62c2d685905f85e96f61388e437ef6b94c5ff6e250fb33c2413f7fd9ef647a28fde3b89f7da10eb40ce6c
+         0 VirtualMapState 8800dd9aaee37b943e0a2cea41842aff412f32fe1e25acd8d9865b788dde4cb908054f90bcc09b417ec925fb66070d0c
+         1 VirtualRootNode bf0678ac2152a08efda8800796bbf48b7b5a71652d56af74699708b737e8f6dbb55f4fa6773fd922c6bec2bb26aa46ae
+      4 MerkleMap 40ac64c5b743e1ed1f55c9c675f55aa5d5e030f8037539cc8c6b2f6cb90c328835049f41f36c80566e384880cad24553
+      5 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      6 MerkleNetworkContext 40f2a851afe8c9ccbc331266fcc39d67a149d1e0d7cf43681274a5af13f32d7c0aaf46f6d3c9fc01ae971e1dbac2e9cb
+      7 MerkleSpecialFiles eccb5484424a20e13ca7ab778b8e61c90c097e66546e112bc9bfc2b654e37136ffa748c9be8eac5101b4cc38c673f6a8
+      8 MerkleScheduledTransactions f24f3f0a3b3a213537dbb1c2312b4df2271098fb2b64da1fa1416c8091d4b210d84f816d3a96498a99948e2cc78801d6
+         0 MerkleScheduledTransactionsState 72bc214d2087ec6ebd6d31714f7bbb28aca889d6cbca726b01a7e7f51225adab5a2acdfc4327cab33b3e0d887d7896e7
+         1 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         2 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+         3 MerkleMap 2ef002bf2a218ea91ae2d58a98a3f25fdd33d2eaf0fb501231a70918c3db91277f1705fe0ac88dfc65a2a580aabf8c23
+      9 RecordsRunningHashLeaf 2fbd50460b18b08fc14d3ca015079dae59750cd27e41061fec38ddf323ee904da68739769058c14f31432ec4b2648510
+      10 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+      11 VirtualMap ded770a8e3c0fd2647b7cd6d79d5beaa7f3be5f58ebedeae16739e90f68da3ec0cee23db0855a8a80578bc70e191c996
+         0 VirtualMapState 7a68df3703cd3260f1de2cced37be3aca90229c92f8476c5546474e7679c48f5d0c35c8d8e0c556b437c581b0cb24c57
+         1 VirtualRootNode 9cf66321fcdd0a37871ae8b5fbe1f6867c1b3e2347ed2816d95d0551c8125c6eeffb0bbbe761b8f421d94286b5248c2f
+      12 MerkleMap 99ab6d165e0be16412a13e669684e099d55e36e4a26eec4dc604ab77f882dd0400a005dfa8cd1fc496fffb23c863f957
+   1 PlatformState 25b7c97108812d70ecf37e03e64b5b61239d3488bcc651b41646c5ae54ee2ef3b32d303da7962339a31814239fdc8b72
+      0 PlatformData 3e8d80c9b09cc5ca091d2435a53139cf9a1728ccfc98ca283f33c1efadd7fd12d006e7e6b5d8a8bcf77c6f2e00d75d51
+      1 AddressBook 34c37bdd743ec72404e4394664716f70fe0b171430336029c22e056a54323e7b4d97e24200e436bda0d1d5d509e07d5c
+   2 DualStateImpl d1087184ad0616bbaebb8830fa18e8a56e9284a99f83c5bf6323ef41d4896f132ef45178394992376ed3203c4618b684
+2022-11-13 09:45:00.217 104542   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: null {"round":183795,"freezeState":false} [com.swirlds.logging.payloads.StateSavedToDiskPayload]
+2022-11-13 09:45:00.221 104543   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: Finished writing 'Signed state for round 183795' to disk
+2022-11-13 09:45:00.221 104544   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: deleting directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/94611
+2022-11-13 09:45:00.232 104545   INFO  STATE_TO_DISK    <<platform-core: objectFileManager 0>> SignedStateFileManager: successfully deleted directory /opt/hgcapp/services-hedera/HapiApp2.0/data/saved/com.hedera.services.ServicesMain/0/hedera/94611
