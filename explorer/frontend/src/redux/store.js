@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
 
 export const store = configureStore({
     reducer: rootReducer,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(hbarApi.middleware, hederaApi.middleware)
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(hbarApi.middleware, hederaApi.middleware, serverApi.middleware)
 });
 
 setupListeners(store.dispatch)
