@@ -26,14 +26,15 @@ export const serverApi = createApi({
         getLocalAccounts: builder.query({
             query: () => ({
                 url: `localhost:8080/account`
-            })
+            }),
+            transformResponse: (response) => response.data
         }),
         getLocalAccount: builder.query({
             query: ({acc}) => ({
                 url: `localhost:8080/account/${acc}`
             })
         }),
-        
+        transformResponse: (response) => response.data
     })
 })
 

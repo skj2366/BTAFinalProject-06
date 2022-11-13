@@ -38,9 +38,9 @@ const Navbar = () => {
             style={{ width: 150 }}
             onChange={(value) => dispatch(selectNet(value))}
           >
-            <Option value='localnet'>localnet</Option>
-            <Option value='mainnet'>Mainnet</Option>
+            <Option value='localnet'>Localnet</Option>
             <Option value='testnet'>Testnet</Option>
+            <Option value='mainnet'>Mainnet</Option>
           </Select>
 
           <Button type='link' ghost={true} size='small'>

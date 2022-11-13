@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Transaction = ({ id, type, result, fee }) => {
+  //console.log(type)
   return (
     <tr>
       <td className='transaction_link'>
