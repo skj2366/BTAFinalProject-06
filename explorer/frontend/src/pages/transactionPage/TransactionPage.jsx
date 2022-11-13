@@ -25,10 +25,12 @@ const TransactionPage = () => {
       getTxList();
     },[]);
     const getTxList = async() => {
-      console.log(`http://localhost:8080/tx/${id}`)
-      await axios.get(`http://localhost:8080/tx/${id}`)
+      //console.log(`http://localhost:8080/tx/${id}`)
+      //await axios.get(`http://localhost:8080/tx/${id}`)
+      await axios.get(`http://localhost:5551/api/v1/transactions/${id}?order=desc`)
       .then((res) => {
-        setDataLocal(res.data.data[0]);
+        //setDataLocal(res.data.data[0]);
+        setDataLocal(res.data.transactions[0]);  
       })
       .catch((e)=> {
         console.log(e);
