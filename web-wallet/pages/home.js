@@ -68,11 +68,6 @@ export default function Home() {
   }
 
   const getAccountTransactions = async () => {
-    await axios.get(`/api/transactions?accountId=${accountId}&client=${client}`)
-      .then(response => {
-        console.log(response)
-      }).catch(e => console.log(e))
-
     const api = new Api(client)
     await api.getTransactions(accountId)
       .then(response => {
