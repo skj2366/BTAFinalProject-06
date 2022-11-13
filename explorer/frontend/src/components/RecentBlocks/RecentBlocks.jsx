@@ -1,6 +1,7 @@
 import React from 'react';
 import './RecentBlocks.css';
 import Block from './Block';
+import getTime from '../../utils/GetTime'
 
 const RecentBlocks = ({ elements }) => {
     // const blocks = '';
@@ -8,7 +9,7 @@ const RecentBlocks = ({ elements }) => {
         <Block
             key={elem.hash}
             number={elem.number}
-            startTime={elem.timestamp_from}
+            startTime={getTime(elem.timestamp_from)}
             gas_used={elem.gas_used}
             count={elem.count}
             name={elem.name}
