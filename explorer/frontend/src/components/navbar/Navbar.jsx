@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Button, notification } from 'antd';
-import { InfoOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
 import './Navbar.css';
 import { useDispatch } from 'react-redux';

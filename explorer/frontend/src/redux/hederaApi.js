@@ -35,11 +35,12 @@ export const hederaApi = createApi({
       transformResponse: (response) => response.blocks,
     }),
     getLocalBlocks: builder.query({
-      query: (net) => ({
+      query: ({ net, page }) => ({
         url: `${net}/block`,
         params: {
           limit: 10,
           order: 'desc',
+          page: page,
         },
       }),
       transformResponse: (response) => response.data,
@@ -68,11 +69,11 @@ export const hederaApi = createApi({
       transformResponse: (response) => response.transactions[0],
     }),
     getAccounts: builder.query({
-        query: ({ net, acc }) => ({
-          url: `${net}/api/v1/accounts`
-        }),
-        transformResponse: (response) => response.accounts,
+      query: ({ net, acc }) => ({
+        url: `${net}/api/v1/accounts`,
       }),
+      transformResponse: (response) => response.accounts,
+    }),
     getAccount: builder.query({
       query: ({ net, acc }) => ({
         //url: `${net}/api/v1/accounts/${acc}`

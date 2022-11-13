@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import getTime from '../../utils/GetTime';
 
 const Block = ({ number, startTime, count, gas_used }) => {
   return (

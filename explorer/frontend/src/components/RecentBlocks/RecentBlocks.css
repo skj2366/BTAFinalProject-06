@@ -1,5 +1,6 @@
 .recent_blocks {
     margin: 2rem 0 2rem 0;
+    position: relative;
 }
 .transaction_link {
     color: var(--primary-blue);
