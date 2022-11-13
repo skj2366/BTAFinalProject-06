@@ -86,6 +86,12 @@ export const hederaApi = createApi({
         url: `localhost:5551/api/v1/tokens/${token}`,
       }),
     }),
+    getTransactionForAccID: builder.query({
+        query: ({ net, acc }) => ({
+            url: `${net}/api/v1/transactions/?account.id=${acc}&order=desc`,
+        }),
+        transformResponse: (response) => response.transactions,
+    }),
   }),
 });
 
@@ -101,4 +107,5 @@ export const {
   useGetAccountsQuery,
   useGetAccountQuery,
   useGetTokenQuery,
+  useGetTransactionForAccIDQuery,
 } = hederaApi;

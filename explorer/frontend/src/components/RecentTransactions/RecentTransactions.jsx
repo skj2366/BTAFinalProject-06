@@ -19,21 +19,23 @@ const RecentTransactions = ({trans, transLocal, net}) => {
         )
     }
     return (
-        <> < h4 className = 'info_title' > Recent Transactions</h4> < div className = 'recent_transactions page' > <table className="table table-borderless table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">TX ID</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Result</th>
-                    <th scope='col'>Fee (Hbar)</th>
-                </tr>
-            </thead>
-            <tbody>
-                {transactions}
-            </tbody>
-        </table>
-    </div>
-</>
+        <> < h4 className = 'info_title' > Recent Transactions</h4>
+            < div className = 'recent_transactions page' >
+                <table className="table table-borderless table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">TX ID</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Result</th>
+                            <th scope='col'>Fee (Hbar)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {transactions}
+                    </tbody>
+                </table>
+            </div>
+        </>
     )
 }
 

@@ -7,7 +7,6 @@ import getDynamicQuery from '../../utils/getDynamicQuery'
 import { useGetAccountsQuery } from '../../redux/hederaApi'
 import { useGetLocalAccountsQuery } from '../../redux/serverApi'
 const RecentAccounts = () => {
-   
     let acc;
    /*  if (net === 'localnet') {
         accounts = accountLocal.map(
@@ -16,7 +15,6 @@ const RecentAccounts = () => {
                 result={elem.result} fee={elem.charged_tx_fee}/>
         )
     } else { */
-
     const state_net = useSelector(state => state.net.net)
     const net = getDynamicQuery(state_net)
     const [account, setAccount] = useState([]); 
@@ -46,15 +44,15 @@ const RecentAccounts = () => {
       });
     }
     const getAccountList = async() => {
-        await axios.get(`testnet.mirrornode.hedera.com/api/v1/accounts`)
+        await axios.get(`http://testnet.mirrornode.hedera.com/api/v1/accounts/?order=desc`)
         .then((res) => {
-          console.log(res.data)
+          console.log(res.data.accounts)
           setAccount(res.data.accounts);
         })
         .catch((e)=> {
           console.log(e);
         });
-      }
+    }
     /* const state_net = useSelector(state => state.net.net)
     const {data: accountsLocal} = useGetLocalAccountsQuery({
         pollingInterval: 20000,
@@ -64,11 +62,14 @@ const RecentAccounts = () => {
     }) */
 
     acc = account.map(
-        (elem) => <Account key={elem.account} id={elem.account} 
-        balance={elem.balance.balance}
-        keyName={elem.key}
+        (elem) => <Account  
+        key={elem.account}
+        id={elem.account} 
+        balance={elem.balance.balance != 0 ? (elem.balance.balance / Math.pow(10, 8)) : elem.balance.balance}
+        keyName={elem.key != null ? (Array.isArray(elem.key) ? elem.key.substr(0,60) : elem.key.key.substr(0,60)) : ''}
         alias={elem.alias}
-        evmAddress = {elem.evm_address} />
+        evmAddress = {elem.evm_address} 
+        />
     )
 
     return (
