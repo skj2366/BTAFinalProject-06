@@ -14,7 +14,6 @@
 
 파일 구조
  - explorer
-   - client
    - frontend : explorer 웹 페이지
    - server : daemon 서버
  - node : 로컬 노드 서버 구성
