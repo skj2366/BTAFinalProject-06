@@ -20,7 +20,10 @@ export const ChangeAccountDrawer = (props) => {
   const { open, setOpen, client } = props;
 
   useEffect(() => {
-    getAccounts().catch(e => console.log(e))
+    let timer = setInterval(() => {
+      getAccounts().catch(e => console.log(e))
+    }, 1000)
+   return () => {clearTimeout(timer)}
   }, [])
 
   const getAccounts = async () => {
@@ -48,7 +51,6 @@ export const ChangeAccountDrawer = (props) => {
       }).then(response => {
         console.log(response)
         dispatch(openSnackBar('success', 'account가 생성되었습니다.'))
-        getAccounts().catch(e => console.log(e))
       }).catch(e => console.log(e))
     }
   }
