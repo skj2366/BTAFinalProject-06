@@ -10,7 +10,7 @@ const getLastTimestampFromChain = async () => {
 
             const {data} = await axios.get(`${env.NODE_URI}/api/v1/transactions/?order=desc&limit=1`)     
             timestamp = data.transactions[0].consensus_timestamp; // 마지막 합의한 타임스탬프
-            console.log("마지막 합의한 타임스탬프  : " + timestamp);
+            console.log("마지막 합의한 타임스탬프: " + timestamp);
 
             return timestamp;
     } catch (error) {
