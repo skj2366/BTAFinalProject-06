@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
-import {Avatar, Box, Paper, Stack, Typography} from "@mui/material";
-import {RecoverAccount} from "./recoverAccount";
+import {Box, Paper, Stack, Typography} from "@mui/material";
 import {useDispatch} from "react-redux";
 import {storage} from "../utill/common";
 import {ClientTypeName, StoredKey} from "../utill/enum";
@@ -17,7 +16,7 @@ export default function Help() {
   useEffect(() => {
     async function checkLogin() {
       const client = storage.get(StoredKey.CLIENT)
-      dispatch(changeClient(client ? client :  ClientTypeName.TEST_NET))
+      dispatch(changeClient(client ? client :  ClientTypeName.LOCAL_NET))
 
       const password = storage.get(StoredKey.PASSWORD)
       const accountId = storage.get(StoredKey.ACCOUNT_ID)

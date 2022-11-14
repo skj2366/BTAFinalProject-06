@@ -6,18 +6,8 @@ import {WalletButton} from "./walletButton";
 import {decryptByEncryptPassword, storage} from "../utill/common";
 import {StoredKey} from "../utill/enum";
 import {Api} from "../api/api";
-import {
-  Card,
-  CardContent,
-  List, ListItem,
-  ListItemAvatar,
-  ListItemButton,
-  ListItemIcon, ListItemText,
-  ListSubheader,
-  Typography
-} from "@mui/material";
+import {List, ListItem, ListItemAvatar, ListItemText} from "@mui/material";
 import {useDispatch} from "react-redux";
-import {changeAccount} from "../redux/modules/accountInfo";
 import {openSnackBar} from "../redux/modules/snackBar";
 import axios from "axios";
 import {SimpleSnackBar} from "./simpleSnackBar";
@@ -57,7 +47,8 @@ export const ChangeAccountDrawer = (props) => {
         client: client
       }).then(response => {
         console.log(response)
-        dispatch(openSnackBar('success', 'account가 생성되었습니다.'));
+        dispatch(openSnackBar('success', 'account가 생성되었습니다.'))
+        getAccounts().catch(e => console.log(e))
       }).catch(e => console.log(e))
     }
   }

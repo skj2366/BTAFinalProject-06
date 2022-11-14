@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {FormControl, InputLabel, NativeSelect} from "@mui/material";
+import {FormControl, NativeSelect} from "@mui/material";
 import {ClientTypeName, StoredKey} from "../utill/enum";
-import {useDispatch, useSelector} from "react-redux";
 import {removeStorage, storage} from "../utill/common";
 import {useRouter} from "next/router";
 
@@ -11,17 +10,19 @@ export const NetworkChangeSelector = () => {
 
   useEffect(() => {
     const storedClient = storage.get(StoredKey.CLIENT)
+    console.log(storedClient)
     if (storedClient) {
       setClient(storedClient)
     } else {
-      setClient(ClientTypeName.TEST_NET)
-      storage.set(StoredKey.CLIENT, ClientTypeName.TEST_NET)
+      setClient(ClientTypeName.LOCAL_NET)
+      storage.set(StoredKey.CLIENT, ClientTypeName.LOCAL_NET)
     }
   },[])
 
   const handleChangeNetwork = (e) => {
     const selectClient = e.target.value;
     console.log(selectClient)
+    setClient(selectClient)
     storage.set(StoredKey.CLIENT, selectClient)
     removeStorage()
     router.push('/')
@@ -33,8 +34,8 @@ export const NetworkChangeSelector = () => {
         onChange={handleChangeNetwork}
         value={client}
       >
-        <option value={ClientTypeName.TEST_NET}>Testnet</option>
         <option value={ClientTypeName.LOCAL_NET}>Localnet</option>
+        <option value={ClientTypeName.TEST_NET}>Testnet</option>
       </NativeSelect>
     </FormControl>
   )
