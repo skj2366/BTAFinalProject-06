@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Header} from "../components/header";
-import {Avatar, Box, Button, Grid, Typography} from "@mui/material";
-import {useDispatch, useSelector} from "react-redux";
+import {Box, Grid, Typography} from "@mui/material";
+import {useDispatch} from "react-redux";
 import {openSnackBar} from "../redux/modules/snackBar";
 import {WalletButton} from "../components/walletButton";
 import {FormInput} from "../components/formInput";
@@ -13,6 +13,7 @@ import {Api} from "../api/api";
 import {changeAccount} from "../redux/modules/accountInfo";
 import {useRouter} from "next/router";
 import {Logo} from "../components/logo";
+import {SimpleSnackBar} from "../components/simpleSnackBar";
 
 export default function RecoverAccount () {
   const MNEMONIC_ARRAY_LENGTH = 12
@@ -88,6 +89,7 @@ export default function RecoverAccount () {
 
   return (
     <>
+      <SimpleSnackBar/>
       <Header showBackBtn={true}/>
       <Box sx={{textAlign: 'center', padding: '30px'}}>
         <Box sx={{margin: '0 auto 10px'}}>
