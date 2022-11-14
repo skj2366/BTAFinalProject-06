@@ -44,9 +44,8 @@ export default function Home() {
       setAccountId(storedAccountId)
     }
 
-    if (client && accountId) {
-      init().catch(e => console.log(e))
-    }
+    let timer = setInterval(() => {init().catch(e => console.log(e))}, 2000)
+    return () => {clearInterval(timer)}
   },[accountId, client])
 
   const init = async () => {

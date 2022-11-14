@@ -23,7 +23,7 @@ export const ChangeAccountDrawer = (props) => {
     let timer = setInterval(() => {
       getAccounts().catch(e => console.log(e))
     }, 1000)
-   return () => {clearTimeout(timer)}
+   return () => {clearInterval(timer)}
   }, [])
 
   const getAccounts = async () => {
