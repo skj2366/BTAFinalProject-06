@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "daemon": "nodemon daemon/daemon.js"
+    "daemon": "pm2 start daemon/daemon.js"
   },
   "keywords": [
     "nodejs",
@@ -29,6 +29,7 @@
     "https": "^1.0.0",
     "mysql2": "^2.3.3",
     "node-cron": "^3.0.2",
+    "pm2": "^5.2.2",
     "sequelize": "^6.25.3",
     "sqlite3": "^5.1.2",
     "swagger-ui-express": "^4.5.0",

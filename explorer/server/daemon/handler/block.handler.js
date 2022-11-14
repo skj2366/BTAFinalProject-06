@@ -10,7 +10,7 @@ const getLastblockNumberFromChain = async () => {
 
             const {data} = await axios.get(`${env.NODE_URI}/api/v1/blocks/?order=desc&limit=1`)     
             blockNumber = data.blocks[0].number; //마지막 블록 넘버
-            console.log("블록 넘버 : " + blockNumber);
+            console.log("블록 넘버: " + blockNumber);
 
             return blockNumber;
     } catch (error) {
